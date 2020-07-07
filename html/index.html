@@ -16,6 +16,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </head>
     <body>
+        
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
@@ -42,14 +43,19 @@
             </div>
         </nav>
         
-        <input type="text" name="lowerBound" id="lowerBound" value="1" style="visibility: hidden">
-        <input type="text" name="upperBound" id="upperBound" value="151" style="visibility: hidden">
+        <br>
+        
+        <div class="form-group has-search">
+            <span class="fa fa-search form-control-feedback"></span>
+            <input type="text" class="form-control" id="queryContent" onkeyup="search()" placeholder="Search for a Pokemon">
+        </div>
         
         <div class="container">
             <ul id="pokedex"></ul>
         </div>
         
-        <script src="../js/fullPokedex.js"></script>
+        <script src="../js/search.js"></script>
+        
         
         <div class="footer-copyright text-center py-3">© 2020 Brian Spencer 
             <a href="pokeapi.co">Pokeapi Used for Data</a>
