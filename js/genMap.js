@@ -41,10 +41,8 @@ const fetchMaps = (bound) => {
     ];
     
     var index_1 = getRandomInt(allMaps.length);
-    console.log('index1:', index_1);
     while (true) {
         var index_2 = getRandomInt(allMaps.length);
-        console.log('index2:', index_2);
         if (index_1 != index_2) {
             break;
         }
@@ -53,10 +51,9 @@ const fetchMaps = (bound) => {
 };
 
 const displayMaps = (allMaps) => {
-    const map_1 = '<p>'+allMaps[0]+'</p>';
-    const map_2 = '<p>'+allMaps[1]+'</p>';
+    const map_1 = '<li class="list-group-item list-group-item-warning">'+allMaps[0]+'</li>';
+    const map_2 = '<li class="list-group-item list-group-item-warning">'+allMaps[1]+'</li>';
     maps.innerHTML = map_1 + map_2;
-    console.log(maps.innerHTML);
 };
 
 fetchMaps();
