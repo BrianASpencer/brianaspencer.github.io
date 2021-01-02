@@ -81,6 +81,7 @@
                 <a class="item active w-20 bg-dark" data-tab="first"><h2 class="text-white">General</h2></a>
                 <a class="item w-20 bg-dark" data-tab="second"><h2 class="text-white">Survivors</h2></a>
                 <a class="item w-20 bg-dark" data-tab="third"><h2 class="text-white">Killer</h2></a>
+                <a class="item w-20 bg-dark" data-tab="fourth"><h2 class="text-white">Map Picker</h2></a>
             </div>
             <div class="ui bottom attached tab segment active bg-dark" data-tab="first">
                 <h3>Current</h3>
@@ -177,6 +178,11 @@
                         Lightborn
                     </li>
                 </ul>
+            </div>
+            <div class="ui bottom attached tab segment bg-dark" data-tab="fourth">
+                <h3>Generated Maps</h3>
+                <li id="maps" class="list-group-item list-group-item-warning"></li>
+                <script src="../../js/genMap.js"></script>
             </div>
             <script> 
                 $('.menu .item').tab();                    
