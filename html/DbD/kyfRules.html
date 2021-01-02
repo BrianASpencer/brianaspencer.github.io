@@ -45,43 +45,17 @@
 
     </head>
     <body class="bg-dark">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#navbarTogglerDemo01"
-                    aria-controls="navbarTogglerDemo01"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                    >
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div
-                 class="collapse navbar-collapse"
-                 id="navbarTogglerDemo01"
-                 style="font-size: 1.7em"
-                 >
-                <ul class="navbar-nav">
-                    <li class="nav-item" style="font-size: 1.1em;">
-                        <a class="nav-link" href="https://dennisreep.nl/dbd/maps/" target="_blank" rel="noopener noreferrer">
-                            Maps
-                        </a>
-                    </li>
-                    <li class="nav-item" style="font-size: 1.1em;">
-                        <a class="nav-link" href="https://docs.google.com/spreadsheets/d/14eny8di9fgeTUK9ESKweJJ-KhJ6-50zK-iVj3WbEi8Q/edit#gid=0" target="_blank" rel="noopener noreferrer">
-                            Killer Rankings
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        
+        <div class="text-center">
+            <img src="https://i.pinimg.com/600x315/73/97/c0/7397c0919de60f1425ad03c4ce83d0a4.jpg">
+        </div>
         <div class="container header jumbotron jumbotron-fluid bg-dark">
             <div class="ui top attached tabular menu">
                 <a class="item active bg-dark" data-tab="first"><h2 class="text-white">General</h2></a>
                 <a class="item bg-dark" data-tab="second"><h2 class="text-white">Survivors</h2></a>
                 <a class="item bg-dark" data-tab="third"><h2 class="text-white">Killer</h2></a>
                 <a class="item bg-dark" data-tab="fourth"><h2 class="text-white">Map Picker</h2></a>
+                <a class="item bg-dark" data-tab="fifth"><h2 class="text-white">Killer Rankings</h2></a>
             </div>
             <div class="ui bottom attached tab segment active bg-dark" data-tab="first">
                 <h3>Current</h3>
@@ -187,6 +161,11 @@
                     <button class="btn btn-warning" onclick="fetchMaps()">Generate New Maps</button>
                 </div>
                 <script src="../../js/genMap.js"></script>
+            </div>
+            <div class="ui bottom attached tab segment bg-dark" data-tab="fifth">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRNqWt1PnWHcddsLEIu5cI3FQzz9MdqOnPVYQblO3zCSmRJumMROT1Z1DuZz9CrBodC2QDcYHjOS2td/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                </div>
             </div>
             <script> 
                 $('.menu .item').tab();                    
