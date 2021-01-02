@@ -181,7 +181,11 @@
             </div>
             <div class="ui bottom attached tab segment bg-dark" data-tab="fourth">
                 <h3>Generated Maps</h3>
-                <li id="maps" class="list-group-item list-group-item-warning"></li>
+                <ul id="maps">
+                </ul>
+                <div class="text-center">
+                    <button class="btn btn-warning" onclick="fetchMaps()">Generate New Maps</button>
+                </div>
                 <script src="../../js/genMap.js"></script>
             </div>
             <script> 
