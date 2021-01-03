@@ -55,8 +55,6 @@
                 <a class="item active bg-dark" data-tab="first"><h2 class="text-white">General</h2></a>
                 <a class="item bg-dark" data-tab="second"><h2 class="text-white">Survivors</h2></a>
                 <a class="item bg-dark" data-tab="third"><h2 class="text-white">Killer</h2></a>
-                <a class="item bg-dark" data-tab="fourth"><h2 class="text-white">Random Survivor Build</h2></a>
-                <a class="item bg-dark" data-tab="fifth"><h2 class="text-white">Random Killer Build</h2></a>
             </div>
             <div class="ui bottom attached tab segment active bg-dark" data-tab="first">
                 <h3>Current</h3>
@@ -115,6 +113,13 @@
                         Object of Obsession
                     </li>
                 </ul>
+                <br>
+                <div class="text-center">
+                    <button class="btn btn-primary" onclick="fetchPerks()">Generate A New Build</button>
+                </div>
+                <br>
+                <ul id="sPerks">
+                </ul>
             </div>
             <div class="ui bottom attached tab segment bg-dark" data-tab="third">
                 <h3>Gameplay/Loadout</h3>
@@ -153,22 +158,7 @@
                         Lightborn
                     </li>
                 </ul>
-                
-                <br><br>
-                
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRNqWt1PnWHcddsLEIu5cI3FQzz9MdqOnPVYQblO3zCSmRJumMROT1Z1DuZz9CrBodC2QDcYHjOS2td/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
-                </div>
-            </div>
-            <div class="ui bottom attached tab segment bg-dark" data-tab="fourth">
-                <div class="text-center">
-                    <button class="btn btn-primary" onclick="fetchPerks()">Generate A New Build</button>
-                </div>
                 <br>
-                <ul id="sPerks">
-                </ul>
-            </div>
-            <div class="ui bottom attached tab segment bg-dark" data-tab="fifth">
                 <div class="text-center">
                     <button class="btn btn-danger" onclick="fetchKiller()">Generate A New Killer</button>
                 </div>
@@ -189,6 +179,9 @@
                 <br>
                 <ul id="kPerks">
                 </ul>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRNqWt1PnWHcddsLEIu5cI3FQzz9MdqOnPVYQblO3zCSmRJumMROT1Z1DuZz9CrBodC2QDcYHjOS2td/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                </div>
             </div>
             <script src="../../js/genMap.js"></script>
             <script src="../../js/genKPerks.js"></script>
