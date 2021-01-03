@@ -30,7 +30,6 @@ const buildPerks = (arr) => {
     function myFunction(item) {
         var sPerks = [];
         for (const element in item) {
-            var sIndex = 0;
             var url = 'https://dbd-stats.info/data/Public/';
             if (item[element].type === "EInventoryItemType::CamperPerk") {
                 sPerks.push([item[element].displayName, item[element].perkDefaultDescription, url + item[element].iconPathList[0]]);
