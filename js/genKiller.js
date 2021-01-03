@@ -37,7 +37,7 @@ const buildKiller = (arr) => {
 
 const displayKiller = (disPerks) => {
     killerSlot.innerHTML = '';
-    var lag = '<li class="list-group-item list-group-item-warning"><h2 class="text-center">' +
+    var lag = '<li class="list-group-item list-group-item-danger"><h2 class="text-center">' +
     disPerks[0] + '</h2>' + '<div class="text-center"> <img style="width: 20%; height: 20%;" src="' + disPerks[2] +'"></div>' + '<div>' + disPerks[1].replace(/<(.|\n)*?>/g, '') + '</div><br>' + '</li>';
     killerSlot.innerHTML += lag;
 };
