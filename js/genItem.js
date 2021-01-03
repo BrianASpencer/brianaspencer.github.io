@@ -21,7 +21,6 @@ const fetchItem = (bound) => {
     const url = 'https://dbd-stats.info/api/items';
     
     itemList.push(fetch(url).then((res) => res.json()));
-    console.log('items: ', itemList);
     
     Promise.all(itemList).then((results) => {
         buildItem(results);
@@ -42,7 +41,7 @@ const buildItem = (arr) => {
         }
         var index = getRandomInt(items.length);
         sItem = items[index];
-        console.log('item: ', sItem);
+        
         return displayItem(sItem);
     }
 };
