@@ -49,7 +49,7 @@ const buildItem = (arr) => {
 
 const displayItem = (item) => {
     itemSLot.innerHTML = '';
-    var lag = '<li class="list-group-item list-group-item-danger"><div class="text-center"><h2>' +
+    var lag = '<li class="list-group-item list-group-item-primary"><div class="text-center"><h2>' +
     item[0] + '</h2>' + '<img style="width: 15%; height: 15%;" src="' + item[2] +'">' + '<div>' + item[1].replace(/<(.|\n)*?>/g, '') + '</div></div></li>';
     itemSLot.innerHTML += lag;
 };
