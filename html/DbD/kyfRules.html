@@ -1,6 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
+<!DOCTYPE html> 
+<html lang="en"> 
+
+    <head> 
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -42,159 +43,227 @@
         <script src= 
                 "https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"> 
         </script> 
+    </head> 
 
-    </head>
-    <body class="bg-dark">
-
+    <body class="bg-dark"> 
+        
         <div class="text-center">
             <br>
-            <img src="/images/DBD_RULES.png">
-        </div>
-        <div class="container header jumbotron jumbotron-fluid bg-dark">
-            <div class="ui top attached tabular menu">
-                <a class="item active bg-dark" data-tab="first"><h2 class="text-white">General</h2></a>
-                <a class="item bg-dark" data-tab="second"><h2 class="text-white">Survivors</h2></a>
-                <a class="item bg-dark" data-tab="third"><h2 class="text-white">Killer</h2></a>
-            </div>
-            <div class="ui bottom attached tab segment active bg-dark" data-tab="first">
-                <h3>Current</h3>
-                <ul class="list-group">
-                    <li class="list-group-item list-group-item-dark">
-                        Offerings are not allowed
-                    </li>
-                    <li class="list-group-item list-group-item-dark">
-                        Two maps will be randomly chosen and the survivors will vote on them (Killer breaks a tie)
-                    </li>
-                </ul>
-                <h3>Proposed</h3>
-                <ul class="list-group">
-                    <li class="list-group-item list-group-item-success">
-                        Not allowed to play The Spirit
-                    </li>
-                    <li class="list-group-item list-group-item-success">
-                        No toolboxes allowed
-                    </li>
-                    <li class="list-group-item list-group-item-success">
-                        Only one of each item type is allowed
-                    </li>
-                </ul>
-            </div>
-            <div class="ui bottom attached tab segment bg-dark" data-tab="second">
-                <h3>Gameplay/Loadout</h3>
-                <ul class="list-group">
-                    <li class="list-group-item list-group-item-primary">
-                        No identical outfits
-                    </li>
-                    <li class="list-group-item list-group-item-primary">
-                        No sabotage build
-                    </li>
-                    <li class="list-group-item list-group-item-primary">
-                        Only one flashlight can be brought
-                    </li>
-                    <li class="list-group-item list-group-item-primary">
-                        No more than two toolboxes can be brought
-                    </li>
-                </ul>
-                <h3>Items</h3>
-                <ul class="list-group">
-                    <li class="list-group-item list-group-item-primary">
-                        Toolboxes above uncommon rarity
-                    </li>
-                    <li class="list-group-item list-group-item-primary">
-                        Brand new parts
-                    </li>
-                    <li class="list-group-item list-group-item-primary">
-                        Any key above Rare rarity
-                    </li>
-                </ul>
-                <h3>Perks</h3>
-                <ul class="list-group">
-                    <li class="list-group-item list-group-item-primary">
-                        Object of Obsession
-                    </li>
-                </ul>
-                <br>
-                <div class="text-center">
-                    <button class="btn btn-primary" onclick="fetchPerks()">Generate A New Build</button>
-                </div>
-                <br>
-                <ul id="sPerks">
-                </ul>
-            </div>
-            <div class="ui bottom attached tab segment bg-dark" data-tab="third">
-                <h3>Gameplay/Loadout</h3>
-                <ul class="list-group">
-                    <li class="list-group-item list-group-item-danger">
-                        Cannot play The Nurse
-                    </li>
-                    <li class="list-group-item list-group-item-danger">
-                        No face camping
-                    </li>
-                    <li class="list-group-item list-group-item-danger">
-                        Cannot proxy unless there are signs of rescue
-                    </li>
-                </ul>
-                <h3>Addons</h3>
-                <ul class="list-group">
-                    <li class="list-group-item list-group-item-danger">
-                        Iridescent Head Huntress
-                    </li>
-                    <li class="list-group-item list-group-item-danger">
-                        Instakill Myers
-                    </li>
-                    <li class="list-group-item list-group-item-danger">
-                        Anything that causes Exhaustion
-                    </li>
-                </ul>
-                <h3>Perks</h3>
-                <ul class="list-group">
-                    <li class="list-group-item list-group-item-danger"
-                        >Hex: No one Escapes Death
-                    </li>
-                    <li class="list-group-item list-group-item-danger">
-                        Hex: Devour Hope
-                    </li>
-                    <li class="list-group-item list-group-item-danger">
-                        Lightborn
-                    </li>
-                </ul>
-                <br>
-                <div class="text-center">
-                    <button class="btn btn-danger" onclick="fetchKiller()">Generate A New Killer</button>
-                </div>
-                <br>
-                <ul id="killerSlot">
-                </ul>
-                <br>
-                <div class="text-center">
-                    <button class="btn btn-danger" onclick="fetchMaps()">Generate New Maps</button>
-                </div>
-                <br>
-                <ul id="maps">
-                </ul>
-                <br>
-                <div class="text-center">
-                    <button class="btn btn-danger" onclick="fetchKPerks()">Generate A New Build</button>
-                </div>
-                <br>
-                <ul id="kPerks">
-                </ul>
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRNqWt1PnWHcddsLEIu5cI3FQzz9MdqOnPVYQblO3zCSmRJumMROT1Z1DuZz9CrBodC2QDcYHjOS2td/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
-                </div>
-            </div>
-            <script src="../../js/genMap.js"></script>
-            <script src="../../js/genKPerks.js"></script>
-            <script src="../../js/genSPerks.js"></script>
-            <script src="../../js/genKiller.js"></script>
-            <script> 
-                $('.menu .item').tab();                    
-            </script> 
+            <img src="../../images/DBD_RULES.png">
         </div>
 
-        <div class="footer-copyright text-center py-3">
-            <text style="color: white;">© 2020 Brian Spencer</text> 
-        </div>
+        <div style="margin-top: 100px" 
+             class="ui container"> 
 
-    </body>
-</html>
+            <div id="context1"> 
+                <div class="ui secondary menu"> 
+                    <a class="item active" data-tab="first"> 
+                        <h2 class="text-white">General</h2> 
+                    </a> 
+                    <a class="item" data-tab= 
+                       "second">
+                        <h2 class="text-white">Survivors</h2>
+                    </a> 
+
+                    <a class="item" data-tab="third"> 
+                        <h2 class="text-white">Killer</h2> 
+                    </a> 
+                </div> 
+
+                <div class="ui tab segment active" data-tab="first"> 
+                    <div class="ui top attached tabular menu"> 
+                        <a class="active item" data-tab= 
+                           "first/a">
+                            <h3>Current</h3> 
+                        </a> 
+                        <a class="item" data-tab= 
+                           "first/b">
+                            <h3>Proposed Rules</h3>
+                        </a> 
+                    </div> 
+
+                    <div class="ui bottom attached tab  
+                                segment active" data-tab="first/a"> 
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-dark">
+                                Offerings are not allowed
+                            </li>
+                            <li class="list-group-item list-group-item-dark">
+                                Two maps will be randomly chosen and the survivors will vote on them (Killer breaks a tie)
+                            </li>
+                        </ul>
+                    </div> 
+
+                    <div class="ui bottom attached tab  
+                                segment" data-tab="first/b"> 
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-dark">
+                                Not allowed to play The Spirit
+                            </li>
+                            <li class="list-group-item list-group-item-dark">
+                                No toolboxes allowed
+                            </li>
+                            <li class="list-group-item list-group-item-dark">
+                                Only one of each item type is allowed
+                            </li>
+                        </ul>
+                    </div> 
+                </div> 
+                <div class="ui tab segment" 
+                     data-tab="second"> 
+                    <div class="ui top attached  
+                                tabular menu"> 
+                        <a class="item" data-tab= 
+                           "second/a">
+                            <h3>Rules</h3>
+                        </a> 
+                        <a class="item" data-tab= 
+                           "second/b">
+                            <h3>Perks</h3>
+                        </a> 
+                        <a class="item" 
+                           data-tab="second/c">
+                            <h3>Items/Addons</h3>
+                        </a> 
+                    </div> 
+                    <div class="ui bottom attached  
+                                tab segment" data-tab="second/a"> 
+                        <h3>Gameplay/Loadout</h3>
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-primary">
+                                No identical outfits
+                            </li>
+                            <li class="list-group-item list-group-item-primary">
+                                No sabotage build
+                            </li>
+                            <li class="list-group-item list-group-item-primary">
+                                Only one flashlight can be brought
+                            </li>
+                            <li class="list-group-item list-group-item-primary">
+                                No more than two toolboxes can be brought
+                            </li>
+                        </ul>
+                        <h3>Items</h3>
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-primary">
+                                Toolboxes above uncommon rarity
+                            </li>
+                            <li class="list-group-item list-group-item-primary">
+                                Brand new parts
+                            </li>
+                            <li class="list-group-item list-group-item-primary">
+                                Any key above Rare rarity
+                            </li>
+                        </ul>
+                        <h3>Perks</h3>
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-primary">
+                                Object of Obsession
+                            </li>
+                        </ul>
+                    </div> 
+                    <div class="ui bottom attached tab  
+                                segment" data-tab="second/b"> 
+                        <div class="text-center">
+                            <button class="btn btn-primary" onclick="fetchPerks()">Generate New Perks</button>
+                        </div>
+                        <br>
+                        <ul id="sPerks">
+                        </ul>
+                    </div> 
+                    <div class="ui bottom attached tab  
+                                segment" data-tab="second/c"> 
+                        Survivor Item and Addon generator coming soon! 
+                    </div> 
+                </div> 
+                <div class="ui tab segment" data-tab="third"> 
+                    <div class="ui top attached tabular menu"> 
+                        <a class="item" data-tab="third/a">
+                            <h3>Rules</h3>
+                        </a> 
+                        <a class="item" data-tab="third/b">
+                            <h3>Perks</h3>
+                        </a> 
+                        <a class="item" data-tab="third/c">
+                            <h3>Killer/Addons/Map</h3>
+                        </a> 
+                    </div> 
+                    <div class="ui bottom attached tab 
+                                segment" data-tab="third/a"> 
+                        <h3>Gameplay/Loadout</h3>
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-danger">
+                                Cannot play The Nurse
+                            </li>
+                            <li class="list-group-item list-group-item-danger">
+                                No face camping
+                            </li>
+                            <li class="list-group-item list-group-item-danger">
+                                Cannot proxy unless there are signs of rescue
+                            </li>
+                        </ul>
+                        <h3>Addons</h3>
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-danger">
+                                Iridescent Head Huntress
+                            </li>
+                            <li class="list-group-item list-group-item-danger">
+                                Instakill Myers
+                            </li>
+                            <li class="list-group-item list-group-item-danger">
+                                Anything that causes Exhaustion
+                            </li>
+                        </ul>
+                        <h3>Perks</h3>
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-danger"
+                                >Hex: No one Escapes Death
+                            </li>
+                            <li class="list-group-item list-group-item-danger">
+                                Hex: Devour Hope
+                            </li>
+                            <li class="list-group-item list-group-item-danger">
+                                Lightborn
+                            </li>
+                        </ul> 
+                    </div> 
+                    <div class="ui bottom attached tab  
+                                segment" data-tab="third/b"> 
+                        <div class="text-center">
+                            <button class="btn btn-danger" onclick="fetchKPerks()">Generate New Perks</button>
+                        </div>
+                        <br>
+                        <ul id="kPerks">
+                        </ul>
+                    </div> 
+                    <div class="ui bottom attached tab  
+                                segment" data-tab="third/c"> 
+                        <div class="text-center">
+                            <button class="btn btn-danger" onclick="fetchKiller()">Generate A New Killer</button>
+                        </div>
+                        <br>
+                        <ul id="killerSlot">
+                        </ul>
+                        <br>
+                        <div class="text-center">
+                            <button class="btn btn-danger" onclick="fetchMaps()">Generate New Maps</button>
+                        </div>
+                        <br>
+                        <ul id="maps">
+                        </ul>
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+
+        <script src="../../js/genMap.js"></script>
+        <script src="../../js/genKPerks.js"></script>
+        <script src="../../js/genSPerks.js"></script>
+        <script src="../../js/genKiller.js"></script>
+        <script> 
+            $('.menu .item').tab();                    
+        </script> 
+
+    </body> 
+
+</html> 
