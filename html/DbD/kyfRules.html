@@ -172,7 +172,16 @@
                     </div> 
                     <div class="ui bottom attached tab  
                                 segment bg-dark" data-tab="second/c"> 
-                        <h3 class="text-white">Survivor Item and Addon generator coming soon!</h3> 
+                        <div class="text-center">
+                            <button class="btn btn-danger" onclick="timeOutButton(this, 'survivor');">Generate A New Item</button>
+                        </div>
+                        <br>
+                        <ul id="itemSlot">
+                        </ul>
+                        <br>
+                        <ul id="itemAddonSlot">
+                        </ul>
+                        <br>
                     </div> 
                 </div> 
                 <div class="ui tab segment bg-dark" data-tab="third"> 
@@ -238,7 +247,7 @@
                     <div class="ui bottom attached tab  
                                 segment bg-dark" data-tab="third/c"> 
                         <div class="text-center">
-                            <button class="btn btn-danger" onclick="timeOutButton(this);">Generate A New Killer</button>
+                            <button class="btn btn-danger" onclick="timeOutButton(this, 'killer');">Generate A New Killer</button>
                         </div>
                         <br>
                         <ul id="killerSlot">
@@ -263,6 +272,8 @@
         <script src="../../js/genSPerks.js"></script>
         <script src="../../js/genKiller.js"></script>
         <script src="../../js/genKAddons.js"></script>
+        <script src="../../js/genItem.js"></script>
+        <script src="../../js/genItemAddons.js"></script>
         <script> 
             $('.menu .item').tab();                    
         </script> 
