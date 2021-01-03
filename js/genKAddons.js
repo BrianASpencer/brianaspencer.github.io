@@ -20,7 +20,7 @@ const fetchAddons = (bound) => {
     const url = 'https://dbd-stats.info/api/itemaddons/';
     
     addons.push(fetch(url).then((res) => res.json()));
-    console.log('all addons: ', addons);
+    
     Promise.all(addons).then((results) => {
         buildAddons(results);
     });
@@ -40,33 +40,42 @@ const buildAddons = (arr) => {
                 addons.push([item[element].displayName, url + item[element].iconPathList[0]]);
             }
         }
-        console.log('addons', addons);
+        
         var indeces = getIndeces(2, addons.length);
-        return displayAddons([addons[indeces[0]], addons[indeces[1]]]);
+        return displayItemAddons([addons[indeces[0]], addons[indeces[1]]]);
     }
 };
 
-const displayAddons = (addons) => {
+const displayItemAddons = (addons) => {
     addonSlot.innerHTML = '';
     for (i = 0; i < 2; i++) {
         var lag = '<li class="list-group-item list-group-item-danger"><div class="text-center"><h2>' +
-        addons[i][0] + '</h2>' + '<img style="width: 16%; height: 16%;" src="' + addons[i][1] +'">' + '</div></li>';
+        addons[i][0] + '</h2>' + '<img style="width: 10%; height: 10%;" src="' + addons[i][1] +'">' + '</div></li>';
         addonSlot.innerHTML += lag;
     }
 };
 
-function timeOutButton(obj) {
+function timeOutButton(obj, key) {
     obj.disabled = true;
+    console.log('keyey', key);
     setTimeout(function() {
-        fetchKiller();
-        timeOutTime(obj);
+        if (key === 'killer') {
+            fetchKiller();
+        } else {
+            fetchItem();
+        }
+        timeOutTime(obj, key);
     }, 700);
 }
 
-function timeOutTime(obj) {
+function timeOutTime(obj, key) {
     setTimeout(function() {
         obj.disabled = false;
-        fetchAddons();
+        if (key === 'killer') {
+            fetchAddons();
+        } else {
+            fetchItemAddon();
+        }
     }, 500);
 }
 
