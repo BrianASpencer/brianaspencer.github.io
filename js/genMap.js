@@ -55,8 +55,8 @@ const fetchMaps = (bound) => {
 };
 
 const displayMaps = (allMaps) => {
-    const map_1 = '<li class="list-group-item list-group-item-warning">'+allMaps[0]+'</li>';
-    const map_2 = '<li class="list-group-item list-group-item-warning">'+allMaps[1]+'</li>';
+    const map_1 = '<li class="list-group-item list-group-item-danger">'+allMaps[0]+'</li>';
+    const map_2 = '<li class="list-group-item list-group-item-danger">'+allMaps[1]+'</li>';
     maps.innerHTML = map_1 + map_2;
 };
 
