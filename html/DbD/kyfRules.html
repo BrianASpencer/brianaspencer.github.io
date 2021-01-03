@@ -117,14 +117,6 @@
                 </ul>
             </div>
             <div class="ui bottom attached tab segment bg-dark" data-tab="third">
-                <h3>Generated Maps</h3>
-                <ul id="maps">
-                </ul>
-                <div class="text-center">
-                    <button class="btn btn-warning" onclick="fetchMaps()">Generate New Maps</button>
-                </div>
-                <script src="../../js/genMap.js"></script>
-                <br>
                 <h3>Gameplay/Loadout</h3>
                 <ul class="list-group">
                     <li class="list-group-item list-group-item-danger">
@@ -183,6 +175,14 @@
                 <br>
                 <ul id="killerSlot">
                 </ul>
+                <br>
+                <div class="text-center">
+                    <button class="btn btn-warning" onclick="fetchMaps()">Generate New Maps</button>
+                </div>
+                <br>
+                <ul id="maps">
+                </ul>
+                <br>
                 <div class="text-center">
                     <button class="btn btn-danger" onclick="fetchKPerks()">Generate A New Build</button>
                 </div>
@@ -190,6 +190,7 @@
                 <ul id="kPerks">
                 </ul>
             </div>
+            <script src="../../js/genMap.js"></script>
             <script src="../../js/genKPerks.js"></script>
             <script src="../../js/genSPerks.js"></script>
             <script src="../../js/genKiller.js"></script>
