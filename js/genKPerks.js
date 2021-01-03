@@ -31,7 +31,7 @@ const buildKPerks = (arr) => {
         var kPerks = [];
         for (const element in item) {
             var url = 'https://dbd-stats.info/data/Public/';
-            if (item[element].type === "EInventoryItemType::SlasherPerk") {
+            if ((item[element].type === "EInventoryItemType::SlasherPerk") && item[element].bloodWeb) {
                 kPerks.push([item[element].displayName, item[element].perkDefaultDescription, url + item[element].iconPathList[0]]);
             }
         }
