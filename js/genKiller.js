@@ -1,21 +1,33 @@
 const killerSlot = document.getElementById('killerSlot');
+var killer;
 
 function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
 }
 
-const fetchKiller = (bound) => {
-    
-    const promises = [];
-    for (let i = 0; i <= 0; i++) {
-        const url = 'https://dbd-stats.info/api/characters';
-        promises.push(fetch(url).then((res) => res.json()));
+function getIndeces(length, arrLength) {
+    var arr = [];
+    while(arr.length < length){
+        var r = Math.floor(Math.random() * arrLength);
+        if(arr.indexOf(r) === -1) arr.push(r);
     }
-    Promise.all(promises).then((results) => {
+    return arr;
+}
+
+const fetchKiller = (bound) => {
+    killer = [];
+    const characters = [];
+    
+    const url = 'https://dbd-stats.info/api/characters';
+    
+    characters.push(fetch(url).then((res) => res.json()));
+    
+    Promise.all(characters).then((results) => {
         buildKiller(results);
     });
-    
+
 };
+
 
 const buildKiller = (arr) => {
     arr.forEach(myFunction);
@@ -24,11 +36,12 @@ const buildKiller = (arr) => {
         for (const element in item) {
             var url = 'https://dbd-stats.info/data/Public/';
             if (item[element].role === "EPlayerRole::VE_Slasher") {
-                killers.push([item[element].displayName, item[element].biography, url + item[element].iconPath]);
+                killers.push([item[element].displayName, item[element].biography, url + item[element].iconPath, item[element].defaultItem]);
             }
         }
-        
-        return displayKiller(killers[getRandomInt(killers.length)]);
+        var index = getRandomInt(killers.length);
+        killer = killers[index];
+        return displayKiller(killer);
     }
 };
 
