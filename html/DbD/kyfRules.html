@@ -45,7 +45,7 @@
 
     </head>
     <body class="bg-dark">
-        
+
         <div class="text-center">
             <img src="https://i.pinimg.com/600x315/73/97/c0/7397c0919de60f1425ad03c4ce83d0a4.jpg">
         </div>
@@ -56,6 +56,7 @@
                 <a class="item bg-dark" data-tab="third"><h2 class="text-white">Killer</h2></a>
                 <a class="item bg-dark" data-tab="fourth"><h2 class="text-white">Map Picker</h2></a>
                 <a class="item bg-dark" data-tab="fifth"><h2 class="text-white">Killer Rankings</h2></a>
+                <a class="item bg-dark" data-tab="sixth"><h2 class="text-white">Build Generator</h2></a>
             </div>
             <div class="ui bottom attached tab segment active bg-dark" data-tab="first">
                 <h3>Current</h3>
@@ -70,14 +71,14 @@
                 <h3>Proposed</h3>
                 <ul class="list-group">
                     <li class="list-group-item list-group-item-success">
-                    Not allowed to play The Spirit
-                </li>
-                <li class="list-group-item list-group-item-success">
-                    No toolboxes allowed
-                </li>
-                <li class="list-group-item list-group-item-success">
-                    Only one of each item type is allowed
-                </li>
+                        Not allowed to play The Spirit
+                    </li>
+                    <li class="list-group-item list-group-item-success">
+                        No toolboxes allowed
+                    </li>
+                    <li class="list-group-item list-group-item-success">
+                        Only one of each item type is allowed
+                    </li>
                 </ul>
             </div>
             <div class="ui bottom attached tab segment bg-dark" data-tab="second">
@@ -160,13 +161,21 @@
                 <div class="text-center">
                     <button class="btn btn-warning" onclick="fetchMaps()">Generate New Maps</button>
                 </div>
-                <script src="../../js/genMap.js"></script>
             </div>
             <div class="ui bottom attached tab segment bg-dark" data-tab="fifth">
                 <div class="embed-responsive embed-responsive-16by9">
                     <iframe class="embed-responsive-item" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRNqWt1PnWHcddsLEIu5cI3FQzz9MdqOnPVYQblO3zCSmRJumMROT1Z1DuZz9CrBodC2QDcYHjOS2td/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
                 </div>
             </div>
+            <div class="ui bottom attached tab segment bg-dark" data-tab="sixth">
+                <h2>Killer Perks</h2>
+                <ul id="kPerks">
+                </ul>
+                <h2>Survivor Perks</h2>
+                <ul id="sPerks">
+                </ul>
+            </div>
+            <script src="../../js/genMap.js"></script>
             <script> 
                 $('.menu .item').tab();                    
             </script> 
