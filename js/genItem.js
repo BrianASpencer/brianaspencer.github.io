@@ -1,4 +1,5 @@
-const itemAddonSlot = document.getElementById('itemAddonSlot');
+const itemSLot = document.getElementById('itemSlot');
+var sItem;
 
 function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
@@ -13,64 +14,43 @@ function getIndeces(length, arrLength) {
     return arr;
 }
 
-const fetchItemAddon = (bound) => {
+const fetchItem = (bound) => {
+    sItem  = [];
+    const itemList = [];
     
-    const addons = [];
-
-    const url = 'https://dbd-stats.info/api/itemaddons/';
+    const url = 'https://dbd-stats.info/api/items';
     
-    addons.push(fetch(url).then((res) => res.json()));
+    itemList.push(fetch(url).then((res) => res.json()));
     
-    Promise.all(addons).then((results) => {
-        buildItemAddons(results);
+    Promise.all(itemList).then((results) => {
+        buildItem(results);
     });
 };
 
-const buildItemAddons = (arr) => {
+
+const buildItem = (arr) => {
     arr.forEach(myFunction);
     function myFunction(item) {
-        var addons = [];
+        var items = [];
         for (const element in item) {
             var url = 'https://dbd-stats.info/data/Public/';
-            var i = 0;
-            for (i = 0; i < item[element].parentItems.length; i++) {
-                var itemName = item[element].parentItems[i] ? item[element].parentItems[i] : '';
-            
-                if (itemName === sItem[3] && item[element].bloodWeb && item[element].role === 'EPlayerRole::VE_Camper') {
-                    addons.push([item[element].displayName, url + item[element].iconPathList[0]]);
-                }
+            if (item[element].role === "EPlayerRole::VE_Camper" && item[element].bloodWeb && item[element].rarity !== "EItemRarity::SpecialEvent") {
+                items.push([item[element].displayName, item[element].description, url + item[element].iconPathList[0],
+                           item[element].id]);
             }
         }
+        var index = getRandomInt(items.length);
+        sItem = items[index];
         
-        var indeces = getIndeces(2, addons.length);
-        var alt = [['No Addon Available', ''], ['No Addon Available', '']];
-        return displayAddons(addons.length ? [addons[indeces[0]], addons[indeces[1]]] : alt);
+        return displayItem(sItem);
     }
 };
 
-const displayAddons = (addons) => {
-    itemAddonSlot.innerHTML = '';
-    for (i = 0; i < 2; i++) {
-        var lag = '<li class="list-group-item list-group-item-primary"><div class="text-center"><h2>' +
-        addons[i][0] + '</h2>' + '<img style="width: 10%; height: 10%;" src="' + addons[i][1] +'">' + '</div></li>';
-        itemAddonSlot.innerHTML += lag;
-    }
+const displayItem = (item) => {
+    itemSLot.innerHTML = '';
+    var lag = '<li class="list-group-item list-group-item-primary"><div class="text-center"><h2>' +
+    item[0] + '</h2>' + '<img style="width: 15%; height: 15%;" src="' + item[2] +'">' + '<div>' + item[1].replace(/<(.|\n)*?>/g, '') + '</div></div></li>';
+    itemSLot.innerHTML += lag;
 };
 
-function timeOutButton_2(obj) {
-    obj.disabled = true;
-    setTimeout(function() {
-        fetchItem();
-        timeOutTime_2(obj);
-    }, 800);
-}
-
-function timeOutTime_2(obj) {
-    setTimeout(function() {
-        obj.disabled = false;
-        fetchItemAddon();
-    }, 600);
-}
-
-
-fetchItemAddon();
+fetchItem();
