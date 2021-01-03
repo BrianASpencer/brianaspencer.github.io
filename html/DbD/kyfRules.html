@@ -6,7 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Brian Spencer</title>
-        <link rel="icon" href="images/favIcon.png"/>
         <link rel="stylesheet" href="../../css/kyf.css" />
         <link
               href="https://fonts.googleapis.com/css?family=Rubik&display=swap"
@@ -239,13 +238,14 @@
                     <div class="ui bottom attached tab  
                                 segment bg-dark" data-tab="third/c"> 
                         <div class="text-center">
-                            <button class="btn btn-danger" onclick="fetchKiller()">Generate A New Killer</button>
+                            <button class="btn btn-danger" onclick="timeOutButton(this);">Generate A New Killer</button>
                         </div>
                         <br>
                         <ul id="killerSlot">
                         </ul>
                         <br>
-                        <h3 class="text-center text-white">Killer Addon generator coming soon!</h3>
+                        <ul id="addonSlot">
+                        </ul>
                         <br>
                         <div class="text-center">
                             <button class="btn btn-danger" onclick="fetchMaps()">Generate New Maps</button>
@@ -262,6 +262,7 @@
         <script src="../../js/genKPerks.js"></script>
         <script src="../../js/genSPerks.js"></script>
         <script src="../../js/genKiller.js"></script>
+        <script src="../../js/genKAddons.js"></script>
         <script> 
             $('.menu .item').tab();                    
         </script> 
