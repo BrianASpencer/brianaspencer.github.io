@@ -31,7 +31,7 @@ const buildPerks = (arr) => {
         var sPerks = [];
         for (const element in item) {
             var url = 'https://dbd-stats.info/data/Public/';
-            if (item[element].type === "EInventoryItemType::CamperPerk") {
+            if ((item[element].type === "EInventoryItemType::CamperPerk") && item[element].bloodWeb) {
                 sPerks.push([item[element].displayName, item[element].perkDefaultDescription, url + item[element].iconPathList[0]]);
             }
         }
@@ -46,7 +46,7 @@ const displaySurvPerks = (disPerks) => {
     var i = 0;
     for (i = 0; i < 4; i++) {
         var lag = '<li class="list-group-item list-group-item-primary"><h2 class="text-center">' +
-        disPerks[i][0] + '</h2>' + '<div class="text-center"> <img style="width: 20%; height: 20%;" src="' + disPerks[i][2] +'"></div>' + '<div>' + disPerks[i][1].replace(/<(.|\n)*?>/g, '') + '</div><br>' + '</li>';
+        disPerks[i][0] + '</h2>' + '<div class="text-center"> <img style="width: 20%; height: 20%;" src="' + disPerks[i][2] +'"></div>' + '<div>' + disPerks[i][1].replace(/<(.|\n)*?>/g, '') + '</div>' + '</li>';
         surv.innerHTML += lag;
     }
 };
