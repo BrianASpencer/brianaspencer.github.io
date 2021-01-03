@@ -20,7 +20,6 @@ const fetchItemAddon = (bound) => {
     const url = 'https://dbd-stats.info/api/itemaddons/';
     
     addons.push(fetch(url).then((res) => res.json()));
-    console.log('every addons: ', addons);
     
     Promise.all(addons).then((results) => {
         buildItemAddons(results);
@@ -28,7 +27,6 @@ const fetchItemAddon = (bound) => {
 };
 
 const buildItemAddons = (arr) => {
-    console.log('yikes', arr);
     arr.forEach(myFunction);
     function myFunction(item) {
         var addons = [];
@@ -51,10 +49,9 @@ const buildItemAddons = (arr) => {
 };
 
 const displayAddons = (addons) => {
-    console.log('addonssns???: ', addons);
     itemAddonSlot.innerHTML = '';
     for (i = 0; i < 2; i++) {
-        var lag = '<li class="list-group-item list-group-item-danger"><div class="text-center"><h2>' +
+        var lag = '<li class="list-group-item list-group-item-primary"><div class="text-center"><h2>' +
         addons[i][0] + '</h2>' + '<img style="width: 10%; height: 10%;" src="' + addons[i][1] +'">' + '</div></li>';
         itemAddonSlot.innerHTML += lag;
     }
