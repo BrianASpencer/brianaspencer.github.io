@@ -65,7 +65,7 @@ function timeOutButton(obj, key) {
             fetchItem();
         }
         timeOutTime(obj, key);
-    }, 700);
+    }, 800);
 }
 
 function timeOutTime(obj, key) {
@@ -76,7 +76,7 @@ function timeOutTime(obj, key) {
         } else {
             fetchItemAddon();
         }
-    }, 500);
+    }, 600);
 }
 
 
