@@ -178,13 +178,21 @@
             </div>
             <div class="ui bottom attached tab segment bg-dark" data-tab="fifth">
                 <div class="text-center">
-                    <button class="btn btn-danger" onclick="fetchPerks()">Generate A New Build</button>
+                    <button class="btn btn-danger" onclick="fetchKiller()">Generate A New Killer</button>
+                </div>
+                <br>
+                <ul id="killerSlot">
+                </ul>
+                <div class="text-center">
+                    <button class="btn btn-danger" onclick="fetchKPerks()">Generate A New Build</button>
                 </div>
                 <br>
                 <ul id="kPerks">
                 </ul>
             </div>
-            <script src="../../js/genPerks.js"></script>
+            <script src="../../js/genKPerks.js"></script>
+            <script src="../../js/genSPerks.js"></script>
+            <script src="../../js/genKiller.js"></script>
             <script> 
                 $('.menu .item').tab();                    
             </script> 
