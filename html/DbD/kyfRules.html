@@ -54,9 +54,8 @@
                 <a class="item active bg-dark" data-tab="first"><h2 class="text-white">General</h2></a>
                 <a class="item bg-dark" data-tab="second"><h2 class="text-white">Survivors</h2></a>
                 <a class="item bg-dark" data-tab="third"><h2 class="text-white">Killer</h2></a>
-                <a class="item bg-dark" data-tab="fourth"><h2 class="text-white">Map Picker</h2></a>
-                <a class="item bg-dark" data-tab="fifth"><h2 class="text-white">Killer Rankings</h2></a>
-                <a class="item bg-dark" data-tab="sixth"><h2 class="text-white">Build Generator</h2></a>
+                <a class="item bg-dark" data-tab="fourth"><h2 class="text-white">Random Survivor Build</h2></a>
+                <a class="item bg-dark" data-tab="fifth"><h2 class="text-white">Random Killer Build</h2></a>
             </div>
             <div class="ui bottom attached tab segment active bg-dark" data-tab="first">
                 <h3>Current</h3>
@@ -117,6 +116,13 @@
                 </ul>
             </div>
             <div class="ui bottom attached tab segment bg-dark" data-tab="third">
+                <h3>Generated Maps</h3>
+                <ul id="maps">
+                </ul>
+                <div class="text-center">
+                    <button class="btn btn-warning" onclick="fetchMaps()">Generate New Maps</button>
+                </div>
+                <br>
                 <h3>Gameplay/Loadout</h3>
                 <ul class="list-group">
                     <li class="list-group-item list-group-item-danger">
@@ -153,27 +159,20 @@
                         Lightborn
                     </li>
                 </ul>
-            </div>
-            <div class="ui bottom attached tab segment bg-dark" data-tab="fourth">
-                <h3>Generated Maps</h3>
-                <ul id="maps">
-                </ul>
-                <div class="text-center">
-                    <button class="btn btn-warning" onclick="fetchMaps()">Generate New Maps</button>
-                </div>
-            </div>
-            <div class="ui bottom attached tab segment bg-dark" data-tab="fifth">
+                
+                <br><br>
+                
                 <div class="embed-responsive embed-responsive-16by9">
                     <iframe class="embed-responsive-item" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRNqWt1PnWHcddsLEIu5cI3FQzz9MdqOnPVYQblO3zCSmRJumMROT1Z1DuZz9CrBodC2QDcYHjOS2td/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
                 </div>
             </div>
-            <div class="ui bottom attached tab segment bg-dark" data-tab="sixth">
-                <h2>Killer Perks</h2>
-                <ul id="kPerks">
-                </ul>
-                <h2>Survivor Perks</h2>
+            <div class="ui bottom attached tab segment bg-dark" data-tab="fourth">
                 <ul id="sPerks">
                 </ul>
+            </div>
+            <div class="ui bottom attached tab segment bg-dark" data-tab="fifth">
+                <ul id="kPerks">
+                </ul
             </div>
             <script src="../../js/genMap.js"></script>
             <script> 
