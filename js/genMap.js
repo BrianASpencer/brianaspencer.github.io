@@ -33,7 +33,9 @@ const buildMaps = (arr) => {
         var maps = [];
         for (const element in item) {
             var url = 'https://dbd-stats.info/data/Public/';
-            maps.push([item[element].name, url + item[element].thumbnailPath]);
+            if (item[element].hookMaxCount > -1) {
+                maps.push([item[element].name, url + item[element].thumbnailPath]);
+            }
         }
         
         var indeces = getIndeces(2, maps.length);
@@ -46,8 +48,8 @@ const displayMaps = (mapList) => {
     maps.innerHTML = '';
     var i = 0;
     for (i = 0; i < 2; i++) {
-        var lag = '<li class="list-group-item list-group-item-danger"><div class="text-center"><h2 class="text-center">' +
-        mapList[i][0] + '</h2>' + '<img style="width: 20%; height: 20%;" src="' + mapList[i][1] +'"></div>' + '<br></li>';
+        var lag = '<li class="list-group-item list-group-item-danger"><div class="text-center"><h2>' +
+        mapList[i][0] + '</h2>' + '<img style="width: 25%; height: 25%;" src="' + mapList[i][1] +'"></div>' + '</li>';
         maps.innerHTML += lag;
     }
 };
