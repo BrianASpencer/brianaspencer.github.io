@@ -35,7 +35,7 @@ const buildKPerks = (arr) => {
                 kPerks.push([item[element].displayName, item[element].perkDefaultDescription, url + item[element].iconPathList[0]]);
             }
         }
-        
+    
         var kIndeces = getIndeces(4, kPerks.length);
         return displayKillerPerks([kPerks[kIndeces[0]], kPerks[kIndeces[1]], kPerks[kIndeces[2]], kPerks[kIndeces[3]]]);
     }
