@@ -17,6 +17,7 @@ const fetchMaps = (bound) => {
     const allMaps = [
         "Mother's Dwelling",
         "Shelter Woods",
+        "Disturbed Ward",
         "Azarov's Resting Place",
         "Blood Lodge",
         "Torment Creek",
@@ -35,7 +36,6 @@ const fetchMaps = (bound) => {
         "Sanctum of Wrath",
         "Mount Ormond Resort",
         "The Thompson House",
-        "Treatment Theatre",
         "Badham Preschool V",
         "Wreckers' Yard",
         "Badham Preschool I",
