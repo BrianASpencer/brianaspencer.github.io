@@ -4,7 +4,7 @@ function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
 }
 
-function getIndeces(length, arrLength) {
+function getIndices(length, arrLength) {
     var arr = [];
     while(arr.length < length){
         var r = Math.floor(Math.random() * arrLength);
@@ -36,7 +36,7 @@ const buildKPerks = (arr) => {
             }
         }
     
-        var kIndeces = getIndeces(4, kPerks.length);
+        var kIndeces = getIndices(4, kPerks.length);
         return displayKillerPerks([kPerks[kIndeces[0]], kPerks[kIndeces[1]], kPerks[kIndeces[2]], kPerks[kIndeces[3]]]);
     }
 };
