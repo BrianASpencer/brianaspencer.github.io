@@ -35,8 +35,9 @@ const buildAddons = (arr) => {
         for (const element in item) {
             var url = 'https://dbd-stats.info/data/Public/';
             var itemName = item[element].parentItems[0] ? item[element].parentItems[0] : '';
+            var killerItem = killer ? killer[3] : "Rare Candy";
             
-            if (itemName === killer[3] && item[element].bloodWeb) {
+            if (itemName === killerItem && item[element].bloodWeb) {
                 addons.push([item[element].displayName, url + item[element].iconPathList[0]]);
             }
         }
