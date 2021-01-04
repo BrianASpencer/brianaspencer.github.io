@@ -35,8 +35,9 @@ const buildItemAddons = (arr) => {
             var i = 0;
             for (i = 0; i < item[element].parentItems.length; i++) {
                 var itemName = item[element].parentItems[i] ? item[element].parentItems[i] : '';
+                var parentItem = sItem ? sItem[3] : "Rare Candy";
             
-                if (itemName === sItem[3] && item[element].bloodWeb && item[element].role === 'EPlayerRole::VE_Camper') {
+                if (itemName === parentItem && item[element].bloodWeb && item[element].role === 'EPlayerRole::VE_Camper') {
                     addons.push([item[element].displayName, url + item[element].iconPathList[0]]);
                 }
             }
