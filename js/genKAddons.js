@@ -1955,5 +1955,37 @@ function getKiller() {
     return arr;
 }
 
+function timeOutButton_2(obj) {
+    obj.disabled = true;
+    setTimeout(function() {
+        displayKiller();
+        timeOutTime_2(obj);
+    }, 400);
+}
+
+function timeOutTime_2(obj) {
+    setTimeout(function() {
+        obj.disabled = false;
+        displayKillerAddons();
+    }, 300);
+}
+
+function displayStuff(obj) {
+    obj.disabled = true;
+    displayKiller();
+    displayKillerAddons();
+    setTimeout(function() {
+        obj.disabled = false;
+    }, 1200);
+}
+
+function displayStuff2(obj) {
+    obj.disabled = true;
+    displayItem();
+    displayAddons();
+    setTimeout(function() {
+        obj.disabled = false;
+    }, 1200);
+}
 
 displayKillerAddons();
