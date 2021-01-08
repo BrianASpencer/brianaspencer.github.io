@@ -57,7 +57,7 @@
 
             <div id="context1"> 
                 <div class="ui secondary menu"> 
-                    <a class="item active" style="border-style: solid;" data-tab="first"> 
+                    <a class="item active" style="border-style: solid; border-color: darkgrey;" data-tab="first"> 
                         <h2 class="text-white">General</h2> 
                     </a> 
                     <a class="item" data-tab= 
@@ -84,6 +84,16 @@
 
                     <div class="ui bottom attached tab  
                                 segment active bg-dark" data-tab="first/a"> 
+                        <div class="text-center text-white">
+                            <h2>
+                                Welcome!
+                            </h2>
+                            <h3>
+                                This is a little project to both house our rules for "Kill Your Friends" game mode
+                                and random generators for several different playables in the game.
+                            </h3>
+                            <br>
+                        </div>
                         <ul class="list-group">
                             <li class="list-group-item list-group-item-dark">
                                 Offerings are not allowed
@@ -165,7 +175,7 @@
                     <div class="ui bottom attached tab  
                                 segment bg-dark" data-tab="second/b"> 
                         <div class="text-center">
-                            <button class="btn btn-primary" onclick="fetchPerks()">Generate New Perks</button>
+                            <button class="btn btn-primary" onclick="displaySurvPerks()">Generate New Perks</button>
                         </div>
                         <br>
                         <ul id="sPerks">
@@ -174,7 +184,7 @@
                     <div class="ui bottom attached tab  
                                 segment bg-dark" data-tab="second/c"> 
                         <div class="text-center">
-                            <button class="btn btn-primary" onclick="timeOutButton(this, 'survivor');">Generate A New Item</button>
+                            <button class="btn btn-primary" onclick="displayItem(); displayAddons();">Generate A New Item</button>
                         </div>
                         <br>
                         <ul id="itemSlot">
@@ -239,7 +249,7 @@
                     <div class="ui bottom attached tab  
                                 segment bg-dark" data-tab="third/b"> 
                         <div class="text-center">
-                            <button class="btn btn-danger" onclick="fetchKPerks()">Generate New Perks</button>
+                            <button class="btn btn-danger" onclick="displayKillerPerks()">Generate New Perks</button>
                         </div>
                         <br>
                         <ul id="kPerks">
@@ -248,7 +258,7 @@
                     <div class="ui bottom attached tab  
                                 segment bg-dark" data-tab="third/c"> 
                         <div class="text-center">
-                            <button class="btn btn-danger" onclick="timeOutButton(this, 'killer');">Generate A New Killer</button>
+                            <button class="btn btn-danger" onclick="displayKiller(); displayKillerAddons();">Generate A New Killer</button>
                         </div>
                         <br>
                         <ul id="killerSlot">
@@ -258,7 +268,7 @@
                         </ul>
                         <br>
                         <div class="text-center">
-                            <button class="btn btn-danger" onclick="fetchMaps()">Generate New Maps</button>
+                            <button class="btn btn-danger" onclick="displayMaps()">Generate New Maps</button>
                         </div>
                         <br>
                         <ul id="maps">
@@ -267,11 +277,11 @@
                 </div> 
             </div> 
         </div> 
+        <script src="../../js/genKiller.js"></script>
+        <script src="../../js/genKAddons.js"></script>
         <script src="../../js/genMap.js"></script>
         <script src="../../js/genKPerks.js"></script>
         <script src="../../js/genSPerks.js"></script>
-        <script src="../../js/genKiller.js"></script>
-        <script src="../../js/genKAddons.js"></script>
         <script src="../../js/genItem.js"></script>
         <script src="../../js/genItemAddons.js"></script>
         <script> 
