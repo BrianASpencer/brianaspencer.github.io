@@ -1973,19 +1973,30 @@ function timeOutTime_2(obj) {
 function displayStuff(obj) {
     obj.disabled = true;
     displayKiller();
+    setTimeout(function() {
+    }, 600);
     displayKillerAddons();
     setTimeout(function() {
         obj.disabled = false;
-    }, 1200);
+    }, 3000);
+}
+
+function timeOutTime_2(obj) {
+    setTimeout(function() {
+        displayKillerAddons();
+        obj.disabled = false;
+    }, 500);
 }
 
 function displayStuff2(obj) {
     obj.disabled = true;
     displayItem();
+    setTimeout(function() {
+    }, 600);
     displayAddons();
     setTimeout(function() {
         obj.disabled = false;
-    }, 1200);
+    }, 10000);
 }
 
 displayKillerAddons();
