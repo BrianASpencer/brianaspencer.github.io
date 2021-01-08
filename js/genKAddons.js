@@ -1970,7 +1970,7 @@ function timeOutTime_2(obj) {
     }, 300);
 }
 
-function displayStuff(obj) {
+function displayKillerBuild(obj) {
     obj.disabled = true;
     displayKiller();
     setTimeout(function() {
@@ -1988,7 +1988,7 @@ function timeOutTime_2(obj) {
     }, 500);
 }
 
-function displayStuff2(obj) {
+function displaySurvivorBuild(obj) {
     obj.disabled = true;
     displayItem();
     setTimeout(function() {
@@ -1997,6 +1997,30 @@ function displayStuff2(obj) {
     setTimeout(function() {
         obj.disabled = false;
     }, 10000);
+}
+
+function displayKillerPerkss(obj) {
+    obj.disabled = true;
+    displayKillerPerks();
+    setTimeout(function() {
+        obj.disabled = false;
+    }, 5000);
+}
+
+function displaySurvPerkss(obj) {
+    obj.disabled = true;
+    displaySurvPerks();
+    setTimeout(function() {
+        obj.disabled = false;
+    }, 5000);
+}
+
+function displayMapss(obj) {
+    obj.disabled = true;
+    displayMaps();
+    setTimeout(function() {
+        obj.disabled = false;
+    }, 5000);
 }
 
 displayKillerAddons();
