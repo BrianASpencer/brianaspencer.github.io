@@ -646,9 +646,6 @@ function getItem() {
     for(i = 0; i < survItemAddons.length; i++) {
         var j;
         for(j = 0; j < survItemAddons[i].parentItem.length; j++) {
-            if (cnt == 2) {
-                break;
-            }
             if (survItemAddons[i].parentItem[j] === sItem.id) {
                 arr.push(survItemAddons[i]);
                 cnt++;

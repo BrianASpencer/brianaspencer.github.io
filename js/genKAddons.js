@@ -1996,7 +1996,7 @@ function displaySurvivorBuild(obj) {
     displayAddons();
     setTimeout(function() {
         obj.disabled = false;
-    }, 10000);
+    }, 5000);
 }
 
 function displayKillerPerkss(obj) {
