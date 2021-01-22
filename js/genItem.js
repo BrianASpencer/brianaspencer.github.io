@@ -164,7 +164,7 @@ const displayItem = (item) => {
     var index = getRandomInt(survivorItems.length);
     sItem = survivorItems[index];
     var lag = '<li class="list-group-item list-group-item-primary"><div class="text-center"><h2>' +
-    sItem.name + '</h2>' + '<img style="width: 15%; height: 15%;" src="' + sItem.image +'">' + '<div>' + sItem.description.replace(/<(.|\n)*?>/g, '') + '</div></div></li>';
+    sItem.name + '</h2>' + '<img style="width: 25%; height: 25%;" src="' + sItem.image +'">' + '</div></li>';
     itemSLot.innerHTML += lag;
 };
 

@@ -190,10 +190,14 @@ function displayKiller() {
     killerSlot.innerHTML = '';
     var index = getRandomInt(killers.length);
     killer = killers[index];
-    console.log('killer: ', killer);
+    var lag = '<li class="list-group-item list-group-item-danger"><div class="text-center"><h2>' +
+    killer.name + '</h2>' + '<img style="width: 25%; height: 25%;" src="' +killer.image +'">' + '</div></li>';
+    killerSlot.innerHTML += lag;
+    /*
     var lag = '<li class="list-group-item list-group-item-danger"><div class="text-center"><h2>' +
     killer.name + '</h2>' + '<img style="width: 20%; height: 20%;" src="' +killer.image +'">' + '<div>' + killer.description.replace(/<(.|\n)*?>/g, '') + '</div></div></li>';
     killerSlot.innerHTML += lag;
+    */
 }
 
 

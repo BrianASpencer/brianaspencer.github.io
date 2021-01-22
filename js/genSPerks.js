@@ -111,11 +111,6 @@ const survivorPerks = [
 	image: "https://dbd-stats.info/data/Public/UI/Icons/Perks/iconPerks_darkSense.png"
 	},
 	{
-	name: "Object of Obsession",
-	descritpion: "A supernatural bond links you to the Killer. If you are looking in the Killer’s direction, your link will reveal your auras to each other. This effect applies only if you are outside the Killer’s Terror Radius.<br>As the Killer’s obsession, this effect applies to a maximum range of <span class='Highlight1'>{0} meters</span>. Otherwise, it applies to a maximum range of <span class='Highlight1'>{1} meters</span>.<br><i><li>Increases your chances of being the Killer’s obsession.</li><li>The Killer can only be <b>obsessed</b> with one survivor at a time.</li></i><br><span class='FlavorText'>“He was watching me!” -Laurie Strode</span>",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/Perks/DLC2/iconPerks_objectOfObsession.png"
-	},
-	{
 	name: "Breakdown",
 	descritpion: "Any time you are removed from a hook (escaped or saved), the hook breaks and the Killer's aura is shown to you for <span class='Highlight1'>{0} seconds</span>. A hook broken by this perk takes <span class='Highlight2'>180 seconds</span> to respawn.<br><br><span class='FlavorText'>“Charge from the Belly of the Beast.”<br>Here's a sketch/painting on a piece of wood I saw by the side of the road. I felt like it got a story to tell. And it didn’t waste its second chance. –Jeff, ink and oil wash on slice of wood, 12x16</span>",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/Perks/Kenya/iconPerks_breakdown.png"
@@ -460,9 +455,14 @@ function displaySurvPerks() {
     var i = 0;
     for (i = 0; i < 4; i++) {
         var lag = '<li class="list-group-item list-group-item-primary"><h2 class="text-center">' +
-        perks[i].name + '</h2>' + '<div class="text-center"> <img style="width: 20%; height: 20%;" src="' + perks[i].image +'"></div>' + '<div>' + perks[i].descritpion.replace(/<(.|\n)*?>/g, '') + '</div>' + '</li>';
+        perks[i].name + '</h2>' + '<div class="text-center"> <img style="width: 30%; height: 30%;" src="' + perks[i].image +'"></div>' + '</li>';
         surv.innerHTML += lag;
     }
+    /*
+    var lag = '<li class="list-group-item list-group-item-primary"><h2 class="text-center">' +
+        perks[i].name + '</h2>' + '<div class="text-center"> <img style="width: 20%; height: 20%;" src="' + perks[i].image +'"></div>' + '<div>' + perks[i].descritpion.replace(/<(.|\n)*?>/g, '') + '</div>' + '</li>';
+        surv.innerHTML += lag;
+    */
 }
 
 displaySurvPerks();

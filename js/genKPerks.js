@@ -101,11 +101,6 @@ const killerPerks = [
 	image: "https://dbd-stats.info/data/Public/UI/Icons/Perks/Wales/iconPerks_forcedPenance.png"
 	},
 	{
-	name: "Lightborn",
-	descritpion: "Unlike other beasts of The Fog, you have adapted to light. You are immune to blindness caused by flashlights and firecrackers. Survivors that attempt blinding you have their aura revealed for <span class='Highlight1'>{0} seconds.</span><br><span class='FlavorText'>'These monsters… they adapt! They emerge with strange new abilities.' -Vigo's Journal</span>",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/Perks/iconPerks_lightborn.png"
-	},
-	{
 	name: "Insidious",
 	descritpion: "Unlocks the stealth ability.<br><br>Standing still for <span class='Highlight1'>{0} seconds</span> grants you the <b>Undetectable</b> status effect until you move or act again.",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/Perks/iconPerks_insidious.png"
@@ -159,11 +154,6 @@ const killerPerks = [
 	name: "Beast of Prey",
 	descritpion: "Your lust for a kill is so intense that your connection with the Entity is momentarily lost, making you totally unpredictable.<br><br>Grants the <b>Undetectable</b> status effect after gaining Bloodlust Tier I. The status effect is removed once you lose Bloodlust.<br><br><li>Gain <span class='Highlight1'>{0}%</span> more Bloodpoints for actions in the Hunter Category.</li><br><span class='FlavorText'>'Where did she go?'</span>",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/Perks/DLC5/iconPerks_BeastOfPrey.png"
-	},
-	{
-	name: "Hex: Devour Hope",
-	descritpion: "A Hex rooting its power on hope. The false hope of Survivors ignites your hunger. When a Survivor is rescued from a hook at least <span class='Highlight1'>24 meters</span> away, Devour Hope receives a token.<br><li><span class='Highlight3'>2 Tokens</span>: Gain a <span class='Highlight2'>{0}%</span> <b><i>Haste</i></b> status effect,<span class='Highlight3'>10 seconds</span> after hooking a Survivor, for a duration of <span class='Highlight3'>10 seconds</span>.</li><li><span class='Highlight3'>3 Tokens</span>: Survivors suffer from the <b><i>Exposed</i></b> status effect.</li><li><span class='Highlight2'>5 Tokens</span>: Grants the ability to kill Survivors by your own hand.</li><br><i>The Hex effects persist as long as the related Hex Totem is standing.</i><br><br><span class='FlavorText'>“If you do nothing, you have their blood on your hands. If you save them, her hunger grows.“</span>",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/Perks/DLC3/iconPerks_devourHope.png"
 	},
 	{
 	name: "Gearhead",
@@ -341,11 +331,6 @@ const killerPerks = [
 	image: "https://dbd-stats.info/data/Public/UI/Icons/Perks/Mali/iconPerks_corruptIntervention.png"
 	},
 	{
-	name: "Hex: No One Escapes Death",
-	descritpion: "A Hex rooting its power on hope. You are animated by the power of your Hex Totem when the Survivors are on the verge of escaping.<br>Once the Exit Gates are powered, if there is a Dull Totem remaining on the map, this Hex is applied to it.</br><br>While this Hex is active,<li>Survivors suffer from the <b><i>Exposed</i></b> status effect.</li><li>Your movement speed is increased by <span class='Highlight1'>{0}%</span></li><br>The Hex effects persist as long as the related Hex Totem is standing.<br><br><span class='FlavorText'>'And the beast became faster and more powerful as if The Entity's shadowy whips were lashing at its back.'</span>",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/Perks/iconPerks_noOneEscapesDeath.png"
-	},
-	{
 	name: "Make your Choice",
 	descritpion: "When a Survivor rescues another from a hook at least <span class='Highlight1'>{0} meters</span> away from you, <i>Make your Choice</i> causes the Survivor to scream and applies the <b><i>Exposed</i></b> status effect to them for <span class='Highlight2'>{1} seconds</span>.<br><i>Make your Choice</i> has a cooldown of <span class='Highlight3'>{2} seconds</span>. <br><span class='FlavorText'>'You'd be surprised what tools can save a life.' -Amanda Young</span>",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/Perks/Finland/iconPerks_makeYourChoice.png"
@@ -420,9 +405,14 @@ function displayKillerPerks() {
     var i = 0;
     for (i = 0; i < 4; i++) {
         var lag = '<li class="list-group-item list-group-item-danger"><h2 class="text-center">' +
-        perks[i].name + '</h2>' + '<div class="text-center"> <img style="width: 20%; height: 20%;" src="' + perks[i].image +'"></div>' + '<div>' + perks[i].descritpion.replace(/<(.|\n)*?>/g, '') + '</div>' + '</li>';
+        perks[i].name + '</h2>' + '<div class="text-center"> <img style="width: 30%; height: 30%;" src="' + perks[i].image +'"></div>' + '</li>';
         kill.innerHTML += lag;
     }
+    /*
+    var lag = '<li class="list-group-item list-group-item-danger"><h2 class="text-center">' +
+        perks[i].name + '</h2>' + '<div class="text-center"> <img style="width: 20%; height: 20%;" src="' + perks[i].image +'"></div>' + '<div>' + perks[i].descritpion.replace(/<(.|\n)*?>/g, '') + '</div>' + '</li>';
+        kill.innerHTML += lag;
+    */
 }
 
 displayKillerPerks();
