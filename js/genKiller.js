@@ -20,12 +20,6 @@ const killers = [
 	item: "Item_Slasher_Chainsaw"
 	},
 	{
-	name: "The Nurse",
-	description: "A warping Killer, able to blink through obstacles and quickly close gaps with her power, <B>Spencer's Last Breath</B>.<BR><BR>Her personal perks, <B>Stridor</B>, <B>Thanatophobia</B> and <B>A Nurse's Calling</B>, allow her to decrease Survivor abilities and track them when they are injured.",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/CharPortraits/NR_charSelect_portrait.png",
-	item: "Item_Slasher_Blinker"
-	},
-	{
 	name: "The Hag",
 	description: "A cursed Killer, able to place traps and then teleport to them when activated, using her <B>Blackened Catalyst</B>.<BR><BR>Her personal perks, <B>Hex: The Third Seal</B>, <B>Hex: Ruin</B> and <B>Hex: Devour Hope</B>, apply crippling penalties to Survivors as long as the totem they are attached to remains uncleansed.",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/CharPortraits/DLC3/HA_charSelect_portrait.png",
@@ -74,12 +68,6 @@ const killers = [
 	item: "Item_Slasher_GasBomb"
 	},
 	{
-	name: "The Spirit",
-	description: "A phase-walking Killer, able to catch Survivors off-guard with her traversal power, <b>Yamaoka’s Haunting</b>. Her Power allows her to teleport from one place to another without being seen.<br><br>Her personal perks, <b>Spirit Fury</b>, <b>Hex: Haunted Ground</b> and <b>Rancor</b>, give her tools to observe and bait Survivors, and deal with obstacles directly in her path.",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/CharPortraits/Haiti/HK_charSelect_portrait.png",
-	item: "Item_Slasher_PhaseWalker"
-	},
-	{
 	name: "The Legion",
 	description: "A band of merciless Killers, able to rushdown helpless Survivors with their power, <b>Feral Frenzy</b>. Attacks made during their frenzy inflict lingering internal damage, downing any Survivors that are not quick enough to react.<br><br>Their personal perks, <b>Discordance</b>, <b>Mad Grit</b> and <b>Iron Maiden</b>, give them the ability to locate their prey and attack savagely while transporting Survivors to the hook.",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/CharPortraits/Kenya/KK_charSelect_portrait.png",
@@ -120,9 +108,31 @@ const killers = [
 	description: "A map-manipulation Killer, able to torment Survivors with the hazards he creates. Affected Survivors will be vulnerable to his special hook, the <b>Cage of Atonement</b>, and his unique mori, <b>Final Judgment</b>.<br><br>His personal Perks, <b>Forced Penance</b>, <b>Trail of Torment</b>, and <b>Deathbound</b>, allow him to aggressively pursue his prey while deceiving and tracking Survivors.",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/CharPortraits/Wales/K20_charSelect_portrait.png",
 	item: "Item_Slasher_TormentMode"
+	},
+    {
+	name: "The Blight",
+	description: "Dash go brrr.",
+	image: "",
+	item: "blight"
+	},
+    {
+	name: "The Twins",
+	description: "I can only slug.",
+	image: "",
+	item: "twins"
 	}
 ];
 
+/*
+* TODO:
+* Implement new killers (twins and blight)
+* Update when new clown changes happen
+* Remove description of perks?
+* Add Huntresses' addons
+* remove all banned perks from each side
+* remove banned maps from each side
+* remove all banned addons
+*/
 
 function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
@@ -180,6 +190,7 @@ function displayKiller() {
     killerSlot.innerHTML = '';
     var index = getRandomInt(killers.length);
     killer = killers[index];
+    console.log('killer: ', killer);
     var lag = '<li class="list-group-item list-group-item-danger"><div class="text-center"><h2>' +
     killer.name + '</h2>' + '<img style="width: 20%; height: 20%;" src="' +killer.image +'">' + '<div>' + killer.description.replace(/<(.|\n)*?>/g, '') + '</div></div></li>';
     killerSlot.innerHTML += lag;
