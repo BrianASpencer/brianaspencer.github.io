@@ -50,10 +50,6 @@ const maps = [
 	image: "https://dbd-stats.info/data/Public/UI/Icons/Maps/iconMap_Jnk_GasStation.png"
 	},
 	{
-	name: "The Game",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/Maps/Finland/iconMap_Fin_TheGame.png"
-	},
-	{
 	name: "Torment Creek",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/Maps/iconMap_Frm_Silo.png"
 	},
@@ -80,10 +76,6 @@ const maps = [
 	{
 	name: "Family Residence",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/Maps/Haiti/iconMap_Hti_Manor.png"
-	},
-	{
-	name: "The Underground Complex",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/Maps/Qatar/iconMap_Qat_Lab.png"
 	},
 	{
 	name: "Rotten Fields",
@@ -128,10 +120,6 @@ const maps = [
 	{
 	name: "The Pale Rose",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/Maps/iconMap_Swp_PaleRose.png"
-	},
-	{
-	name: "Treatment Theatre",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/Maps/iconMap_Hos_Treatment.png"
 	},
 	{
 	name: "Dead Dawg Saloon",
