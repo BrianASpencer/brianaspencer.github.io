@@ -191,8 +191,8 @@ function displayMaps() {
     var mapList = [maps[indeces[0]], maps[indeces[1]], maps[indeces[2]], maps[indeces[3]]];
     var i = 0;
     for (i = 0; i < 2; i++) {
-        var lag = '<li class="list-group-item list-group-item-danger"><div class="text-center"><h2>' +
-        mapList[i].name + '</h2>' + '<img style="width: 50%; height: 50%;" src="' + mapList[i].image +'"></div>' + '</li>';
+        var lag = '<li class="list-group-item list-group-item-danger"><div class="text-center"><h3>' +
+        mapList[i].name + '</h3>' + '<img style="width: 50%; height: 50%;" src="' + mapList[i].image +'"></div>' + '</li>';
         mapSlot.innerHTML += lag;
     }
 }

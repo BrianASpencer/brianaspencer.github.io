@@ -613,8 +613,8 @@ function displayAddons() {
     var addons = [items[indeces[0]], items[indeces[1]]];
     var i = 0;
     for (i = 0; i < 2; i++) {
-        var lag = '<li class="list-group-item list-group-item-primary"><div class="text-center"><h2>' +
-        addons[i].name + '</h2>' + '<img style="width: 15%; height: 15%;" src="' + addons[i].image +'">' + '</div></li>';
+        var lag = '<li class="list-group-item list-group-item-primary"><div class="text-center"><h3>' +
+        addons[i].name + '</h3>' + '<img style="width: 15%; height: 15%;" src="' + addons[i].image +'">' + '</div></li>';
         itemAddonSlot.innerHTML += lag;
     }
 }

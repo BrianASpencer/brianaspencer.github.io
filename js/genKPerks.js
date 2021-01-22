@@ -404,8 +404,8 @@ function displayKillerPerks() {
     var perks = [killerPerks[sIndeces[0]], killerPerks[sIndeces[1]], killerPerks[sIndeces[2]], killerPerks[sIndeces[3]]];
     var i = 0;
     for (i = 0; i < 4; i++) {
-        var lag = '<li class="list-group-item list-group-item-danger"><h2 class="text-center">' +
-        perks[i].name + '</h2>' + '<div class="text-center"> <img style="width: 30%; height: 30%;" src="' + perks[i].image +'"></div>' + '</li>';
+        var lag = '<li class="list-group-item list-group-item-danger"><h3 class="text-center">' +
+        perks[i].name + '</h3>' + '<div class="text-center"> <img style="width: 20%; height: 20%;" src="' + perks[i].image +'"></div>' + '</li>';
         kill.innerHTML += lag;
     }
     /*
