@@ -454,8 +454,8 @@ function displaySurvPerks() {
     var perks = [survivorPerks[indeces[0]], survivorPerks[indeces[1]], survivorPerks[indeces[2]], survivorPerks[indeces[3]]];
     var i = 0;
     for (i = 0; i < 4; i++) {
-        var lag = '<li class="list-group-item list-group-item-primary"><h3 class="text-center">' +
-        perks[i].name + '</h3>' + '<div class="text-center"> <img class="img-fluid" style="width: 20%; height: 20%;" src="' + perks[i].image +'"></div>' + '</li>';
+        var lag = '<div class="columnresponsive" style="width:96%"><li class="list-group-item list-group-item-primary"><h3 class="text-center">' +
+        perks[i].name + '</h3>' + '<div class="text-center"> <img class="img-fluid" style="width: 20%;" src="' + perks[i].image +'"></div></div></li>';
         surv.innerHTML += lag;
     }
     /*
