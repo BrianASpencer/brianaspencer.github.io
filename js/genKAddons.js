@@ -2132,7 +2132,7 @@ function displayKillerAddons() {
     var i = 0;
     for (i = 0; i < 2; i++) {
         lag += '<div class="columnresponsive" style="width:48%"><li class="list-group-item list-group-item-danger"><div class="text-center"><h3>' +
-        addons[i].name + '</h3>' + '<img class="img-fluid" style="width: 35%; height: 10%;" src="' + addons[i].image +'">' + '</div></div></li>';
+        addons[i].name + '</h3>' + '<img class="img-fluid" style="width: 35%;" src="' + addons[i].image +'">' + '</div></div></li>';
     }
     lag +='</div>';
     addonSlot.innerHTML += lag;
