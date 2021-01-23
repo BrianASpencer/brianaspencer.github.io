@@ -112,13 +112,13 @@ const killers = [
     {
 	name: "The Blight",
 	description: "Dash go brrr.",
-	image: "",
+	image: "../../images/DbD/blight.png",
 	item: "blight"
 	},
     {
 	name: "The Twins",
 	description: "I can only slug.",
-	image: "",
+	image: "../../images/DbD/twins.png",
 	item: "twins"
 	}
 ];
