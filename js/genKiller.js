@@ -132,6 +132,7 @@ const killers = [
 * remove all banned perks from each side
 * remove banned maps from each side
 * remove all banned addons
+* FREEZE ISSUE: https://stackoverflow.com/questions/15973089/javascript-settimeout-and-interface-freezing
 */
 
 function getRandomInt(max) {

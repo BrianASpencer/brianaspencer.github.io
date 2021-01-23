@@ -1586,6 +1586,21 @@ const killerAddons = [
 	parentItem: "Item_Slasher_Hatchet",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC5/iconAddon_begrimedHead.png"
 	},
+    {
+	name: "Oak Haft",
+	parentItem: "Item_Slasher_Hatchet",
+	image: "../../images/DbD/oakHaft.png"
+	},
+    {
+	name: "Manna Grass Braid",
+	parentItem: "Item_Slasher_Hatchet",
+	image: "../../images/DbD/mannaGrassBraid.png"
+	},
+    {
+	name: "Leather Loop",
+	parentItem: "Item_Slasher_Hatchet",
+	image: "../../images/DbD/leatherLoop.png"
+	},
 	{
 	name: "Grisly Chain",
 	parentItem: "Item_Slasher_LFChainsaw",
@@ -1779,8 +1794,8 @@ function displayKillerAddons() {
     var addons = [list[indeces[0]], list[indeces[1]]];
     var i = 0;
     for (i = 0; i < 2; i++) {
-        var lag = '<li class="list-group-item list-group-item-danger"><div class="text-center"><h3>' +
-        addons[i].name + '</h3>' + '<img style="width: 15%; height: 15%;" src="' + addons[i].image +'">' + '</div></li>';
+        var lag = '<li class="list-group-item list-group-item-danger"><div class="text-center"><h2>' +
+        addons[i].name + '</h2>' + '<img style="width: 10%; height: 10%;" src="' + addons[i].image +'">' + '</div></li>';
         addonSlot.innerHTML += lag;
     }
 }
@@ -1820,8 +1835,8 @@ function displayKillerBuild(obj) {
     obj.disabled = true;
     displayKiller();
     setTimeout(function() {
-    }, 600);
-    displayKillerAddons();
+        displayKillerAddons();
+    }, 50);
     setTimeout(function() {
         obj.disabled = false;
     }, 3000);
@@ -1838,8 +1853,8 @@ function displaySurvivorBuild(obj) {
     obj.disabled = true;
     displayItem();
     setTimeout(function() {
-    }, 600);
-    displayAddons();
+        displayAddons();
+    }, 50);
     setTimeout(function() {
         obj.disabled = false;
     }, 5000);

@@ -11,14 +11,6 @@ const survItemAddons = [
 		"Item_Camper_Flashlight_Anniversary2020"]
 	},
 	{
-	name: "Milky Glass",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_milkyGlass.png",
-	parentItem: [
-		"Item_Camper_Key",
-		"Item_Camper_DullKey",
-		"Item_Camper_BrokenKey"]
-	},
-	{
 	name: "Grip Wrench",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_gripWrench.png",
 	parentItem: [
@@ -198,14 +190,6 @@ const survItemAddons = [
 		"Item_Camper_Flashlight03",
 		"Item_Camper_Flashlight04",
 		"Item_Camper_Flashlight_Anniversary2020"]
-	},
-	{
-	name: "Weaved Ring",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_weavedRing.png",
-	parentItem: [
-		"Item_Camper_Key",
-		"Item_Camper_DullKey",
-		"Item_Camper_BrokenKey"]
 	},
 	{
 	name: "Focus Lens",
@@ -459,17 +443,6 @@ const survItemAddons = [
 		"Item_Camper_MedKit04",
 		"Item_Camper_MedKit05",
 		"Item_Camper_Medkit_Anniversary2020"]
-	},
-	{
-	name: "Brand New Part",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_brandNewPart.png",
-	parentItem: [
-		"Item_Camper_WornoutToolbox",
-		"Item_Camper_Toolbox",
-		"Item_Camper_MechanicsToolbox",
-		"Item_Camper_CommodiousToolbox",
-		"Item_Camper_EngineerToolbox",
-		"Item_Camper_AlexsToolbox"]
 	},
 	{
 	name: "Rubber Gloves",
