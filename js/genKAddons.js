@@ -2172,7 +2172,7 @@ function displayKillerBuild(obj) {
     displayKiller();
     setTimeout(function() {
         displayKillerAddons();
-    }, 600);
+    }, 100);
     setTimeout(function() {
         obj.disabled = false;
     }, 3000);
