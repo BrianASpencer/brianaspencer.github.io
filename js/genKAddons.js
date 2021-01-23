@@ -706,11 +706,6 @@ const killerAddons = [
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Haiti/iconAddon_origamiCrane.png"
 	},
 	{
-	name: "Venomous Concoction",
-	parentItem: "Item_Slasher_Hatchet",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC5/iconAddon_venomousConcoction.png"
-	},
-	{
 	name: "Emetic potion",
 	parentItem: "Item_Slasher_PlaguePower",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Mali/iconAddon_emeticPotion.png"
@@ -1114,16 +1109,6 @@ const killerAddons = [
 	name: "Scratched Mirror",
 	parentItem: "Item_Slasher_Stalker",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC2/iconAddon_scratchedMirror.png"
-	},
-	{
-	name: "Berus Toxin",
-	parentItem: "Item_Slasher_Hatchet",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC5/iconAddon_berusToxin.png"
-	},
-	{
-	name: "Slow-Release Toxin",
-	parentItem: "Item_Slasher_ReverseBearTrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Finland/iconAddon_slowReleaseToxin.png"
 	},
 	{
 	name: "Matchbox",
@@ -1574,11 +1559,6 @@ const killerAddons = [
 	name: "'Order' - Class II",
 	parentItem: "Item_Slasher_Killer07Item",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC4/iconAddon_orderClassII.png"
-	},
-	{
-	name: "Solvent Jug",
-	parentItem: "Item_Slasher_GasBomb",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Guam/iconAddon_solventJug.png"
 	},
 	{
 	name: "Prototype Claws",
@@ -2131,7 +2111,7 @@ function displayKillerAddons() {
     var lag = '<div class="row text-center">';
     var i = 0;
     for (i = 0; i < 2; i++) {
-        lag += '<div class="columnresponsive" style="width:48%"><li class="list-group-item list-group-item-danger"><div class="text-center"><h3>' +
+        lag += '<div class="column" style="width:48%"><li class="list-group-item list-group-item-danger"><div class="text-center"><h3>' +
         addons[i].name + '</h3>' + '<img class="img-fluid" style="width: 35%;" src="' + addons[i].image +'">' + '</div></div></li>';
     }
     lag +='</div>';
