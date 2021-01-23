@@ -26,9 +26,19 @@ const killerAddons = [
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_trapperBag.png"
 	},
 	{
+	name: "Juniper Bonsai",
+	parentItem: "Item_Slasher_PhaseWalker",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Haiti/iconAddon_juniperBonzai.png"
+	},
+	{
 	name: "'Discipline' - Class III",
 	parentItem: "Item_Slasher_Killer07Item",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC4/iconAddon_diciplineClassIII.png"
+	},
+	{
+	name: "Bad Man Keepsake",
+	parentItem: "Item_Slasher_Blinker",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_badManKeepsake.png"
 	},
 	{
 	name: "Jigsaw's Annotated Plan",
@@ -61,9 +71,24 @@ const killerAddons = [
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC4/iconAddon_calmClassII.png"
 	},
 	{
+	name: "Katana Tsuba",
+	parentItem: "Item_Slasher_PhaseWalker",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Haiti/iconAddon_katanaTsuba.png"
+	},
+	{
 	name: "Wooden Oni Mask",
 	parentItem: "Item_Slasher_Kanobo",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Sweden/iconAddon_woodenOniMask.png"
+	},
+	{
+	name: "Zōri",
+	parentItem: "Item_Slasher_PhaseWalker",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Haiti/iconAddon_zori.png"
+	},
+	{
+	name: "Leather Loop",
+	parentItem: "Item_Slasher_Hatchet",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC5/iconAddon_leatherLoop.png"
 	},
 	{
 	name: "Video Tape",
@@ -130,7 +155,11 @@ const killerAddons = [
 	parentItem: "Item_Slasher_Kanobo",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Sweden/iconAddon_polishedMaedate.png"
 	},
-
+	{
+	name: "Gifted Bamboo Comb",
+	parentItem: "Item_Slasher_PhaseWalker",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Haiti/iconAddon_giftedBambooComb.png"
+	},
 	{
 	name: "Ashen Apple",
 	parentItem: "Item_Slasher_PlaguePower",
@@ -197,6 +226,11 @@ const killerAddons = [
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_longGuideBar.png"
 	},
 	{
+	name: "Katsumori Talisman",
+	parentItem: "Item_Slasher_PhaseWalker",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Haiti/iconAddon_katsumoriTalisman.png"
+	},
+	{
 	name: "Tacky Earrings",
 	parentItem: "Item_Slasher_Stalker",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC2/iconAddon_tackyEarrings.png"
@@ -205,6 +239,11 @@ const killerAddons = [
 	name: "Pill Bottle",
 	parentItem: "Item_Slasher_DreamInducer",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/England/iconAddon_pillBottle.png"
+	},
+	{
+	name: "Starling Feather",
+	parentItem: "Item_Slasher_GasBomb",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Guam/iconAddon_starlingFeather.png"
 	},
 	{
 	name: "Chewing Tobacco",
@@ -232,9 +271,19 @@ const killerAddons = [
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Wales/iconAddon_iridescentSeal.png"
 	},
 	{
+	name: "Mother-Daughter Ring",
+	parentItem: "Item_Slasher_PhaseWalker",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Haiti/iconAddon_motherDaughterRing.png"
+	},
+	{
 	name: "Sticky Lining",
 	parentItem: "Item_Slasher_QatarKillerPower",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Qatar/iconAddon_stickyLining.png"
+	},
+	{
+	name: "Pungent Fiale",
+	parentItem: "Item_Slasher_Hatchet",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC5/iconAddon_pungentFiale.png"
 	},
 	{
 	name: "Hellshire Iron",
@@ -252,9 +301,19 @@ const killerAddons = [
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Wales/iconAddon_valtielSectPhotograph.png"
 	},
 	{
+	name: "Heavy Panting",
+	parentItem: "Item_Slasher_Blinker",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_heavyPanting.png"
+	},
+	{
 	name: "Chainsaw File",
 	parentItem: "Item_Slasher_LFChainsaw",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_chainsawFile.png"
+	},
+	{
+	name: "White Hair Ribbon",
+	parentItem: "Item_Slasher_PhaseWalker",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Haiti/iconAddon_whiteHairRibbon.png"
 	},
 	{
 	name: "Pighouse Gloves",
@@ -277,6 +336,11 @@ const killerAddons = [
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_sootTheBeast.png"
 	},
 	{
+	name: "Dark Cincture",
+	parentItem: "Item_Slasher_Blinker",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_darkCincture.png"
+	},
+	{
 	name: "Waterlogged Shoe",
 	parentItem: "Item_Slasher_PhantomTrap",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC3/iconAddon_waterloggedShoe.png"
@@ -290,6 +354,11 @@ const killerAddons = [
 	name: "Depth Gauge Rake",
 	parentItem: "Item_Slasher_LFChainsaw",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_depthGaugeRake.png"
+	},
+	{
+	name: "Muddy Sports Day Cap",
+	parentItem: "Item_Slasher_PhaseWalker",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Haiti/iconAddon_muddySportCap.png"
 	},
 	{
 	name: "Interlocking Razor",
@@ -310,6 +379,16 @@ const killerAddons = [
 	name: "Cat Block",
 	parentItem: "Item_Slasher_DreamInducer",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/England/iconAddon_catBlock.png"
+	},
+	{
+	name: "Kaiun Talisman",
+	parentItem: "Item_Slasher_PhaseWalker",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Haiti/iconAddon_kaiunTalisman.png"
+	},
+	{
+	name: "Amanita Toxin",
+	parentItem: "Item_Slasher_Hatchet",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC5/iconAddon_amanitaToxin.png"
 	},
 	{
 	name: "Outdoor Security Camera",
@@ -335,6 +414,11 @@ const killerAddons = [
 	name: "Friendship Bracelet",
 	parentItem: "Item_Slasher_Frenzy",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Kenya/iconAddon_friendshipBracelet.png"
+	},
+	{
+	name: "Pocket Watch",
+	parentItem: "Item_Slasher_Blinker",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_pocketWatch.png"
 	},
 	{
 	name: "LoPro Chains",
@@ -377,6 +461,11 @@ const killerAddons = [
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_boneClapper.png"
 	},
 	{
+	name: "Smelly Inner Soles",
+	parentItem: "Item_Slasher_GasBomb",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Guam/iconAddon_smellyInnerSoles.png"
+	},
+	{
 	name: "Green Dress",
 	parentItem: "Item_Slasher_DreamInducer",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/England/iconAddon_greenDress.png"
@@ -392,9 +481,19 @@ const killerAddons = [
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Mali/iconAddon_prayerApple.png"
 	},
 	{
+	name: "Flower Babushka",
+	parentItem: "Item_Slasher_Hatchet",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC5/iconAddon_flowerBabushka.png"
+	},
+	{
 	name: "“Philly”",
 	parentItem: "Item_Slasher_GhostPower",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Oman/iconAddon_philly.png"
+	},
+	{
+	name: "Judith's Tombstone",
+	parentItem: "Item_Slasher_Stalker",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC2/iconAddon_judithsTombstone.png"
 	},
 	{
 	name: "Workshop Grease",
@@ -417,6 +516,11 @@ const killerAddons = [
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Mali/iconAddon_prayerTabletFragment.png"
 	},
 	{
+	name: "Yew Seed Brew",
+	parentItem: "Item_Slasher_Hatchet",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC5/iconAddon_yewSeedBrew.png"
+	},
+	{
 	name: "Rotting Rope",
 	parentItem: "Item_Slasher_Kanobo",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Sweden/iconAddon_rottingRope.png"
@@ -425,6 +529,11 @@ const killerAddons = [
 	name: "Reflective Fragment",
 	parentItem: "Item_Slasher_Stalker",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC2/iconAddon_reflectiveFragment.png"
+	},
+	{
+	name: "Dried Cherry Blossom",
+	parentItem: "Item_Slasher_PhaseWalker",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Haiti/iconAddon_driedCherryBlossom.png"
 	},
 	{
 	name: "Iridescent Button",
@@ -472,6 +581,11 @@ const killerAddons = [
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Oman/iconAddon_leatherKnifeSheath.png"
 	},
 	{
+	name: "Fine Stone",
+	parentItem: "Item_Slasher_Hatchet",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC5/iconAddon_fineStone.png"
+	},
+	{
 	name: "Willow Wreath",
 	parentItem: "Item_Slasher_PhantomTrap",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC3/iconAddon_willowWreath.png"
@@ -480,6 +594,21 @@ const killerAddons = [
 	name: "Victim’s Detailed Routine",
 	parentItem: "Item_Slasher_GhostPower",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Oman/iconAddon_victimsDetailedRoutine.png"
+	},
+	{
+	name: "Iridescent Head",
+	parentItem: "Item_Slasher_Hatchet",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC5/iconAddon_iridescentHead.png"
+	},
+	{
+	name: "Plaid Flannel",
+	parentItem: "Item_Slasher_Blinker",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_plaidFlannel.png"
+	},
+	{
+	name: "Shiawase Amulet",
+	parentItem: "Item_Slasher_PhaseWalker",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Haiti/iconAddon_ShiawaseAmulet.png"
 	},
 	{
 	name: "Heavy Clutch",
@@ -547,14 +676,39 @@ const killerAddons = [
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC3/iconAddon_mintRag.png"
 	},
 	{
+	name: "Rusty Flute",
+	parentItem: "Item_Slasher_PhaseWalker",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Haiti/iconAddon_rustyFlute.png"
+	},
+	{
 	name: "Combat Straps",
 	parentItem: "Item_Slasher_ReverseBearTrap",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Finland/iconAddon_combatStraps.png"
 	},
 	{
+	name: "Deerskin Gloves",
+	parentItem: "Item_Slasher_Hatchet",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC5/iconAddon_deerskinGloves.png"
+	},
+	{
 	name: "Iridescent Queen",
 	parentItem: "Item_Slasher_Killer07Item",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC4/iconAddon_iridescentQueen.png"
+	},
+	{
+	name: "Campbell's Last Breath",
+	parentItem: "Item_Slasher_Blinker",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_campbellsLastBreath.png"
+	},
+	{
+	name: "Origami Crane",
+	parentItem: "Item_Slasher_PhaseWalker",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Haiti/iconAddon_origamiCrane.png"
+	},
+	{
+	name: "Venomous Concoction",
+	parentItem: "Item_Slasher_Hatchet",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC5/iconAddon_venomousConcoction.png"
 	},
 	{
 	name: "Emetic potion",
@@ -577,9 +731,24 @@ const killerAddons = [
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Cannibal/iconAddon_theGrease.png"
 	},
 	{
+	name: "Ataxic Respiration",
+	parentItem: "Item_Slasher_Blinker",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_ataxicRespiration.png"
+	},
+	{
+	name: "Kavanagh's Last Breath",
+	parentItem: "Item_Slasher_Blinker",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_kavanaghsLastBreath.png"
+	},
+	{
 	name: "Devotee's Amulet",
 	parentItem: "Item_Slasher_PlaguePower",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Mali/iconAddon_devoteesAmulet.png"
+	},
+	{
+	name: "Thick Cork Stopper",
+	parentItem: "Item_Slasher_GasBomb",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Guam/iconAddon_thickCorkStopper.png"
 	},
 	{
 	name: "Speed Limiter",
@@ -590,6 +759,11 @@ const killerAddons = [
 	name: "Defaced Smiley Pin",
 	parentItem: "Item_Slasher_Frenzy",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Kenya/iconAddon_defacedSmileyButton.png"
+	},
+	{
+	name: "Dull Bracelet",
+	parentItem: "Item_Slasher_Blinker",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_dullBracelet.png"
 	},
 	{
 	name: "Rubbing Oil",
@@ -625,6 +799,11 @@ const killerAddons = [
 	name: "Deer Lung",
 	parentItem: "Item_Slasher_QatarKillerPower",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Qatar/iconAddon_deerLung.png"
+	},
+	{
+	name: "Infantry Belt",
+	parentItem: "Item_Slasher_Hatchet",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC5/iconAddon_infantryBelt.png"
 	},
 	{
 	name: "Swamp Orchid Necklet",
@@ -692,6 +871,16 @@ const killerAddons = [
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Sweden/iconAddon_bloodySash.png"
 	},
 	{
+	name: "Anxious Gasp",
+	parentItem: "Item_Slasher_Blinker",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_anxiousGasp.png"
+	},
+	{
+	name: "Torn Bookmark",
+	parentItem: "Item_Slasher_Blinker",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_tornBookmark.png"
+	},
+	{
 	name: "Rat Tail",
 	parentItem: "Item_Slasher_QatarKillerPower",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Qatar/iconAddon_ratTail.png"
@@ -725,6 +914,11 @@ const killerAddons = [
 	name: "Fragrant Tuft of Hair",
 	parentItem: "Item_Slasher_Stalker",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC2/iconAddon_tuftOfHair.png"
+	},
+	{
+	name: "Redhead's Pinky Finger",
+	parentItem: "Item_Slasher_GasBomb",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Guam/iconAddon_redheadsPinkyFinger.png"
 	},
 	{
 	name: "Lock of Hair",
@@ -792,6 +986,16 @@ const killerAddons = [
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_lightChassis.png"
 	},
 	{
+	name: "'Bad Man's' Last Breath",
+	parentItem: "Item_Slasher_Blinker",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_badMansLastBreath.png"
+	},
+	{
+	name: "Shiny Pin",
+	parentItem: "Item_Slasher_Hatchet",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC5/iconAddon_shinyPin.png"
+	},
+	{
 	name: "Jigsaw's Sketch",
 	parentItem: "Item_Slasher_ReverseBearTrap",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Finland/iconAddon_jigsawsSketch.png"
@@ -817,6 +1021,11 @@ const killerAddons = [
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Xipre/iconAddon_blackGrease.png"
 	},
 	{
+	name: "Fingerless Parade Gloves",
+	parentItem: "Item_Slasher_GasBomb",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Guam/iconAddon_fingerlessParadeGloves.png"
+	},
+	{
 	name: "Bloody Coil",
 	parentItem: "Item_Slasher_Beartrap",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_bloodyCoil.png"
@@ -825,6 +1034,16 @@ const killerAddons = [
 	name: "Setting Tools",
 	parentItem: "Item_Slasher_Beartrap",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_settingTools.png"
+	},
+	{
+	name: "Rin's Broken Watch",
+	parentItem: "Item_Slasher_PhaseWalker",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Haiti/iconAddon_rinsBrokenWatch.png"
+	},
+	{
+	name: "Yakuyoke Amulet",
+	parentItem: "Item_Slasher_PhaseWalker",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Haiti/iconAddon_yakuyokeAmulet.png"
 	},
 	{
 	name: "Chewed Pen",
@@ -852,6 +1071,11 @@ const killerAddons = [
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_oilyCoil.png"
 	},
 	{
+	name: "Metal Spoon",
+	parentItem: "Item_Slasher_Blinker",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_metalSpoon.png"
+	},
+	{
 	name: "Bayshore’s Gold Tooth",
 	parentItem: "Item_Slasher_HarpoonRifle",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Ukraine/iconAddon_bayshoresGoldTooth.png"
@@ -872,6 +1096,11 @@ const killerAddons = [
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Qatar/iconAddon_viscousWebbing.png"
 	},
 	{
+	name: "Crystal Bead",
+	parentItem: "Item_Camper_BeigeMap",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_beadCrystal.png"
+	},
+	{
 	name: "Nasty Blade",
 	parentItem: "Item_Slasher_Frenzy",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Kenya/iconAddon_nastyBlade.png"
@@ -887,9 +1116,24 @@ const killerAddons = [
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC2/iconAddon_scratchedMirror.png"
 	},
 	{
+	name: "Berus Toxin",
+	parentItem: "Item_Slasher_Hatchet",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC5/iconAddon_berusToxin.png"
+	},
+	{
 	name: "Slow-Release Toxin",
 	parentItem: "Item_Slasher_ReverseBearTrap",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Finland/iconAddon_slowReleaseToxin.png"
+	},
+	{
+	name: "Matchbox",
+	parentItem: "Item_Slasher_Blinker",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_matchBox.png"
+	},
+	{
+	name: "Ether 5 vol%",
+	parentItem: "Item_Slasher_GasBomb",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Guam/iconAddon_ether5.png"
 	},
 	{
 	name: "Julie's Mix Tape",
@@ -927,6 +1171,16 @@ const killerAddons = [
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Wales/iconAddon_scarletEgg.png"
 	},
 	{
+	name: "Prayer Beads Bracelet",
+	parentItem: "Item_Slasher_PhaseWalker",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Haiti/iconAddon_prayersBeads.png"
+	},
+	{
+	name: "Coarse Stone",
+	parentItem: "Item_Slasher_Hatchet",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC5/iconAddon_coarseStone.png"
+	},
+	{
 	name: "Mother's Helpers",
 	parentItem: "Item_Slasher_Chainsaw",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Xipre/iconAddon_mothersHelpers.png"
@@ -950,6 +1204,11 @@ const killerAddons = [
 	name: "Copper Ring ",
 	parentItem: "Item_Slasher_TormentMode",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Wales/iconAddon_copperRing.png"
+	},
+	{
+	name: "Jenner's Last Breath",
+	parentItem: "Item_Slasher_Blinker",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_jennersLastBreath.png"
 	},
 	{
 	name: "Paint Thinner",
@@ -987,6 +1246,11 @@ const killerAddons = [
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Ukraine/iconAddon_wardensKeys.png"
 	},
 	{
+	name: "Catatonic Boy's Treasure",
+	parentItem: "Item_Slasher_Blinker",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_catatonicTreasure.png"
+	},
+	{
 	name: "Incensed Ointment",
 	parentItem: "Item_Slasher_PlaguePower",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Mali/iconAddon_incensedOintment.png"
@@ -1017,6 +1281,11 @@ const killerAddons = [
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Ukraine/iconAddon_tinOilCan.png"
 	},
 	{
+	name: "Manna Grass Braid",
+	parentItem: "Item_Slasher_Hatchet",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC5/iconAddon_mannaGrassBraid.png"
+	},
+	{
 	name: "Rusty Shackles",
 	parentItem: "Item_Slasher_PhantomTrap",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC3/iconAddon_rustyShackles.png"
@@ -1035,6 +1304,11 @@ const killerAddons = [
 	name: "'The Ghost' - Soot",
 	parentItem: "Item_Slasher_CloakBell",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_sootTheGhost.png"
+	},
+	{
+	name: "Spasmodic Breath",
+	parentItem: "Item_Slasher_Blinker",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_spasmodicBreath.png"
 	},
 	{
 	name: "Drop-Leg Knife Sheath",
@@ -1090,6 +1364,11 @@ const killerAddons = [
 	name: "Mischief List",
 	parentItem: "Item_Slasher_Frenzy",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Kenya/iconAddon_mischiefList.png"
+	},
+	{
+	name: "Wakizashi Saya",
+	parentItem: "Item_Slasher_PhaseWalker",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Haiti/iconAddon_wakizashiSaya.png"
 	},
 	{
 	name: "Red Paint Brush",
@@ -1182,6 +1461,11 @@ const killerAddons = [
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_mudBlink.png"
 	},
 	{
+	name: "Yew Seed Concoction",
+	parentItem: "Item_Slasher_Hatchet",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC5/iconAddon_yewSeedConcoction.png"
+	},
+	{
 	name: "Low Kickback Chains",
 	parentItem: "Item_Slasher_Chainsaw",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Xipre/iconAddon_lowKickbackChains.png"
@@ -1227,6 +1511,11 @@ const killerAddons = [
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC2/iconAddon_tombstonePiece.png"
 	},
 	{
+	name: "White Nit Comb",
+	parentItem: "Item_Slasher_Blinker",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_whiteNitComb.png"
+	},
+	{
 	name: "'Swift Hunt' - Blood",
 	parentItem: "Item_Slasher_CloakBell",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_bloodSwiftHunt.png"
@@ -1257,6 +1546,16 @@ const killerAddons = [
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Finland/iconAddon_lastWill.png"
 	},
 	{
+	name: "Bandaged Haft",
+	parentItem: "Item_Slasher_Hatchet",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC5/iconAddon_bandagedHaft.png"
+	},
+	{
+	name: "Robin Feather",
+	parentItem: "Item_Slasher_GasBomb",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Guam/iconAddon_robinFeather.png"
+	},
+	{
 	name: "Lion Fang",
 	parentItem: "Item_Slasher_Kanobo",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Sweden/iconAddon_lionFang.png"
@@ -1275,6 +1574,11 @@ const killerAddons = [
 	name: "'Order' - Class II",
 	parentItem: "Item_Slasher_Killer07Item",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC4/iconAddon_orderClassII.png"
+	},
+	{
+	name: "Solvent Jug",
+	parentItem: "Item_Slasher_GasBomb",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Guam/iconAddon_solventJug.png"
 	},
 	{
 	name: "Prototype Claws",
@@ -1310,6 +1614,11 @@ const killerAddons = [
 	name: "Cinderella Music Box ",
 	parentItem: "Item_Slasher_TormentMode",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Wales/iconAddon_cinderellaMusicBox.png"
+	},
+	{
+	name: "Kerosene Can",
+	parentItem: "Item_Slasher_GasBomb",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Guam/iconAddon_keroseneCan.png"
 	},
 	{
 	name: "Burning Man Painting ",
@@ -1372,6 +1681,11 @@ const killerAddons = [
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Mali/iconAddon_olibanumIncense.png"
 	},
 	{
+	name: "Wooden Horse",
+	parentItem: "Item_Slasher_Blinker",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_woodenHorse.png"
+	},
+	{
 	name: "Powdered Eggshell",
 	parentItem: "Item_Slasher_PhantomTrap",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC3/iconAddon_powderedEggshell.png"
@@ -1380,6 +1694,11 @@ const killerAddons = [
 	name: "Obsidian Goblet ",
 	parentItem: "Item_Slasher_TormentMode",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Wales/iconAddon_obsidianGoblet.png"
+	},
+	{
+	name: "Glowing Concoction",
+	parentItem: "Item_Slasher_Hatchet",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC5/iconAddon_glowingConcoction.png"
 	},
 	{
 	name: "'Order' - Carter's Notes",
@@ -1457,6 +1776,11 @@ const killerAddons = [
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC2/iconAddon_jMyersMemorial.png"
 	},
 	{
+	name: "Fragile Wheeze",
+	parentItem: "Item_Slasher_Blinker",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_fragileWheeze.png"
+	},
+	{
 	name: "'Blind Warrior' - Mud",
 	parentItem: "Item_Slasher_CloakBell",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_mudBaikraKaeug.png"
@@ -1485,6 +1809,16 @@ const killerAddons = [
 	name: "Crate of Gears",
 	parentItem: "Item_Slasher_ReverseBearTrap",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Finland/iconAddon_crateOfGears.png"
+	},
+	{
+	name: "Father's Glasses",
+	parentItem: "Item_Slasher_PhaseWalker",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Haiti/iconAddon_fathersGlasses.png"
+	},
+	{
+	name: "Bloody Hair Brooch",
+	parentItem: "Item_Slasher_PhaseWalker",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Haiti/iconAddon_bloodyHairBroochi.png"
 	},
 	{
 	name: "Scalped Topknot",
@@ -1527,6 +1861,11 @@ const killerAddons = [
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_stichedBag.png"
 	},
 	{
+	name: "Dirty Uwabaki",
+	parentItem: "Item_Slasher_PhaseWalker",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Haiti/iconAddon_dirtyUwabaki.png"
+	},
+	{
 	name: "Doom Engravings",
 	parentItem: "Item_Slasher_Chainsaw",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Xipre/iconAddon_doomEngravings.png"
@@ -1540,6 +1879,11 @@ const killerAddons = [
 	name: "Blond Hair",
 	parentItem: "Item_Slasher_Stalker",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC2/iconAddon_blondeHair.png"
+	},
+	{
+	name: "Sticky Soda Bottle",
+	parentItem: "Item_Slasher_GasBomb",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Guam/iconAddon_stickySodaBottle.png"
 	},
 	{
 	name: "Nancy's Masterpiece",
@@ -1586,25 +1930,15 @@ const killerAddons = [
 	parentItem: "Item_Slasher_Hatchet",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC5/iconAddon_begrimedHead.png"
 	},
-    {
-	name: "Oak Haft",
-	parentItem: "Item_Slasher_Hatchet",
-	image: "../../images/DbD/oakHaft.png"
-	},
-    {
-	name: "Manna Grass Braid",
-	parentItem: "Item_Slasher_Hatchet",
-	image: "../../images/DbD/mannaGrassBraid.png"
-	},
-    {
-	name: "Leather Loop",
-	parentItem: "Item_Slasher_Hatchet",
-	image: "../../images/DbD/leatherLoop.png"
-	},
 	{
 	name: "Grisly Chain",
 	parentItem: "Item_Slasher_LFChainsaw",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_chainsGrisly.png"
+	},
+	{
+	name: "Oak Haft",
+	parentItem: "Item_Slasher_Hatchet",
+	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC5/iconAddon_oakHaft.png"
 	},
 	{
 	name: "'Shadow Dance' - Blood",
@@ -1612,7 +1946,7 @@ const killerAddons = [
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_bloodShadowDance.png"
 	},
 	{
-	name: "Spearhead",
+	name: "Spearhead ",
 	parentItem: "Item_Slasher_TormentMode",
 	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Wales/iconAddon_spearhead.png"
 	},
@@ -1674,7 +2008,7 @@ const killerAddons = [
 ];
 
 
-function doSomething(arr) {
+function doSomethinggg(arr) {
     var names = ['name: ', 'parentItem: ', 'image: '];
     var output = 'export const killerAddons = [\n';
     
@@ -1712,7 +2046,7 @@ function getIndeces(length, arrLength) {
     return arr;
 }
 
-const fetchAddons = (bound) => {
+const fetchAddonsss = (bound) => {
     
     const addons = [];
 
@@ -1728,6 +2062,7 @@ const fetchAddons = (bound) => {
 };
 
 const buildAddons = (arr) => {
+    console.log("ARRAY: ", arr);
     arr.forEach(myFunction);
     function myFunction(item) {
         var addons = [];
@@ -1742,11 +2077,12 @@ const buildAddons = (arr) => {
             }
             */
             //EInventoryItemType::SlasherPerk
-            if (item[element].bloodWeb && item[element].role == "EPlayerRole::VE_Slasher") {
+            if (item[element].bloodWeb && (item[element].role == "EPlayerRole::VE_Slasher" || item[element].role == "EPlayerRole::VE_None")) {
                 addons.push([item[element].displayName, itemName, url + item[element].iconPathList[0]]);
             }
         }
-        doSomething(addons);
+        console.log('addons: ', addons);
+        doSomethinggg(addons);
         
         var indeces = getIndeces(2, addons.length);
         //return displayItemAddons_Old([addons[indeces[0]], addons[indeces[1]]]);
@@ -1836,7 +2172,7 @@ function displayKillerBuild(obj) {
     displayKiller();
     setTimeout(function() {
         displayKillerAddons();
-    }, 50);
+    }, 600);
     setTimeout(function() {
         obj.disabled = false;
     }, 3000);
