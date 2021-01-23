@@ -455,7 +455,7 @@ function displaySurvPerks() {
     var i = 0;
     for (i = 0; i < 4; i++) {
         var lag = '<li class="list-group-item list-group-item-primary"><h3 class="text-center">' +
-        perks[i].name + '</h3>' + '<div class="text-center"> <img style="width: 20%; height: 20%;" src="' + perks[i].image +'"></div>' + '</li>';
+        perks[i].name + '</h3>' + '<div class="text-center"> <img class="img-fluid" style="width: 20%; height: 20%;" src="' + perks[i].image +'"></div>' + '</li>';
         surv.innerHTML += lag;
     }
     /*

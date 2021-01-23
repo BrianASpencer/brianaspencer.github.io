@@ -584,12 +584,15 @@ function displayAddons() {
     var items = getItem();
     var indeces = getIndeces(2, items.length);
     var addons = [items[indeces[0]], items[indeces[1]]];
+    var lag = '<div class="row text-center">';
     var i = 0;
     for (i = 0; i < 2; i++) {
-        var lag = '<li class="list-group-item list-group-item-primary"><div class="text-center"><h3>' +
-        addons[i].name + '</h3>' + '<img style="width: 15%; height: 15%;" src="' + addons[i].image +'">' + '</div></li>';
-        itemAddonSlot.innerHTML += lag;
+        lag += '<div class="columnresponsive" style="width:48%"><li class="list-group-item list-group-item-primary"><div class="text-center"><h3>' +
+        addons[i].name + '</h3>' + '<img class="img-fluid" style="width: 15%; height: 15%;" src="' + addons[i].image +'">' + '</div></div></li>';
     }
+    lag +='</div>';
+    console.log(lag);
+    itemAddonSlot.innerHTML += lag;
 }
 
 function getItemsss() {

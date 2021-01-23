@@ -127,8 +127,8 @@ const displayItem = (item) => {
     itemSLot.innerHTML = '';
     var index = getRandomInt(survivorItems.length);
     sItem = survivorItems[index];
-    var lag = '<li class="list-group-item list-group-item-primary"><div class="text-center"><h3>' +
-    sItem.name + '</h3>' + '<img style="width: 25%; height: 25%;" src="' + sItem.image +'">' + '</div></li>';
+    var lag = '<div class="row text-center"><div class="columnresponsive" style="width:96%"><li class="list-group-item list-group-item-primary"><div class="text-center"><h3>' +
+    sItem.name + '</h3>' + '<img class="img-fluid" style="width: 25%; height: 25%;" src="' + sItem.image +'">' + '</div></div></div></li>';
     itemSLot.innerHTML += lag;
 };
 

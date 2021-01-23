@@ -189,12 +189,14 @@ function displayMaps() {
     mapSlot.innerHTML = '';
     var indeces = getIndeces(2, maps.length);
     var mapList = [maps[indeces[0]], maps[indeces[1]], maps[indeces[2]], maps[indeces[3]]];
+    var lag = '<div class="row text-center">';
     var i = 0;
     for (i = 0; i < 2; i++) {
-        var lag = '<li class="list-group-item list-group-item-danger"><div class="text-center"><h3>' +
-        mapList[i].name + '</h3>' + '<img style="width: 50%; height: 50%;" src="' + mapList[i].image +'"></div>' + '</li>';
-        mapSlot.innerHTML += lag;
+        lag += '<div class="columnresponsive" style="width:48%"><li class="list-group-item list-group-item-danger"><li class="list-group-item list-group-item-danger"><div class="text-center"><h3>' +
+        mapList[i].name + '</h3>' + '<img class="img-fluid" style="width: 50%; height: 50%;" src="' + mapList[i].image +'"></div></div></li>';
     }
+    lag +='</div>';
+    mapSlot.innerHTML += lag;
 }
 
 displayMaps();
