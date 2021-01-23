@@ -192,7 +192,7 @@ function displayMaps() {
     var lag = '<div class="row text-center">';
     var i = 0;
     for (i = 0; i < 2; i++) {
-        lag += '<div class="columnresponsive" style="width:48%"><li class="list-group-item list-group-item-danger"><li class="list-group-item list-group-item-danger"><div class="text-center"><h3>' +
+        lag += '<div class="columnresponsive" style="width:48%"><li class="list-group-item list-group-item-danger"><div class="text-center"><h3>' +
         mapList[i].name + '</h3>' + '<img class="img-fluid" style="width: 100%;" src="' + mapList[i].image +'"></div></div></li>';
     }
     lag +='</div>';
