@@ -1,4 +1,4 @@
-const itemAddonSlot = document.getElementById('itemAddonSlot');
+//const itemAddonSlot = document.getElementById('itemAddonSlot');
 const survItemAddons = [
 	{
 	name: "Rubber Grip",
@@ -580,19 +580,18 @@ function timeOutTime_2(obj) {
 
 
 function displayAddons() {
-    itemAddonSlot.innerHTML = '';
+    //itemAddonSlot.innerHTML = '';
     var items = getItem();
     var indeces = getIndeces(2, items.length);
     var addons = [items[indeces[0]], items[indeces[1]]];
     var lag = '<div class="row text-center">';
     var i = 0;
     for (i = 0; i < 2; i++) {
-        lag += '<div class="columnresponsive" style="width:48%"><li class="list-group-item list-group-item-primary"><div class="text-center"><h3>' +
-        addons[i].name + '</h3>' + '<img class="img-fluid" style="width: 35%;" src="' + addons[i].image +'">' + '</div></div></li>';
+        lag += '<div class="column" style="width:48%"><div class="text-center"><h3>' +
+        addons[i].name + '</h3>' + '<img class="img-fluid" style="width: 35%;" src="' + addons[i].image +'">' + '</div></div>';
     }
-    lag +='</div>';
-    
-    itemAddonSlot.innerHTML += lag;
+    lag +='</div></li>';
+    return lag;
 }
 
 function getItemsss() {
@@ -669,4 +668,4 @@ function doSomething(arr) {
     console.log(output);
 }
 
-displayAddons();
+//displayAddons();

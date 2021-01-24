@@ -1,4 +1,4 @@
-const addonSlot = document.getElementById('addonSlot');
+//const addonSlot = document.getElementById('addonSlot');
 const killerAddons = [
 	{
 	name: "The Legion Pin",
@@ -2103,19 +2103,19 @@ function timeOutTime(obj, key) {
 }
 
 function displayKillerAddons() {
-
     const list = getKiller();
-    addonSlot.innerHTML = '';
+    //addonSlot.innerHTML = '';
     var indeces = getIndeces(2, list.length);
     var addons = [list[indeces[0]], list[indeces[1]]];
     var lag = '<div class="row text-center">';
     var i = 0;
     for (i = 0; i < 2; i++) {
-        lag += '<div class="column" style="width:48%"><li class="list-group-item list-group-item-danger"><div class="text-center"><h3>' +
-        addons[i].name + '</h3>' + '<img class="img-fluid" style="width: 35%;" src="' + addons[i].image +'">' + '</div></div></li>';
+        lag += '<div class="column" style="width:48%"><div class="text-center"><h3>' +
+        addons[i].name + '</h3>' + '<img class="img-fluid" style="width: 35%;" src="' + addons[i].image +'">' + '</div></div>';
     }
-    lag +='</div>';
-    addonSlot.innerHTML += lag;
+    lag +='</div></li>';
+    //addonSlot.innerHTML += lag;
+    return lag;
 }
 
 function getKiller() {
@@ -2202,4 +2202,4 @@ function displayMapss(obj) {
     }, 5000);
 }
 
-displayKillerAddons();
+//displayKillerAddons();

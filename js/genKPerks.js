@@ -402,18 +402,19 @@ function displayKillerPerks() {
     kill.innerHTML = '';
     var sIndeces = getIndeces(4, killerPerks.length);
     var perks = [killerPerks[sIndeces[0]], killerPerks[sIndeces[1]], killerPerks[sIndeces[2]], killerPerks[sIndeces[3]]];
-    var lag = '';
+    var lag = '<li class="list-group-item list-group-item-danger">';
     var i = 0;
     for (i = 0; i < 4; i++) {
         if (i % 2 == 0) {
             lag += '<div class="row text-center">';
         }
-        lag += '<div class="column" style="width:48%"><li class="list-group-item list-group-item-danger"><h3 class="text-center">' +
-        perks[i].name + '</h3>' + '<div class="text-center"> <img class="img-fluid" style="width: 40%;" src="' + perks[i].image +'"></div></div></li>';
+        lag += '<div class="column" style="width:48%"><h3 class="text-center">' +
+        perks[i].name + '</h3>' + '<div class="text-center"> <img class="img-fluid" style="width: 50%;" src="' + perks[i].image +'"></div></div>';
         if (i % 2 == 1) {
             lag += '</div>';
         }
     }
+    lag += '</li>';
     kill.innerHTML += lag;
 }
 

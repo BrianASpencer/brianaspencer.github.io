@@ -133,6 +133,9 @@ const killers = [
 * remove banned maps from each side
 * remove all banned addons
 * FREEZE ISSUE: https://stackoverflow.com/questions/15973089/javascript-settimeout-and-interface-freezing
+* POSSIBLY: 
+* Put gen killer/addons // item/addons together in one actual function to
+* generate them as a grid similar to how perks are generated
 */
 
 function getRandomInt(max) {
@@ -191,14 +194,10 @@ function displayKiller() {
     killerSlot.innerHTML = '';
     var index = getRandomInt(killers.length);
     killer = killers[index];
-    var lag = '<div class="row text-center"><div class="column" style="width:96%"><li class="list-group-item list-group-item-danger"><div class="text-center"><h3>' +
-    killer.name + '</h3>' + '<img class="img-fluid" style="width: 25%; height: 25%;" src="' +killer.image +'">' + '</div></div></li>';
+    var lag = '<li class="list-group-item list-group-item-danger"><div class="row text-center"><div class="column" style="width:96%"><div class="text-center"><h3>' +
+    killer.name + '</h3>' + '<img class="img-fluid" style="width: 25%; height: 25%;" src="' +killer.image +'">' + '</div></div></div><br>';
+    lag += displayKillerAddons();
     killerSlot.innerHTML += lag;
-    /*
-    var lag = '<li class="list-group-item list-group-item-danger"><div class="text-center"><h2>' +
-    killer.name + '</h2>' + '<img style="width: 20%; height: 20%;" src="' +killer.image +'">' + '<div>' + killer.description.replace(/<(.|\n)*?>/g, '') + '</div></div></li>';
-    killerSlot.innerHTML += lag;
-    */
 }
 
 
