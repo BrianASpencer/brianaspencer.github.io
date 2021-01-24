@@ -452,17 +452,19 @@ function displaySurvPerks() {
     surv.innerHTML = '';
     var indeces = getIndeces(4, survivorPerks.length);
     var perks = [survivorPerks[indeces[0]], survivorPerks[indeces[1]], survivorPerks[indeces[2]], survivorPerks[indeces[3]]];
+    var lag = '';
     var i = 0;
     for (i = 0; i < 4; i++) {
-        var lag = '<div class="columnresponsive" style="width:96%"><li class="list-group-item list-group-item-primary"><h3 class="text-center">' +
-        perks[i].name + '</h3>' + '<div class="text-center"> <img class="img-fluid" style="width: 20%;" src="' + perks[i].image +'"></div></div></li>';
-        surv.innerHTML += lag;
+        if (i % 2 == 0) {
+            lag += '<div class="row text-center">';
+        }
+        lag += '<div class="column" style="width:48%"><li class="list-group-item list-group-item-primary"><h3 class="text-center">' +
+        perks[i].name + '</h3>' + '<div class="text-center"> <img class="img-fluid" style="width: 40%;" src="' + perks[i].image +'"></div></div></li>';
+        if (i % 2 == 1) {
+            lag += '</div>';
+        }
     }
-    /*
-    var lag = '<li class="list-group-item list-group-item-primary"><h2 class="text-center">' +
-        perks[i].name + '</h2>' + '<div class="text-center"> <img style="width: 20%; height: 20%;" src="' + perks[i].image +'"></div>' + '<div>' + perks[i].descritpion.replace(/<(.|\n)*?>/g, '') + '</div>' + '</li>';
-        surv.innerHTML += lag;
-    */
+    surv.innerHTML += lag;
 }
 
 displaySurvPerks();

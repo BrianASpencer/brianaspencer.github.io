@@ -591,7 +591,7 @@ function displayAddons() {
         addons[i].name + '</h3>' + '<img class="img-fluid" style="width: 35%;" src="' + addons[i].image +'">' + '</div></div></li>';
     }
     lag +='</div>';
-	
+    
     itemAddonSlot.innerHTML += lag;
 }
 
