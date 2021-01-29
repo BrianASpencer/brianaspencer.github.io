@@ -12,30 +12,37 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+        <script
+                src="https://code.jquery.com/jquery-3.1.1.min.js"
+                integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+                crossorigin="anonymous"></script>
+        <script src="semantic/dist/semantic.min.js"></script>
     </head>
-    <body>
+    <body class="bg-dark">
+
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01" style="font-size: 1.7em;">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
-                    <li class="navbar-brand" style="font-size: 1.1em;">
-                        Brian Spencer
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Brian Spencer <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a href="pdfs/Resume.pdf" class="nav-link">Résumé</a>
+                        <a class="nav-link" href="pdfs/Resume.pdf">Résumé</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="https://github.com/BrianASpencer">GitHub</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Projects
                         </a>
-                        <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink" style="font-size: 1em;">
+                        <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item text-light" href="html/pokedex/poke.html">Pokédex App</a>
+                            <a class="dropdown-item text-light" href="html/DbD/kyfRules.html">KYF Rules</a>
                         </div>
                     </li>
                 </ul>
@@ -44,26 +51,24 @@
 
         <br>
 
-        <h3 class="display-4 text-center" style="color: white;"><strong>About Me</strong></h3>
-
         <div class= "jumbotron col-lg-10 col-md-10 col-sm-10 col-xs-10 offset-1 float-center" style="width: 80%; align-content: center;">
+            <h3 class="display-4 text-center header"><strong>About Me</strong></h3>
             <div class="row">
                 <div class="container-responsive col-sm white-text text-center text-md-left">
                     <hr class="hr-light"> 
-                    <h4 class="h4-responsive">Hi, I'm Brian. I'm a passionate developer but more importantly I'm passionate about technology and learning. I hope you enjoy looking at my résumé, GitHub, or projects!</h4>
+                    <h4 class="h4-responsive">Hi, I'm Brian. I'm a passionate developer who's eager to learn more and more about technology. I have all my projects on GitHub and some hosted on here.</h4>
                     <hr class="hr-light">
                 </div>
-                <div class="col-xl-5 mt-xl-5">
+                <div class="col-xl-5 mt-xl-5 text-center">
                     <img src="images/Untitled.png" alt="" class="img-fluid rounded">
                 </div>
             </div>
         </div>
 
         <br>
-        
-        <h3 class="display-4 text-center" style="color: white;"><strong>My Web Projects</strong></h3>
 
         <div class="jumbotron col-lg-10 col-md-10 col-sm-10 col-xs-10 offset-1 float-center" style="width: 80%; align-content: center;">
+            <h3 class="header display-4 text-center"><strong>My Web Projects</strong></h3>
             <div class="container-responsive col-md white-text text-center">
                 <hr class="hr-light"> 
                 <h4 class="h4-responsive text-center" style="font-size: 1.2em;">Below are the web projects I've developed so far. I have the static project(s) available through the "Projects" tab at the top of the page to demo. However, I do not have the ability to host dynamic projects with GitHub Pages. So, I have those and non-web projects on my GitHub. I have all source code available on my GitHub.</h4>
