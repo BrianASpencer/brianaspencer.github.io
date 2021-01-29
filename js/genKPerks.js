@@ -406,7 +406,7 @@ function displayKillerPerks() {
     var i = 0;
     for (i = 0; i < 4; i++) {
         if (i % 2 == 0) {
-            lag += '<div class="row text-center">';
+            lag += '<div class="row">';
         }
         lag += '<div class="column" style="width:48%"><h3 class="text-center">' +
         perks[i].name + '</h3>' + '<div class="text-center"> <img class="img-fluid" style="width: 50%;" src="' + perks[i].image +'"></div></div>';

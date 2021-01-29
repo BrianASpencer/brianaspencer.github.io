@@ -189,7 +189,7 @@ function displayMaps() {
     mapSlot.innerHTML = '';
     var indeces = getIndeces(2, maps.length);
     var mapList = [maps[indeces[0]], maps[indeces[1]], maps[indeces[2]], maps[indeces[3]]];
-    var lag = '<li class="list-group-item list-group-item-danger"><div class="row text-center">';
+    var lag = '<li class="list-group-item list-group-item-danger"><div class="row">';
     var i = 0;
     for (i = 0; i < 2; i++) {
         lag += '<div class="column" style="width:48%"><div class="text-center"><h3>' +

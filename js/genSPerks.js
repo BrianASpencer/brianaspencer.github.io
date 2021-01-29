@@ -459,7 +459,7 @@ function displaySurvPerks() {
             lag += '<div class="row text-center">';
         }
         lag += '<div class="column" style="width:48%"><h3 class="text-center">' +
-        perks[i].name + '</h3>' + '<div class="text-center"> <img class="img-fluid" style="width: 50%;" src="' + perks[i].image +'"></div></div>';
+        perks[i].name + '</h3>' + '<img class="img-fluid" style="width: 50%;" src="' + perks[i].image +'"></div>';
         if (i % 2 == 1) {
             lag += '</div>';
         }
