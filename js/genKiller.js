@@ -18,7 +18,7 @@ const killers = [
 	},
 	{
 		name: "The Hag",
-		image: "../../images/DbD/killers/Hag.png",
+		image: "../../images/DbD/killers/hag.png",
 		item: "Item_Slasher_PhantomTrap"
 	},
 	{
