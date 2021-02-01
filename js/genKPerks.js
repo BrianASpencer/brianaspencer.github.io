@@ -275,6 +275,30 @@ const killerPerks = [
 	{
 		name: "Territorial Imperative",
 		image: "../../images/DbD/perks/TerritorialImperative.png"
+	},
+    {
+		name: "Dragon's Grip",
+		image: "../../images/DbD/perks/dragonsGrip.png"
+	},
+    {
+		name: "Hex: Blood Favour",
+		image: "../../images/DbD/perks/hexBloodFavour.png"
+	},
+    {
+		name: "Hex: Undying",
+		image: "../../images/DbD/perks/hexUndying.png"
+	},
+    {
+		name: "Hoarder",
+		image: "../../images/DbD/perks/hoarder.png"
+	},
+    {
+		name: "Opression",
+		image: "../../images/DbD/perks/opression.png"
+	},
+    {
+		name: "Coup de Grâce",
+		image: "../../images/DbD/perks/coupeDeGrace.png"
 	}
 ];
 
