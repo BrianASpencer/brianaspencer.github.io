@@ -3,131 +3,131 @@ const mapSlot = document.getElementById('maps');
 const maps = [
 	{
 	name: "Badham Preschool IV",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/Maps/England/iconMap_Eng_ElmStreet04.png"
+	image: "../../images/DbD/Maps/EngElmStreet04.png"
 	},
 	{
 	name: "Badham Preschool III",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/Maps/England/iconMap_Eng_ElmStreet03.png"
+	image: "../../images/DbD/Maps/EngElmStreet03.png"
 	},
 	{
 	name: "The Thompson House",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/Maps/iconMap_Frm_Farmhouse.png"
+	image: "../../images/DbD/Maps/FrmFarmhouse.png"
 	},
 	{
 	name: "Sanctum of Wrath ",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/Maps/Haiti/iconMap_Hti_Shrine.png"
+	image: "../../images/DbD/Maps/HtiShrine.png"
 	},
 	{
 	name: "Blood Lodge",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/Maps/iconMap_Jnk_Lodge.png"
+	image: "../../images/DbD/Maps/JnkLodge.png"
 	},
 	{
 	name: "Badham Preschool I",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/Maps/England/iconMap_Eng_ElmStreet.png"
+	image: "../../images/DbD/Maps/EngElmStreet.png"
 	},
 	{
 	name: "Wreckers' Yard",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/Maps/iconMap_Jnk_Scrapyard.png"
+	image: "../../images/DbD/Maps/JnkScrapyard.png"
 	},
 	{
 	name: "Mother's Dwelling",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/Maps/DLC5/iconMap_Brl_MaHouse.png"
+	image: "../../images/DbD/Maps/BrlMaHouse.png"
 	},
 	{
 	name: "Father Campbell's Chapel",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/Maps/Guam/iconMap_Asy_Chapel.png"
+	image: "../../images/DbD/Maps/AsyChapel.png"
 	},
 	{
 	name: "Disturbed Ward",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/Maps/iconMap_Asy_Asylum.png"
+	image: "../../images/DbD/Maps/AsyAsylum.png"
 	},
 	{
 	name: "Coal Tower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/Maps/iconMap_Ind_CoalTower.png"
+	image: "../../images/DbD/Maps/IndCoalTower.png"
 	},
 	{
 	name: "Gas Heaven",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/Maps/iconMap_Jnk_GasStation.png"
+	image: "../../images/DbD/Maps/JnkGasStation.png"
 	},
 	{
 	name: "Torment Creek",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/Maps/iconMap_Frm_Silo.png"
+	image: "../../images/DbD/Maps/FrmSilo.png"
 	},
 	{
 	name: "Midwich Elementary School",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/Maps/Wales/iconMap_Wal_Level01.png"
+	image: "../../images/DbD/Maps/WalLevel01.png"
 	},
 	{
 	name: "Fractured Cowshed",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/Maps/iconMap_Frm_Barn.png"
+	image: "../../images/DbD/Maps/FrmBarn.png"
 	},
 	{
 	name: "Lampkin Lane",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/Maps/iconMap_Sub_Street.png"
+	image: "../../images/DbD/Maps/SubStreet.png"
 	},
 	{
 	name: "Groaning Storehouse",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/Maps/iconMap_Ind_Storehouse.png"
+	image: "../../images/DbD/Maps/IndStorehouse.png"
 	},
 	{
 	name: "Shelter Woods",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/Maps/iconMap_Ind_Forest.png"
+	image: "../../images/DbD/Maps/IndForest.png"
 	},
 	{
 	name: "Family Residence",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/Maps/Haiti/iconMap_Hti_Manor.png"
+	image: "../../images/DbD/Maps/HtiManor.png"
 	},
 	{
 	name: "Rotten Fields",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/Maps/iconMap_Frm_Cornfield.png"
+	image: "../../images/DbD/Maps/FrmCornfield.png"
 	},
 	{
 	name: "Grim Pantry",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/Maps/Cannibal/iconMap_Swp_GrimPantry.png"
+	image: "../../images/DbD/Maps/SwpGrimPantry.png"
 	},
 	{
 	name: "The Temple of Purgation",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/Maps/Mali/iconMap_Brl_Temple.png"
+	image: "../../images/DbD/Maps/BrlTemple.png"
 	},
 	{
 	name: "Ironworks of Misery",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/Maps/iconMap_Ind_Foundry.png"
+	image: "../../images/DbD/Maps/IndFoundry.png"
 	},
 	{
 	name: "Badham Preschool V",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/Maps/England/iconMap_Eng_ElmStreet05.png"
+	image: "../../images/DbD/Maps/EngElmStreet05.png"
 	},
 	{
 	name: "Azarov’s Resting Place",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/Maps/iconMap_Jnk_Office.png"
+	image: "../../images/DbD/Maps/JnkOffice.png"
 	},
 	{
 	name: "Suffocation Pit",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/Maps/iconMap_Ind_Mine.png"
+	image: "../../images/DbD/Maps/IndMine.png"
 	},
 	{
 	name: "Badham Preschool II",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/Maps/England/iconMap_Eng_ElmStreet02.png"
+	image: "../../images/DbD/Maps/EngElmStreet02.png"
 	},
 	{
 	name: "Rancid Abattoir",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/Maps/iconMap_Frm_Slaughterhouse.png"
+	image: "../../images/DbD/Maps/FrmSlaughterhouse.png"
 	},
 	{
 	name: "Mount Ormond Resort",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/Maps/Kenya/iconMap_Kny_Cottage.png"
+	image: "../../images/DbD/Maps/KnyCottage.png"
 	},
 	{
 	name: "The Pale Rose",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/Maps/iconMap_Swp_PaleRose.png"
+	image: "../../images/DbD/Maps/SwpPaleRose.png"
 	},
 	{
 	name: "Dead Dawg Saloon",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/Maps/Ukraine/iconMap_Ukr_Saloon.png"
+	image: "../../images/DbD/Maps/UkrSaloon.png"
 	},
 	{
 	name: "Wretched Shop",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/Maps/iconMap_Jnk_Garage.png"
+	image: "../../images/DbD/Maps/JnkGarage.png"
 	}
 ];
 
