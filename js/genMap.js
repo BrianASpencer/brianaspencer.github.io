@@ -95,15 +95,15 @@ const maps = [
 	},
 	{
 	name: "Badham Preschool V",
-	image: "../../images/DbD/Maps/EngElmStreet05.png"
+	image: "../../images/DbD/maps/EngElmStreet05.png"
 	},
 	{
 	name: "Azarov’s Resting Place",
-	image: "../../images/DbD/Maps/JnkOffice.png"
+	image: "../../images/DbD/maps/JnkOffice.png"
 	},
 	{
 	name: "Suffocation Pit",
-	image: "../../images/DbD/Maps/IndMine.png"
+	image: "../../images/DbD/maps/IndMine.png"
 	},
 	{
 	name: "Badham Preschool II",
