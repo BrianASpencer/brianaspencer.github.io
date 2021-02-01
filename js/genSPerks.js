@@ -315,6 +315,30 @@ const survivorPerks = [
 	{
 		name: "Off the Record",
 		image: "../../images/DbD/perks/offTheRecord.png"
+	},
+    {
+		name: "Appraisal",
+		image: "../../images/DbD/perks/appraisal.png"
+	},
+    {
+		name: "Deception",
+		image: "../../images/DbD/perks/deception.png"
+	},
+    {
+		name: "Power Struggle",
+		image: "../../images/DbD/perks/powerStruggle.png"
+	},
+    {
+		name: "Visionary",
+		image: "../../images/DbD/perks/versionary.png"
+	},
+    {
+		name: "Desperate Measures",
+		image: "../../images/DbD/perks/desperateMeasures.png"
+	},
+    {
+		name: "Built To Last",
+		image: "../../images/DbD/perks/builtToLast.png"
 	}
 ];
 
