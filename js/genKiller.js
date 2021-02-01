@@ -28,67 +28,67 @@ const killers = [
 	},
 	{
 		name: "The Doctor",
-		image: "../../images/DbD/killers/Doctor.png",
+		image: "../../images/DbD/killers/doctor.png",
 		item: "Item_Slasher_Killer07Item"
 	},
 	{
 		name: "The Huntress",
-		image: "../../images/DbD/killers/Huntress.png",
+		image: "../../images/DbD/killers/huntress.png",
 		item: "Item_Slasher_Hatchet"
 	},
 	{
 		name: "The Cannibal",
-		image: "../../images/DbD/killers/Cannibal.png",
+		image: "../../images/DbD/killers/cannibal.png",
 		item: "Item_Slasher_LFChainsaw"
 	},
 	{
 		name: "The Nightmare",
-		image: "../../images/DbD/killers/Nightmare.png",
+		image: "../../images/DbD/killers/nightmare.png",
 		item: "Item_Slasher_DreamInducer"
 	},
 	{
 		name: "The Pig",
-		image: "../../images/DbD/killers/Pig.png",
+		image: "../../images/DbD/killers/pig.png",
 		item: "Item_Slasher_ReverseBearTrap"
 	},
 	{
 		name: "The Clown",
-		image: "../../images/DbD/killers/Clown.png",
+		image: "../../images/DbD/killers/clown.png",
 		item: "Item_Slasher_GasBomb"
 	},
 	{
 		name: "The Legion",
-		image: "../../images/DbD/killers/Legion.png",
+		image: "../../images/DbD/killers/legion.png",
 		item: "Item_Slasher_Frenzy"
 	},
 	{
 		name: "The Plague",
-		image: "../../images/DbD/killers/Plague.png",
+		image: "../../images/DbD/killers/plague.png",
 		item: "Item_Slasher_PlaguePower"
 	},
 	{
 		name: "The Ghost Face",
-		image: "../../images/DbD/killers/GhostFace.png",
+		image: "../../images/DbD/killers/ghostface.png",
 		item: "Item_Slasher_GhostPower"
 	},
 	{
 		name: "The Demogorgon",
-		image: "../../images/DbD/killers/Demo.png",
+		image: "../../images/DbD/killers/demo.png",
 		item: "Item_Slasher_QatarKillerPower"
 	},
 	{
 		name: "The Oni",
-		image: "../../images/DbD/killers/Oni.png",
+		image: "../../images/DbD/killers/oni.png",
 		item: "Item_Slasher_Kanobo"
 	},
 	{
 		name: "The Deathslinger",
-		image: "../../images/DbD/killers/Deathslinger.png",
+		image: "../../images/DbD/killers/deathslinger.png",
 		item: "Item_Slasher_HarpoonRifle"
 	},
 	{
 		name: "The Executioner",
-		image: "../../images/DbD/killers/Executioner.png",
+		image: "../../images/DbD/killers/executioner.png",
 		item: "Item_Slasher_TormentMode"
 	},
 	{
