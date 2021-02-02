@@ -581,6 +581,7 @@ function timeOutTime_2(obj) {
 
 function displayAddons() {
     //itemAddonSlot.innerHTML = '';
+    //letsgoia();
     var items = getItem();
     var indeces = getIndeces(2, items.length);
     var addons = [items[indeces[0]], items[indeces[1]]];
@@ -592,6 +593,39 @@ function displayAddons() {
     }
     lag +='</div></li>';
     return lag;
+}
+
+function letsgoia() {
+    var i = 0;
+    var arr = ['name: ', 'image: ', 'parentItem: '];
+    var a = 'const survItemAddons = [\n';
+    for(i = 0; i < survItemAddons.length; i++) {
+        var j = 0;
+        var add;
+        a += '\t{\n';
+        for (j = 0; j < arr.length; j++) {
+            var index = survItemAddons[i].image.lastIndexOf('_')+1;
+            index = '../../images/DbD/addons/' + survItemAddons[i].image.substr(index);
+            if (j == arr.length-1) { 
+                // another for loop for array of parent items
+            } else if (j == arr.length-2) {
+                a += '\t\t' + arr[j];
+                add = '"' + index + '"';
+                a += add + '\n';
+            }else {
+                a += '\t\t' + arr[j];
+                add = '"' + survItemAddons[i].name + '"';
+                a += add + ',\n';
+            }
+        }
+        if (i == survItemAddons.length-1) {
+            a += '\t}\n';
+        } else {
+            a += '\t},\n'
+        }
+    }
+    a += '];';
+    console.log(a);
 }
 
 function getItemsss() {

@@ -1,1990 +1,2140 @@
 //const addonSlot = document.getElementById('addonSlot');
 const killerAddons = [
 	{
-	name: "The Legion Pin",
-	parentItem: "Item_Slasher_Frenzy",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Kenya/iconAddon_theLegionButton.png"
+		name: "The Legion Pin",
+		parentItem: "Item_Slasher_Frenzy",
+		image: "../../images/DbD/addons/theLegionButton.png"
 	},
 	{
-	name: "Razor Wires",
-	parentItem: "Item_Slasher_ReverseBearTrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Finland/iconAddon_razerWire.png"
+		name: "Razor Wires",
+		parentItem: "Item_Slasher_ReverseBearTrap",
+		image: "../../images/DbD/addons/razerWire.png"
 	},
 	{
-	name: "Cold Dirt",
-	parentItem: "Item_Slasher_Frenzy",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Kenya/iconAddon_coldDirt.png"
+		name: "Cold Dirt",
+		parentItem: "Item_Slasher_Frenzy",
+		image: "../../images/DbD/addons/coldDirt.png"
 	},
 	{
-	name: "Tear Soaked Tenugui",
-	parentItem: "Item_Slasher_Kanobo",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Sweden/iconAddon_tearSoakedTenugui.png"
+		name: "Tear Soaked Tenugui",
+		parentItem: "Item_Slasher_Kanobo",
+		image: "../../images/DbD/addons/tearSoakedTenugui.png"
 	},
 	{
-	name: "Trapper Bag",
-	parentItem: "Item_Slasher_Beartrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_trapperBag.png"
+		name: "Trapper Bag",
+		parentItem: "Item_Slasher_Beartrap",
+		image: "../../images/DbD/addons/trapperBag.png"
 	},
 	{
-	name: "Juniper Bonsai",
-	parentItem: "Item_Slasher_PhaseWalker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Haiti/iconAddon_juniperBonzai.png"
+		name: "Juniper Bonsai",
+		parentItem: "Item_Slasher_PhaseWalker",
+		image: "../../images/DbD/addons/juniperBonzai.png"
 	},
 	{
-	name: "'Discipline' - Class III",
-	parentItem: "Item_Slasher_Killer07Item",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC4/iconAddon_diciplineClassIII.png"
+		name: "'Discipline' - Class III",
+		parentItem: "Item_Slasher_Killer07Item",
+		image: "../../images/DbD/addons/diciplineClassIII.png"
 	},
 	{
-	name: "Bad Man Keepsake",
-	parentItem: "Item_Slasher_Blinker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_badManKeepsake.png"
+		name: "Bad Man Keepsake",
+		parentItem: "Item_Slasher_Blinker",
+		image: "../../images/DbD/addons/badManKeepsake.png"
 	},
 	{
-	name: "Jigsaw's Annotated Plan",
-	parentItem: "Item_Slasher_ReverseBearTrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Finland/iconAddon_jigsawsAnnotatedPlan.png"
+		name: "Jigsaw's Annotated Plan",
+		parentItem: "Item_Slasher_ReverseBearTrap",
+		image: "../../images/DbD/addons/jigsawsAnnotatedPlan.png"
 	},
 	{
-	name: "'Restraint' - Class III",
-	parentItem: "Item_Slasher_Killer07Item",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC4/iconAddon_restraintClassIII.png"
+		name: "'Restraint' - Class III",
+		parentItem: "Item_Slasher_Killer07Item",
+		image: "../../images/DbD/addons/restraintClassIII.png"
 	},
 	{
-	name: "Junkyard Air Filter",
-	parentItem: "Item_Slasher_Chainsaw",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Xipre/iconAddon_junkyardAirFilter.png"
+		name: "Junkyard Air Filter",
+		parentItem: "Item_Slasher_Chainsaw",
+		image: "../../images/DbD/addons/junkyardAirFilter.png"
 	},
 	{
-	name: "Tampered Timer",
-	parentItem: "Item_Slasher_ReverseBearTrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Finland/iconAddon_tamperedTimer.png"
+		name: "Tampered Timer",
+		parentItem: "Item_Slasher_ReverseBearTrap",
+		image: "../../images/DbD/addons/tamperedTimer.png"
 	},
 	{
-	name: "Boyfriend's Memo",
-	parentItem: "Item_Slasher_Stalker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC2/iconAddon_boyfriendsMemo.png"
+		name: "Boyfriend's Memo",
+		parentItem: "Item_Slasher_Stalker",
+		image: "../../images/DbD/addons/boyfriendsMemo.png"
 	},
 	{
-	name: "'Calm' - Class II",
-	parentItem: "Item_Slasher_Killer07Item",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC4/iconAddon_calmClassII.png"
+		name: "'Calm' - Class II",
+		parentItem: "Item_Slasher_Killer07Item",
+		image: "../../images/DbD/addons/calmClassII.png"
 	},
 	{
-	name: "Katana Tsuba",
-	parentItem: "Item_Slasher_PhaseWalker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Haiti/iconAddon_katanaTsuba.png"
+		name: "Katana Tsuba",
+		parentItem: "Item_Slasher_PhaseWalker",
+		image: "../../images/DbD/addons/katanaTsuba.png"
 	},
 	{
-	name: "Wooden Oni Mask",
-	parentItem: "Item_Slasher_Kanobo",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Sweden/iconAddon_woodenOniMask.png"
+		name: "Wooden Oni Mask",
+		parentItem: "Item_Slasher_Kanobo",
+		image: "../../images/DbD/addons/woodenOniMask.png"
 	},
 	{
-	name: "Zōri",
-	parentItem: "Item_Slasher_PhaseWalker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Haiti/iconAddon_zori.png"
+		name: "Zōri",
+		parentItem: "Item_Slasher_PhaseWalker",
+		image: "../../images/DbD/addons/zori.png"
 	},
 	{
-	name: "Leather Loop",
-	parentItem: "Item_Slasher_Hatchet",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC5/iconAddon_leatherLoop.png"
+		name: "Leather Loop",
+		parentItem: "Item_Slasher_Hatchet",
+		image: "../../images/DbD/addons/leatherLoop.png"
 	},
 	{
-	name: "Video Tape",
-	parentItem: "Item_Slasher_ReverseBearTrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Finland/iconAddon_videoTape.png"
+		name: "Video Tape",
+		parentItem: "Item_Slasher_ReverseBearTrap",
+		image: "../../images/DbD/addons/videoTape.png"
 	},
 	{
-	name: "Rule Set No.2",
-	parentItem: "Item_Slasher_ReverseBearTrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Finland/iconAddon_rulesSetN2.png"
+		name: "Rule Set No.2",
+		parentItem: "Item_Slasher_ReverseBearTrap",
+		image: "../../images/DbD/addons/rulesSetN2.png"
 	},
 	{
-	name: "Violet Waxcap",
-	parentItem: "Item_Slasher_QatarKillerPower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Qatar/iconAddon_violetWaxcap.png"
+		name: "Violet Waxcap",
+		parentItem: "Item_Slasher_QatarKillerPower",
+		image: "../../images/DbD/addons/violetWaxcap.png"
 	},
 	{
-	name: "Susie's Mix Tape",
-	parentItem: "Item_Slasher_Frenzy",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Kenya/iconAddon_suziesMixtape.png"
+		name: "Susie's Mix Tape",
+		parentItem: "Item_Slasher_Frenzy",
+		image: "../../images/DbD/addons/suziesMixtape.png"
 	},
 	{
-	name: "Mural Sketch",
-	parentItem: "Item_Slasher_Frenzy",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Kenya/iconAddon_muralSketch.png"
+		name: "Mural Sketch",
+		parentItem: "Item_Slasher_Frenzy",
+		image: "../../images/DbD/addons/muralSketch.png"
 	},
 	{
-	name: "4-Coil Spring Kit",
-	parentItem: "Item_Slasher_Beartrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_coilsKit4.png"
+		name: "4-Coil Spring Kit",
+		parentItem: "Item_Slasher_Beartrap",
+		image: "../../images/DbD/addons/coilsKit4.png"
 	},
 	{
-	name: "Amanda's Letter",
-	parentItem: "Item_Slasher_ReverseBearTrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Finland/iconAddon_amandasLetter.png"
+		name: "Amanda's Letter",
+		parentItem: "Item_Slasher_ReverseBearTrap",
+		image: "../../images/DbD/addons/amandasLetter.png"
 	},
 	{
-	name: "Maple Knight",
-	parentItem: "Item_Slasher_Killer07Item",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC4/iconAddon_mapleKnight.png"
+		name: "Maple Knight",
+		parentItem: "Item_Slasher_Killer07Item",
+		image: "../../images/DbD/addons/mapleKnight.png"
 	},
 	{
-	name: "Prison Chain",
-	parentItem: "Item_Slasher_HarpoonRifle",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Ukraine/iconAddon_prisonChain.png"
+		name: "Prison Chain",
+		parentItem: "Item_Slasher_HarpoonRifle",
+		image: "../../images/DbD/addons/prisonChain.png"
 	},
 	{
-	name: "Nancy's Sketch",
-	parentItem: "Item_Slasher_DreamInducer",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/England/iconAddon_nancysSketch.png"
+		name: "Nancy's Sketch",
+		parentItem: "Item_Slasher_DreamInducer",
+		image: "../../images/DbD/addons/nancysSketch.png"
 	},
 	{
-	name: "Stolen Sketch Book",
-	parentItem: "Item_Slasher_Frenzy",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Kenya/iconAddon_stolenSketchbook.png"
+		name: "Stolen Sketch Book",
+		parentItem: "Item_Slasher_Frenzy",
+		image: "../../images/DbD/addons/stolenSketchbook.png"
 	},
 	{
-	name: "Filthy Blade",
-	parentItem: "Item_Slasher_Frenzy",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Kenya/iconAddon_filthyBlade.png"
+		name: "Filthy Blade",
+		parentItem: "Item_Slasher_Frenzy",
+		image: "../../images/DbD/addons/filthyBlade.png"
 	},
 	{
-	name: "Polished Maedate",
-	parentItem: "Item_Slasher_Kanobo",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Sweden/iconAddon_polishedMaedate.png"
+		name: "Polished Maedate",
+		parentItem: "Item_Slasher_Kanobo",
+		image: "../../images/DbD/addons/polishedMaedate.png"
 	},
 	{
-	name: "Gifted Bamboo Comb",
-	parentItem: "Item_Slasher_PhaseWalker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Haiti/iconAddon_giftedBambooComb.png"
+		name: "Gifted Bamboo Comb",
+		parentItem: "Item_Slasher_PhaseWalker",
+		image: "../../images/DbD/addons/giftedBambooComb.png"
 	},
 	{
-	name: "Ashen Apple",
-	parentItem: "Item_Slasher_PlaguePower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Mali/iconAddon_ashenApple.png"
+		name: "Ashen Apple",
+		parentItem: "Item_Slasher_PlaguePower",
+		image: "../../images/DbD/addons/ashenApple.png"
 	},
 	{
-	name: "Jaw Smasher ",
-	parentItem: "Item_Slasher_HarpoonRifle",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Ukraine/iconAddon_jawSmasher.png"
+		name: "Jaw Smasher ",
+		parentItem: "Item_Slasher_HarpoonRifle",
+		image: "../../images/DbD/addons/jawSmasher.png"
 	},
 	{
-	name: "Forgotten Videotape ",
-	parentItem: "Item_Slasher_TormentMode",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Wales/iconAddon_forgottenVideoTape.png"
+		name: "Forgotten Videotape ",
+		parentItem: "Item_Slasher_TormentMode",
+		image: "../../images/DbD/addons/forgottenVideoTape.png"
 	},
 	{
-	name: "Dead Rabbit",
-	parentItem: "Item_Slasher_Stalker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC2/iconAddon_deadRabbit.png"
+		name: "Dead Rabbit",
+		parentItem: "Item_Slasher_Stalker",
+		image: "../../images/DbD/addons/deadRabbit.png"
 	},
 	{
-	name: "Honing Stone",
-	parentItem: "Item_Slasher_Beartrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_honingStone.png"
+		name: "Honing Stone",
+		parentItem: "Item_Slasher_Beartrap",
+		image: "../../images/DbD/addons/honingStone.png"
 	},
 	{
-	name: "'Restraint' - Carter's Notes",
-	parentItem: "Item_Slasher_Killer07Item",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC4/iconAddon_restraintCartersNotes.png"
+		name: "'Restraint' - Carter's Notes",
+		parentItem: "Item_Slasher_Killer07Item",
+		image: "../../images/DbD/addons/restraintCartersNotes.png"
 	},
 	{
-	name: "Wax Brick",
-	parentItem: "Item_Slasher_Beartrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_waxBrick.png"
+		name: "Wax Brick",
+		parentItem: "Item_Slasher_Beartrap",
+		image: "../../images/DbD/addons/waxBrick.png"
 	},
 	{
-	name: "Brass Case Lighter",
-	parentItem: "Item_Slasher_QatarKillerPower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Qatar/iconAddon_brassCaseLighter.png"
+		name: "Brass Case Lighter",
+		parentItem: "Item_Slasher_QatarKillerPower",
+		image: "../../images/DbD/addons/brassCaseLighter.png"
 	},
 	{
-	name: "Bloodied Mud",
-	parentItem: "Item_Slasher_PhantomTrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC3/iconAddon_bloodiedMud.png"
+		name: "Bloodied Mud",
+		parentItem: "Item_Slasher_PhantomTrap",
+		image: "../../images/DbD/addons/bloodiedMud.png"
 	},
 	{
-	name: "Cinch Straps ",
-	parentItem: "Item_Slasher_GhostPower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Oman/iconAddon_reusuableCinchStraps.png"
+		name: "Cinch Straps ",
+		parentItem: "Item_Slasher_GhostPower",
+		image: "../../images/DbD/addons/reusuableCinchStraps.png"
 	},
 	{
-	name: "“Ghost Face Caught on Tape”",
-	parentItem: "Item_Slasher_GhostPower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Oman/iconAddon_caughtOnTape.png"
+		name: "“Ghost Face Caught on Tape”",
+		parentItem: "Item_Slasher_GhostPower",
+		image: "../../images/DbD/addons/caughtOnTape.png"
 	},
 	{
-	name: "Dad's Boots",
-	parentItem: "Item_Slasher_Chainsaw",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Xipre/iconAddon_dadsBoots.png"
+		name: "Dad's Boots",
+		parentItem: "Item_Slasher_Chainsaw",
+		image: "../../images/DbD/addons/dadsBoots.png"
 	},
 	{
-	name: "Long Guide Bar",
-	parentItem: "Item_Slasher_LFChainsaw",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_longGuideBar.png"
+		name: "Long Guide Bar",
+		parentItem: "Item_Slasher_LFChainsaw",
+		image: "../../images/DbD/addons/longGuideBar.png"
 	},
 	{
-	name: "Katsumori Talisman",
-	parentItem: "Item_Slasher_PhaseWalker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Haiti/iconAddon_katsumoriTalisman.png"
+		name: "Katsumori Talisman",
+		parentItem: "Item_Slasher_PhaseWalker",
+		image: "../../images/DbD/addons/katsumoriTalisman.png"
 	},
 	{
-	name: "Tacky Earrings",
-	parentItem: "Item_Slasher_Stalker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC2/iconAddon_tackyEarrings.png"
+		name: "Tacky Earrings",
+		parentItem: "Item_Slasher_Stalker",
+		image: "../../images/DbD/addons/tackyEarrings.png"
 	},
 	{
-	name: "Pill Bottle",
-	parentItem: "Item_Slasher_DreamInducer",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/England/iconAddon_pillBottle.png"
+		name: "Pill Bottle",
+		parentItem: "Item_Slasher_DreamInducer",
+		image: "../../images/DbD/addons/pillBottle.png"
 	},
 	{
-	name: "Starling Feather",
-	parentItem: "Item_Slasher_GasBomb",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Guam/iconAddon_starlingFeather.png"
+		name: "Starling Feather",
+		parentItem: "Item_Slasher_GasBomb",
+		image: "../../images/DbD/addons/starlingFeather.png"
 	},
 	{
-	name: "Chewing Tobacco",
-	parentItem: "Item_Slasher_HarpoonRifle",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Ukraine/iconAddon_chewingTobacco.png"
+		name: "Chewing Tobacco",
+		parentItem: "Item_Slasher_HarpoonRifle",
+		image: "../../images/DbD/addons/chewingTobacco.png"
 	},
 	{
-	name: "Bog Water",
-	parentItem: "Item_Slasher_PhantomTrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC3/iconAddon_bogWater.png"
+		name: "Bog Water",
+		parentItem: "Item_Slasher_PhantomTrap",
+		image: "../../images/DbD/addons/bogWater.png"
 	},
 	{
-	name: "Class Photo",
-	parentItem: "Item_Slasher_DreamInducer",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/England/iconAddon_classPhoto.png"
+		name: "Class Photo",
+		parentItem: "Item_Slasher_DreamInducer",
+		image: "../../images/DbD/addons/classPhoto.png"
 	},
 	{
-	name: "Trapper Sack",
-	parentItem: "Item_Slasher_Beartrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_trapperSack.png"
+		name: "Trapper Sack",
+		parentItem: "Item_Slasher_Beartrap",
+		image: "../../images/DbD/addons/trapperSack.png"
 	},
 	{
-	name: "Iridescent Seal of Metatron ",
-	parentItem: "Item_Slasher_TormentMode",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Wales/iconAddon_iridescentSeal.png"
+		name: "Iridescent Seal of Metatron ",
+		parentItem: "Item_Slasher_TormentMode",
+		image: "../../images/DbD/addons/iridescentSeal.png"
 	},
 	{
-	name: "Mother-Daughter Ring",
-	parentItem: "Item_Slasher_PhaseWalker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Haiti/iconAddon_motherDaughterRing.png"
+		name: "Mother-Daughter Ring",
+		parentItem: "Item_Slasher_PhaseWalker",
+		image: "../../images/DbD/addons/motherDaughterRing.png"
 	},
 	{
-	name: "Sticky Lining",
-	parentItem: "Item_Slasher_QatarKillerPower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Qatar/iconAddon_stickyLining.png"
+		name: "Sticky Lining",
+		parentItem: "Item_Slasher_QatarKillerPower",
+		image: "../../images/DbD/addons/stickyLining.png"
 	},
 	{
-	name: "Pungent Fiale",
-	parentItem: "Item_Slasher_Hatchet",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC5/iconAddon_pungentFiale.png"
+		name: "Pungent Fiale",
+		parentItem: "Item_Slasher_Hatchet",
+		image: "../../images/DbD/addons/pungentFiale.png"
 	},
 	{
-	name: "Hellshire Iron",
-	parentItem: "Item_Slasher_HarpoonRifle",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Ukraine/iconAddon_hellshireIron.png"
+		name: "Hellshire Iron",
+		parentItem: "Item_Slasher_HarpoonRifle",
+		image: "../../images/DbD/addons/hellshireIron.png"
 	},
 	{
-	name: "Stab Wounds Study",
-	parentItem: "Item_Slasher_Frenzy",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Kenya/iconAddon_stabWoundsStudy.png"
+		name: "Stab Wounds Study",
+		parentItem: "Item_Slasher_Frenzy",
+		image: "../../images/DbD/addons/stabWoundsStudy.png"
 	},
 	{
-	name: "Valtiel Sect Photograph ",
-	parentItem: "Item_Slasher_TormentMode",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Wales/iconAddon_valtielSectPhotograph.png"
+		name: "Valtiel Sect Photograph ",
+		parentItem: "Item_Slasher_TormentMode",
+		image: "../../images/DbD/addons/valtielSectPhotograph.png"
 	},
 	{
-	name: "Heavy Panting",
-	parentItem: "Item_Slasher_Blinker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_heavyPanting.png"
+		name: "Heavy Panting",
+		parentItem: "Item_Slasher_Blinker",
+		image: "../../images/DbD/addons/heavyPanting.png"
 	},
 	{
-	name: "Chainsaw File",
-	parentItem: "Item_Slasher_LFChainsaw",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_chainsawFile.png"
+		name: "Chainsaw File",
+		parentItem: "Item_Slasher_LFChainsaw",
+		image: "../../images/DbD/addons/chainsawFile.png"
 	},
 	{
-	name: "White Hair Ribbon",
-	parentItem: "Item_Slasher_PhaseWalker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Haiti/iconAddon_whiteHairRibbon.png"
+		name: "White Hair Ribbon",
+		parentItem: "Item_Slasher_PhaseWalker",
+		image: "../../images/DbD/addons/whiteHairRibbon.png"
 	},
 	{
-	name: "Pighouse Gloves",
-	parentItem: "Item_Slasher_Chainsaw",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Xipre/iconAddon_pighouseGloves.png"
+		name: "Pighouse Gloves",
+		parentItem: "Item_Slasher_Chainsaw",
+		image: "../../images/DbD/addons/pighouseGloves.png"
 	},
 	{
-	name: "Iridescent King",
-	parentItem: "Item_Slasher_Killer07Item",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC4/iconAddon_iridescentKing.png"
+		name: "Iridescent King",
+		parentItem: "Item_Slasher_Killer07Item",
+		image: "../../images/DbD/addons/iridescentKing.png"
 	},
 	{
-	name: "Cracked Sakazuki",
-	parentItem: "Item_Slasher_Kanobo",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Sweden/iconAddon_crackedSakazuki.png"
+		name: "Cracked Sakazuki",
+		parentItem: "Item_Slasher_Kanobo",
+		image: "../../images/DbD/addons/crackedSakazuki.png"
 	},
 	{
-	name: "'The Beast' - Soot",
-	parentItem: "Item_Slasher_CloakBell",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_sootTheBeast.png"
+		name: "'The Beast' - Soot",
+		parentItem: "Item_Slasher_CloakBell",
+		image: "../../images/DbD/addons/sootTheBeast.png"
 	},
 	{
-	name: "Dark Cincture",
-	parentItem: "Item_Slasher_Blinker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_darkCincture.png"
+		name: "Dark Cincture",
+		parentItem: "Item_Slasher_Blinker",
+		image: "../../images/DbD/addons/darkCincture.png"
 	},
 	{
-	name: "Waterlogged Shoe",
-	parentItem: "Item_Slasher_PhantomTrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC3/iconAddon_waterloggedShoe.png"
+		name: "Waterlogged Shoe",
+		parentItem: "Item_Slasher_PhantomTrap",
+		image: "../../images/DbD/addons/waterloggedShoe.png"
 	},
 	{
-	name: "Granma's Heart",
-	parentItem: "Item_Slasher_PhantomTrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC3/iconAddon_granmasHeart.png"
+		name: "Granma's Heart",
+		parentItem: "Item_Slasher_PhantomTrap",
+		image: "../../images/DbD/addons/granmasHeart.png"
 	},
 	{
-	name: "Depth Gauge Rake",
-	parentItem: "Item_Slasher_LFChainsaw",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_depthGaugeRake.png"
+		name: "Depth Gauge Rake",
+		parentItem: "Item_Slasher_LFChainsaw",
+		image: "../../images/DbD/addons/depthGaugeRake.png"
 	},
 	{
-	name: "Muddy Sports Day Cap",
-	parentItem: "Item_Slasher_PhaseWalker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Haiti/iconAddon_muddySportCap.png"
+		name: "Muddy Sports Day Cap",
+		parentItem: "Item_Slasher_PhaseWalker",
+		image: "../../images/DbD/addons/muddySportCap.png"
 	},
 	{
-	name: "Interlocking Razor",
-	parentItem: "Item_Slasher_ReverseBearTrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Finland/iconAddon_interlockingRazor.png"
+		name: "Interlocking Razor",
+		parentItem: "Item_Slasher_ReverseBearTrap",
+		image: "../../images/DbD/addons/interlockingRazor.png"
 	},
 	{
-	name: "Bloodied Water",
-	parentItem: "Item_Slasher_PhantomTrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC3/iconAddon_bloodiedWater.png"
+		name: "Bloodied Water",
+		parentItem: "Item_Slasher_PhantomTrap",
+		image: "../../images/DbD/addons/bloodiedWater.png"
 	},
 	{
-	name: "Rusted Chain",
-	parentItem: "Item_Slasher_LFChainsaw",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_chainsRusted.png"
+		name: "Rusted Chain",
+		parentItem: "Item_Slasher_LFChainsaw",
+		image: "../../images/DbD/addons/chainsRusted.png"
 	},
 	{
-	name: "Cat Block",
-	parentItem: "Item_Slasher_DreamInducer",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/England/iconAddon_catBlock.png"
+		name: "Cat Block",
+		parentItem: "Item_Slasher_DreamInducer",
+		image: "../../images/DbD/addons/catBlock.png"
 	},
 	{
-	name: "Kaiun Talisman",
-	parentItem: "Item_Slasher_PhaseWalker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Haiti/iconAddon_kaiunTalisman.png"
+		name: "Kaiun Talisman",
+		parentItem: "Item_Slasher_PhaseWalker",
+		image: "../../images/DbD/addons/kaiunTalisman.png"
 	},
 	{
-	name: "Amanita Toxin",
-	parentItem: "Item_Slasher_Hatchet",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC5/iconAddon_amanitaToxin.png"
+		name: "Amanita Toxin",
+		parentItem: "Item_Slasher_Hatchet",
+		image: "../../images/DbD/addons/amanitaToxin.png"
 	},
 	{
-	name: "Outdoor Security Camera",
-	parentItem: "Item_Slasher_GhostPower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Oman/iconAddon_outdoorSecurityCamera.png"
+		name: "Outdoor Security Camera",
+		parentItem: "Item_Slasher_GhostPower",
+		image: "../../images/DbD/addons/outdoorSecurityCamera.png"
 	},
 	{
-	name: "Night Vision Monocular",
-	parentItem: "Item_Slasher_GhostPower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Oman/iconAddon_nightvisionMoncular.png"
+		name: "Night Vision Monocular",
+		parentItem: "Item_Slasher_GhostPower",
+		image: "../../images/DbD/addons/nightvisionMoncular.png"
 	},
 	{
-	name: "Dragonfly Wings",
-	parentItem: "Item_Slasher_PhantomTrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC3/iconAddon_dragonflyWings.png"
+		name: "Dragonfly Wings",
+		parentItem: "Item_Slasher_PhantomTrap",
+		image: "../../images/DbD/addons/dragonflyWings.png"
 	},
 	{
-	name: "Child's Wooden Sword",
-	parentItem: "Item_Slasher_Kanobo",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Sweden/iconAddon_childsWoodenSword.png"
+		name: "Child's Wooden Sword",
+		parentItem: "Item_Slasher_Kanobo",
+		image: "../../images/DbD/addons/childsWoodenSword.png"
 	},
 	{
-	name: "Friendship Bracelet",
-	parentItem: "Item_Slasher_Frenzy",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Kenya/iconAddon_friendshipBracelet.png"
+		name: "Friendship Bracelet",
+		parentItem: "Item_Slasher_Frenzy",
+		image: "../../images/DbD/addons/friendshipBracelet.png"
 	},
 	{
-	name: "Pocket Watch",
-	parentItem: "Item_Slasher_Blinker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_pocketWatch.png"
+		name: "Pocket Watch",
+		parentItem: "Item_Slasher_Blinker",
+		image: "../../images/DbD/addons/pocketWatch.png"
 	},
 	{
-	name: "LoPro Chains",
-	parentItem: "Item_Slasher_Chainsaw",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Xipre/iconAddon_lowProChains.png"
+		name: "LoPro Chains",
+		parentItem: "Item_Slasher_Chainsaw",
+		image: "../../images/DbD/addons/lowProChains.png"
 	},
 	{
-	name: "Bayshore’s Cigar",
-	parentItem: "Item_Slasher_HarpoonRifle",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Ukraine/iconAddon_bayshoresCigar.png"
+		name: "Bayshore’s Cigar",
+		parentItem: "Item_Slasher_HarpoonRifle",
+		image: "../../images/DbD/addons/bayshoresCigar.png"
 	},
 	{
-	name: "Wax Doll ",
-	parentItem: "Item_Slasher_TormentMode",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Wales/iconAddon_waxDoll.png"
+		name: "Wax Doll ",
+		parentItem: "Item_Slasher_TormentMode",
+		image: "../../images/DbD/addons/waxDoll.png"
 	},
 	{
-	name: "Dead Fly Mud",
-	parentItem: "Item_Slasher_PhantomTrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC3/iconAddon_deadFlyMud.png"
+		name: "Dead Fly Mud",
+		parentItem: "Item_Slasher_PhantomTrap",
+		image: "../../images/DbD/addons/deadFlyMud.png"
 	},
 	{
-	name: "'Restraint' - Class II",
-	parentItem: "Item_Slasher_Killer07Item",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC4/iconAddon_restraintClassII.png"
+		name: "'Restraint' - Class II",
+		parentItem: "Item_Slasher_Killer07Item",
+		image: "../../images/DbD/addons/restraintClassII.png"
 	},
 	{
-	name: "Rat Liver",
-	parentItem: "Item_Slasher_QatarKillerPower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Qatar/iconAddon_ratLiver.png"
+		name: "Rat Liver",
+		parentItem: "Item_Slasher_QatarKillerPower",
+		image: "../../images/DbD/addons/ratLiver.png"
 	},
 	{
-	name: "'Blink' - White",
-	parentItem: "Item_Slasher_CloakBell",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_whiteBlink.png"
+		name: "'Blink' - White",
+		parentItem: "Item_Slasher_CloakBell",
+		image: "../../images/DbD/addons/whiteBlink.png"
 	},
 	{
-	name: "Bone Clapper",
-	parentItem: "Item_Slasher_CloakBell",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_boneClapper.png"
+		name: "Bone Clapper",
+		parentItem: "Item_Slasher_CloakBell",
+		image: "../../images/DbD/addons/boneClapper.png"
 	},
 	{
-	name: "Smelly Inner Soles",
-	parentItem: "Item_Slasher_GasBomb",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Guam/iconAddon_smellyInnerSoles.png"
+		name: "Smelly Inner Soles",
+		parentItem: "Item_Slasher_GasBomb",
+		image: "../../images/DbD/addons/smellyInnerSoles.png"
 	},
 	{
-	name: "Green Dress",
-	parentItem: "Item_Slasher_DreamInducer",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/England/iconAddon_greenDress.png"
+		name: "Green Dress",
+		parentItem: "Item_Slasher_DreamInducer",
+		image: "../../images/DbD/addons/greenDress.png"
 	},
 	{
-	name: "Etched Ruler",
-	parentItem: "Item_Slasher_Frenzy",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Kenya/iconAddon_etchedRuler.png"
+		name: "Etched Ruler",
+		parentItem: "Item_Slasher_Frenzy",
+		image: "../../images/DbD/addons/etchedRuler.png"
 	},
 	{
-	name: "Blessed Apple",
-	parentItem: "Item_Slasher_PlaguePower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Mali/iconAddon_prayerApple.png"
+		name: "Blessed Apple",
+		parentItem: "Item_Slasher_PlaguePower",
+		image: "../../images/DbD/addons/prayerApple.png"
 	},
 	{
-	name: "Flower Babushka",
-	parentItem: "Item_Slasher_Hatchet",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC5/iconAddon_flowerBabushka.png"
+		name: "Flower Babushka",
+		parentItem: "Item_Slasher_Hatchet",
+		image: "../../images/DbD/addons/flowerBabushka.png"
 	},
 	{
-	name: "“Philly”",
-	parentItem: "Item_Slasher_GhostPower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Oman/iconAddon_philly.png"
+		name: "“Philly”",
+		parentItem: "Item_Slasher_GhostPower",
+		image: "../../images/DbD/addons/philly.png"
 	},
 	{
-	name: "Judith's Tombstone",
-	parentItem: "Item_Slasher_Stalker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC2/iconAddon_judithsTombstone.png"
+		name: "Judith's Tombstone",
+		parentItem: "Item_Slasher_Stalker",
+		image: "../../images/DbD/addons/judithsTombstone.png"
 	},
 	{
-	name: "Workshop Grease",
-	parentItem: "Item_Slasher_ReverseBearTrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Finland/iconAddon_workshopGrease.png"
+		name: "Workshop Grease",
+		parentItem: "Item_Slasher_ReverseBearTrap",
+		image: "../../images/DbD/addons/workshopGrease.png"
 	},
 	{
-	name: "'All Seeing' - Spirit",
-	parentItem: "Item_Slasher_CloakBell",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_spiritAllSeeing.png"
+		name: "'All Seeing' - Spirit",
+		parentItem: "Item_Slasher_CloakBell",
+		image: "../../images/DbD/addons/spiritAllSeeing.png"
 	},
 	{
-	name: "Honey Locust Thorns ",
-	parentItem: "Item_Slasher_HarpoonRifle",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Ukraine/iconAddon_honeyLocustThorns.png"
+		name: "Honey Locust Thorns ",
+		parentItem: "Item_Slasher_HarpoonRifle",
+		image: "../../images/DbD/addons/honeyLocustThorns.png"
 	},
 	{
-	name: "Prayer Tablet Fragment",
-	parentItem: "Item_Slasher_PlaguePower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Mali/iconAddon_prayerTabletFragment.png"
+		name: "Prayer Tablet Fragment",
+		parentItem: "Item_Slasher_PlaguePower",
+		image: "../../images/DbD/addons/prayerTabletFragment.png"
 	},
 	{
-	name: "Yew Seed Brew",
-	parentItem: "Item_Slasher_Hatchet",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC5/iconAddon_yewSeedBrew.png"
+		name: "Yew Seed Brew",
+		parentItem: "Item_Slasher_Hatchet",
+		image: "../../images/DbD/addons/yewSeedBrew.png"
 	},
 	{
-	name: "Rotting Rope",
-	parentItem: "Item_Slasher_Kanobo",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Sweden/iconAddon_rottingRope.png"
+		name: "Rotting Rope",
+		parentItem: "Item_Slasher_Kanobo",
+		image: "../../images/DbD/addons/rottingRope.png"
 	},
 	{
-	name: "Reflective Fragment",
-	parentItem: "Item_Slasher_Stalker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC2/iconAddon_reflectiveFragment.png"
+		name: "Reflective Fragment",
+		parentItem: "Item_Slasher_Stalker",
+		image: "../../images/DbD/addons/reflectiveFragment.png"
 	},
 	{
-	name: "Dried Cherry Blossom",
-	parentItem: "Item_Slasher_PhaseWalker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Haiti/iconAddon_driedCherryBlossom.png"
+		name: "Dried Cherry Blossom",
+		parentItem: "Item_Slasher_PhaseWalker",
+		image: "../../images/DbD/addons/driedCherryBlossom.png"
 	},
 	{
-	name: "Iridescent Button",
-	parentItem: "Item_Slasher_Frenzy",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Kenya/iconAddon_iridescentButton.png"
+		name: "Iridescent Button",
+		parentItem: "Item_Slasher_Frenzy",
+		image: "../../images/DbD/addons/iridescentButton.png"
 	},
 	{
-	name: "Rust-colored Egg ",
-	parentItem: "Item_Slasher_TormentMode",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Wales/iconAddon_rustColoredEgg.png"
+		name: "Rust-colored Egg ",
+		parentItem: "Item_Slasher_TormentMode",
+		image: "../../images/DbD/addons/rustColoredEgg.png"
 	},
 	{
-	name: "Shattered Syringe",
-	parentItem: "Item_Slasher_ReverseBearTrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Finland/iconAddon_shatteredSyringe.png"
+		name: "Shattered Syringe",
+		parentItem: "Item_Slasher_ReverseBearTrap",
+		image: "../../images/DbD/addons/shatteredSyringe.png"
 	},
 	{
-	name: "Walleyes Matchbook",
-	parentItem: "Item_Slasher_GhostPower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Oman/iconAddon_walleyesMatchbook.png"
+		name: "Walleyes Matchbook",
+		parentItem: "Item_Slasher_GhostPower",
+		image: "../../images/DbD/addons/walleyesMatchbook.png"
 	},
 	{
-	name: "Thorny Vines",
-	parentItem: "Item_Slasher_QatarKillerPower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Qatar/iconAddon_thornyVines.png"
+		name: "Thorny Vines",
+		parentItem: "Item_Slasher_QatarKillerPower",
+		image: "../../images/DbD/addons/thornyVines.png"
 	},
 	{
-	name: "Steel Toe Boots",
-	parentItem: "Item_Slasher_Chainsaw",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Xipre/iconAddon_steelToeBoots.png"
+		name: "Steel Toe Boots",
+		parentItem: "Item_Slasher_Chainsaw",
+		image: "../../images/DbD/addons/steelToeBoots.png"
 	},
 	{
-	name: "Chili",
-	parentItem: "Item_Slasher_LFChainsaw",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Cannibal/iconAddon_chili.png"
+		name: "Chili",
+		parentItem: "Item_Slasher_LFChainsaw",
+		image: "../../images/DbD/addons/chili.png"
 	},
 	{
-	name: "Yamaoka Sashimono",
-	parentItem: "Item_Slasher_Kanobo",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Sweden/iconAddon_yamaokaSashimono.png"
+		name: "Yamaoka Sashimono",
+		parentItem: "Item_Slasher_Kanobo",
+		image: "../../images/DbD/addons/yamaokaSashimono.png"
 	},
 	{
-	name: "Leather Knife Sheath",
-	parentItem: "Item_Slasher_GhostPower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Oman/iconAddon_leatherKnifeSheath.png"
+		name: "Leather Knife Sheath",
+		parentItem: "Item_Slasher_GhostPower",
+		image: "../../images/DbD/addons/leatherKnifeSheath.png"
 	},
 	{
-	name: "Fine Stone",
-	parentItem: "Item_Slasher_Hatchet",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC5/iconAddon_fineStone.png"
+		name: "Fine Stone",
+		parentItem: "Item_Slasher_Hatchet",
+		image: "../../images/DbD/addons/fineStone.png"
 	},
 	{
-	name: "Willow Wreath",
-	parentItem: "Item_Slasher_PhantomTrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC3/iconAddon_willowWreath.png"
+		name: "Willow Wreath",
+		parentItem: "Item_Slasher_PhantomTrap",
+		image: "../../images/DbD/addons/willowWreath.png"
 	},
 	{
-	name: "Victim’s Detailed Routine",
-	parentItem: "Item_Slasher_GhostPower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Oman/iconAddon_victimsDetailedRoutine.png"
+		name: "Victim’s Detailed Routine",
+		parentItem: "Item_Slasher_GhostPower",
+		image: "../../images/DbD/addons/victimsDetailedRoutine.png"
 	},
 	{
-	name: "Iridescent Head",
-	parentItem: "Item_Slasher_Hatchet",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC5/iconAddon_iridescentHead.png"
+		name: "Iridescent Head",
+		parentItem: "Item_Slasher_Hatchet",
+		image: "../../images/DbD/addons/iridescentHead.png"
 	},
 	{
-	name: "Plaid Flannel",
-	parentItem: "Item_Slasher_Blinker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_plaidFlannel.png"
+		name: "Plaid Flannel",
+		parentItem: "Item_Slasher_Blinker",
+		image: "../../images/DbD/addons/plaidFlannel.png"
 	},
 	{
-	name: "Shiawase Amulet",
-	parentItem: "Item_Slasher_PhaseWalker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Haiti/iconAddon_ShiawaseAmulet.png"
+		name: "Shiawase Amulet",
+		parentItem: "Item_Slasher_PhaseWalker",
+		image: "../../images/DbD/addons/ShiawaseAmulet.png"
 	},
 	{
-	name: "Heavy Clutch",
-	parentItem: "Item_Slasher_Chainsaw",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Xipre/iconAddon_heavyClutch.png"
+		name: "Heavy Clutch",
+		parentItem: "Item_Slasher_Chainsaw",
+		image: "../../images/DbD/addons/heavyClutch.png"
 	},
 	{
-	name: "Never-Sleep Pills",
-	parentItem: "Item_Slasher_Frenzy",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Kenya/iconAddon_neverSleepPills.png"
+		name: "Never-Sleep Pills",
+		parentItem: "Item_Slasher_Frenzy",
+		image: "../../images/DbD/addons/neverSleepPills.png"
 	},
 	{
-	name: "Black Strap ",
-	parentItem: "Item_Slasher_TormentMode",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Wales/iconAddon_blackStrap.png"
+		name: "Black Strap ",
+		parentItem: "Item_Slasher_TormentMode",
+		image: "../../images/DbD/addons/blackStrap.png"
 	},
 	{
-	name: "Rusty Head",
-	parentItem: "Item_Slasher_Hatchet",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC5/iconAddon_rustyHead.png"
+		name: "Rusty Head",
+		parentItem: "Item_Slasher_Hatchet",
+		image: "../../images/DbD/addons/rustyHead.png"
 	},
 	{
-	name: "Logwood Dye",
-	parentItem: "Item_Slasher_Beartrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_logwoodDye.png"
+		name: "Logwood Dye",
+		parentItem: "Item_Slasher_Beartrap",
+		image: "../../images/DbD/addons/logwoodDye.png"
 	},
 	{
-	name: "Rotten Green Tripe",
-	parentItem: "Item_Slasher_QatarKillerPower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Qatar/iconAddon_rottenGreenTripe.png"
+		name: "Rotten Green Tripe",
+		parentItem: "Item_Slasher_QatarKillerPower",
+		image: "../../images/DbD/addons/rottenGreenTripe.png"
 	},
 	{
-	name: "Gold Creek Whiskey",
-	parentItem: "Item_Slasher_HarpoonRifle",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Ukraine/iconAddon_clearCreekWhiskey.png"
+		name: "Gold Creek Whiskey",
+		parentItem: "Item_Slasher_HarpoonRifle",
+		image: "../../images/DbD/addons/clearCreekWhiskey.png"
 	},
 	{
-	name: "Scratched Ruler",
-	parentItem: "Item_Slasher_Frenzy",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Kenya/iconAddon_scratchedRuler.png"
+		name: "Scratched Ruler",
+		parentItem: "Item_Slasher_Frenzy",
+		image: "../../images/DbD/addons/scratchedRuler.png"
 	},
 	{
-	name: "Carburetor Tuning Guide",
-	parentItem: "Item_Slasher_LFChainsaw",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_carburetorTuningGuide.png"
+		name: "Carburetor Tuning Guide",
+		parentItem: "Item_Slasher_LFChainsaw",
+		image: "../../images/DbD/addons/carburetorTuningGuide.png"
 	},
 	{
-	name: "Hair Brush",
-	parentItem: "Item_Slasher_Stalker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC2/iconAddon_hairBrush.png"
+		name: "Hair Brush",
+		parentItem: "Item_Slasher_Stalker",
+		image: "../../images/DbD/addons/hairBrush.png"
 	},
 	{
-	name: "Homemade Muffler",
-	parentItem: "Item_Slasher_LFChainsaw",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_homemadeMuffler.png"
+		name: "Homemade Muffler",
+		parentItem: "Item_Slasher_LFChainsaw",
+		image: "../../images/DbD/addons/homemadeMuffler.png"
 	},
 	{
-	name: "Iridescent Stone",
-	parentItem: "Item_Slasher_Beartrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_diamondStone.png"
+		name: "Iridescent Stone",
+		parentItem: "Item_Slasher_Beartrap",
+		image: "../../images/DbD/addons/diamondStone.png"
 	},
 	{
-	name: "Mint Rag",
-	parentItem: "Item_Slasher_PhantomTrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC3/iconAddon_mintRag.png"
+		name: "Mint Rag",
+		parentItem: "Item_Slasher_PhantomTrap",
+		image: "../../images/DbD/addons/mintRag.png"
 	},
 	{
-	name: "Rusty Flute",
-	parentItem: "Item_Slasher_PhaseWalker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Haiti/iconAddon_rustyFlute.png"
+		name: "Rusty Flute",
+		parentItem: "Item_Slasher_PhaseWalker",
+		image: "../../images/DbD/addons/rustyFlute.png"
 	},
 	{
-	name: "Combat Straps",
-	parentItem: "Item_Slasher_ReverseBearTrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Finland/iconAddon_combatStraps.png"
+		name: "Combat Straps",
+		parentItem: "Item_Slasher_ReverseBearTrap",
+		image: "../../images/DbD/addons/combatStraps.png"
 	},
 	{
-	name: "Deerskin Gloves",
-	parentItem: "Item_Slasher_Hatchet",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC5/iconAddon_deerskinGloves.png"
+		name: "Deerskin Gloves",
+		parentItem: "Item_Slasher_Hatchet",
+		image: "../../images/DbD/addons/deerskinGloves.png"
 	},
 	{
-	name: "Iridescent Queen",
-	parentItem: "Item_Slasher_Killer07Item",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC4/iconAddon_iridescentQueen.png"
+		name: "Iridescent Queen",
+		parentItem: "Item_Slasher_Killer07Item",
+		image: "../../images/DbD/addons/iridescentQueen.png"
 	},
 	{
-	name: "Campbell's Last Breath",
-	parentItem: "Item_Slasher_Blinker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_campbellsLastBreath.png"
+		name: "Campbell's Last Breath",
+		parentItem: "Item_Slasher_Blinker",
+		image: "../../images/DbD/addons/campbellsLastBreath.png"
 	},
 	{
-	name: "Origami Crane",
-	parentItem: "Item_Slasher_PhaseWalker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Haiti/iconAddon_origamiCrane.png"
+		name: "Origami Crane",
+		parentItem: "Item_Slasher_PhaseWalker",
+		image: "../../images/DbD/addons/origamiCrane.png"
 	},
 	{
-	name: "Emetic potion",
-	parentItem: "Item_Slasher_PlaguePower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Mali/iconAddon_emeticPotion.png"
+		name: "Emetic potion",
+		parentItem: "Item_Slasher_PlaguePower",
+		image: "../../images/DbD/addons/emeticPotion.png"
 	},
 	{
-	name: "Hair Bow",
-	parentItem: "Item_Slasher_Stalker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC2/iconAddon_hairBow.png"
+		name: "Hair Bow",
+		parentItem: "Item_Slasher_Stalker",
+		image: "../../images/DbD/addons/hairBow.png"
 	},
 	{
-	name: "Upside Down Resin",
-	parentItem: "Item_Slasher_QatarKillerPower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Qatar/iconAddon_upsidedownResin.png"
+		name: "Upside Down Resin",
+		parentItem: "Item_Slasher_QatarKillerPower",
+		image: "../../images/DbD/addons/upsidedownResin.png"
 	},
 	{
-	name: "The Grease",
-	parentItem: "Item_Slasher_LFChainsaw",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Cannibal/iconAddon_theGrease.png"
+		name: "The Grease",
+		parentItem: "Item_Slasher_LFChainsaw",
+		image: "../../images/DbD/addons/theGrease.png"
 	},
 	{
-	name: "Ataxic Respiration",
-	parentItem: "Item_Slasher_Blinker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_ataxicRespiration.png"
+		name: "Ataxic Respiration",
+		parentItem: "Item_Slasher_Blinker",
+		image: "../../images/DbD/addons/ataxicRespiration.png"
 	},
 	{
-	name: "Kavanagh's Last Breath",
-	parentItem: "Item_Slasher_Blinker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_kavanaghsLastBreath.png"
+		name: "Kavanagh's Last Breath",
+		parentItem: "Item_Slasher_Blinker",
+		image: "../../images/DbD/addons/kavanaghsLastBreath.png"
 	},
 	{
-	name: "Devotee's Amulet",
-	parentItem: "Item_Slasher_PlaguePower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Mali/iconAddon_devoteesAmulet.png"
+		name: "Devotee's Amulet",
+		parentItem: "Item_Slasher_PlaguePower",
+		image: "../../images/DbD/addons/devoteesAmulet.png"
 	},
 	{
-	name: "Thick Cork Stopper",
-	parentItem: "Item_Slasher_GasBomb",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Guam/iconAddon_thickCorkStopper.png"
+		name: "Thick Cork Stopper",
+		parentItem: "Item_Slasher_GasBomb",
+		image: "../../images/DbD/addons/thickCorkStopper.png"
 	},
 	{
-	name: "Speed Limiter",
-	parentItem: "Item_Slasher_Chainsaw",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Xipre/iconAddon_speedLimiter.png"
+		name: "Speed Limiter",
+		parentItem: "Item_Slasher_Chainsaw",
+		image: "../../images/DbD/addons/speedLimiter.png"
 	},
 	{
-	name: "Defaced Smiley Pin",
-	parentItem: "Item_Slasher_Frenzy",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Kenya/iconAddon_defacedSmileyButton.png"
+		name: "Defaced Smiley Pin",
+		parentItem: "Item_Slasher_Frenzy",
+		image: "../../images/DbD/addons/defacedSmileyButton.png"
 	},
 	{
-	name: "Dull Bracelet",
-	parentItem: "Item_Slasher_Blinker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_dullBracelet.png"
+		name: "Dull Bracelet",
+		parentItem: "Item_Slasher_Blinker",
+		image: "../../images/DbD/addons/dullBracelet.png"
 	},
 	{
-	name: "Rubbing Oil",
-	parentItem: "Item_Slasher_PlaguePower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Mali/iconAddon_rubbingOil.png"
+		name: "Rubbing Oil",
+		parentItem: "Item_Slasher_PlaguePower",
+		image: "../../images/DbD/addons/rubbingOil.png"
 	},
 	{
-	name: "Olsen’s Wallet",
-	parentItem: "Item_Slasher_GhostPower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Oman/iconAddon_olsensWallet.png"
+		name: "Olsen’s Wallet",
+		parentItem: "Item_Slasher_GhostPower",
+		image: "../../images/DbD/addons/olsensWallet.png"
 	},
 	{
-	name: "Dried Cicada",
-	parentItem: "Item_Slasher_PhantomTrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC3/iconAddon_driedCicada.png"
+		name: "Dried Cicada",
+		parentItem: "Item_Slasher_PhantomTrap",
+		image: "../../images/DbD/addons/driedCicada.png"
 	},
 	{
-	name: "Kid's Drawing",
-	parentItem: "Item_Slasher_DreamInducer",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/England/iconAddon_kidsDrawing.png"
+		name: "Kid's Drawing",
+		parentItem: "Item_Slasher_DreamInducer",
+		image: "../../images/DbD/addons/kidsDrawing.png"
 	},
 	{
-	name: "Potent Tincture",
-	parentItem: "Item_Slasher_PlaguePower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Mali/iconAddon_potentTincture.png"
+		name: "Potent Tincture",
+		parentItem: "Item_Slasher_PlaguePower",
+		image: "../../images/DbD/addons/potentTincture.png"
 	},
 	{
-	name: "Blue Dress",
-	parentItem: "Item_Slasher_DreamInducer",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/England/iconAddon_blueDress.png"
+		name: "Blue Dress",
+		parentItem: "Item_Slasher_DreamInducer",
+		image: "../../images/DbD/addons/blueDress.png"
 	},
 	{
-	name: "Deer Lung",
-	parentItem: "Item_Slasher_QatarKillerPower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Qatar/iconAddon_deerLung.png"
+		name: "Deer Lung",
+		parentItem: "Item_Slasher_QatarKillerPower",
+		image: "../../images/DbD/addons/deerLung.png"
 	},
 	{
-	name: "Infantry Belt",
-	parentItem: "Item_Slasher_Hatchet",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC5/iconAddon_infantryBelt.png"
+		name: "Infantry Belt",
+		parentItem: "Item_Slasher_Hatchet",
+		image: "../../images/DbD/addons/infantryBelt.png"
 	},
 	{
-	name: "Swamp Orchid Necklet",
-	parentItem: "Item_Slasher_PhantomTrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC3/iconAddon_swampOrchidNecklet.png"
+		name: "Swamp Orchid Necklet",
+		parentItem: "Item_Slasher_PhantomTrap",
+		image: "../../images/DbD/addons/swampOrchidNecklet.png"
 	},
 	{
-	name: "Leopard-Print Fabric  ",
-	parentItem: "Item_Slasher_TormentMode",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Wales/iconAddon_leopardPrintFabric.png"
+		name: "Leopard-Print Fabric  ",
+		parentItem: "Item_Slasher_TormentMode",
+		image: "../../images/DbD/addons/leopardPrintFabric.png"
 	},
 	{
-	name: "Marked Map",
-	parentItem: "Item_Slasher_GhostPower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Oman/iconAddon_markedMap.png"
+		name: "Marked Map",
+		parentItem: "Item_Slasher_GhostPower",
+		image: "../../images/DbD/addons/markedMap.png"
 	},
 	{
-	name: "Rickety Chain",
-	parentItem: "Item_Slasher_HarpoonRifle",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Ukraine/iconAddon_ricketyChain.png"
+		name: "Rickety Chain",
+		parentItem: "Item_Slasher_HarpoonRifle",
+		image: "../../images/DbD/addons/ricketyChain.png"
 	},
 	{
-	name: "Prophylactic Amulet",
-	parentItem: "Item_Slasher_PlaguePower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Mali/iconAddon_prophylacticAmulet.png"
+		name: "Prophylactic Amulet",
+		parentItem: "Item_Slasher_PlaguePower",
+		image: "../../images/DbD/addons/prophylacticAmulet.png"
 	},
 	{
-	name: "Padded Jaws",
-	parentItem: "Item_Slasher_Beartrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_paddedJaws.png"
+		name: "Padded Jaws",
+		parentItem: "Item_Slasher_Beartrap",
+		image: "../../images/DbD/addons/paddedJaws.png"
 	},
 	{
-	name: "Jewelry",
-	parentItem: "Item_Slasher_Stalker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC2/iconAddon_jewelry.png"
+		name: "Jewelry",
+		parentItem: "Item_Slasher_Stalker",
+		image: "../../images/DbD/addons/jewelry.png"
 	},
 	{
-	name: "Tablet of the Oppressor ",
-	parentItem: "Item_Slasher_TormentMode",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Wales/iconAddon_tabletOfTheOppressor.png"
+		name: "Tablet of the Oppressor ",
+		parentItem: "Item_Slasher_TormentMode",
+		image: "../../images/DbD/addons/tabletOfTheOppressor.png"
 	},
 	{
-	name: "'Discipline' - Class II",
-	parentItem: "Item_Slasher_Killer07Item",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC4/iconAddon_diciplineClassII.png"
+		name: "'Discipline' - Class II",
+		parentItem: "Item_Slasher_Killer07Item",
+		image: "../../images/DbD/addons/diciplineClassII.png"
 	},
 	{
-	name: "Face Mask",
-	parentItem: "Item_Slasher_ReverseBearTrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Finland/iconAddon_faceMask.png"
+		name: "Face Mask",
+		parentItem: "Item_Slasher_ReverseBearTrap",
+		image: "../../images/DbD/addons/faceMask.png"
 	},
 	{
-	name: "'Swift Hunt' - White",
-	parentItem: "Item_Slasher_CloakBell",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_whiteKuntinTakkho.png"
+		name: "'Swift Hunt' - White",
+		parentItem: "Item_Slasher_CloakBell",
+		image: "../../images/DbD/addons/whiteKuntinTakkho.png"
 	},
 	{
-	name: "Pussy Willow Catkins",
-	parentItem: "Item_Slasher_PhantomTrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC3/iconAddon_pussyWillowCatkins.png"
+		name: "Pussy Willow Catkins",
+		parentItem: "Item_Slasher_PhantomTrap",
+		image: "../../images/DbD/addons/pussyWillowCatkins.png"
 	},
 	{
-	name: "Bloody Sash",
-	parentItem: "Item_Slasher_Kanobo",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Sweden/iconAddon_bloodySash.png"
+		name: "Bloody Sash",
+		parentItem: "Item_Slasher_Kanobo",
+		image: "../../images/DbD/addons/bloodySash.png"
 	},
 	{
-	name: "Anxious Gasp",
-	parentItem: "Item_Slasher_Blinker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_anxiousGasp.png"
+		name: "Anxious Gasp",
+		parentItem: "Item_Slasher_Blinker",
+		image: "../../images/DbD/addons/anxiousGasp.png"
 	},
 	{
-	name: "Torn Bookmark",
-	parentItem: "Item_Slasher_Blinker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_tornBookmark.png"
+		name: "Torn Bookmark",
+		parentItem: "Item_Slasher_Blinker",
+		image: "../../images/DbD/addons/tornBookmark.png"
 	},
 	{
-	name: "Rat Tail",
-	parentItem: "Item_Slasher_QatarKillerPower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Qatar/iconAddon_ratTail.png"
+		name: "Rat Tail",
+		parentItem: "Item_Slasher_QatarKillerPower",
+		image: "../../images/DbD/addons/ratTail.png"
 	},
 	{
-	name: "Apex Muffler",
-	parentItem: "Item_Slasher_Chainsaw",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Xipre/iconAddon_apexMuffler.png"
+		name: "Apex Muffler",
+		parentItem: "Item_Slasher_Chainsaw",
+		image: "../../images/DbD/addons/apexMuffler.png"
 	},
 	{
-	name: "Amanda's Secret",
-	parentItem: "Item_Slasher_ReverseBearTrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Finland/iconAddon_amandasSecret.png"
+		name: "Amanda's Secret",
+		parentItem: "Item_Slasher_ReverseBearTrap",
+		image: "../../images/DbD/addons/amandasSecret.png"
 	},
 	{
-	name: "Knife Scratches",
-	parentItem: "Item_Slasher_LFChainsaw",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Cannibal/iconAddon_knifeScratches.png"
+		name: "Knife Scratches",
+		parentItem: "Item_Slasher_LFChainsaw",
+		image: "../../images/DbD/addons/knifeScratches.png"
 	},
 	{
-	name: "Leafy Mash",
-	parentItem: "Item_Slasher_Chainsaw",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Xipre/iconAddon_leafyMash.png"
+		name: "Leafy Mash",
+		parentItem: "Item_Slasher_Chainsaw",
+		image: "../../images/DbD/addons/leafyMash.png"
 	},
 	{
-	name: "Black Box",
-	parentItem: "Item_Slasher_DreamInducer",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/England/iconAddon_blackBox.png"
+		name: "Black Box",
+		parentItem: "Item_Slasher_DreamInducer",
+		image: "../../images/DbD/addons/blackBox.png"
 	},
 	{
-	name: "Fragrant Tuft of Hair",
-	parentItem: "Item_Slasher_Stalker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC2/iconAddon_tuftOfHair.png"
+		name: "Fragrant Tuft of Hair",
+		parentItem: "Item_Slasher_Stalker",
+		image: "../../images/DbD/addons/tuftOfHair.png"
 	},
 	{
-	name: "Redhead's Pinky Finger",
-	parentItem: "Item_Slasher_GasBomb",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Guam/iconAddon_redheadsPinkyFinger.png"
+		name: "Redhead's Pinky Finger",
+		parentItem: "Item_Slasher_GasBomb",
+		image: "../../images/DbD/addons/redheadsPinkyFinger.png"
 	},
 	{
-	name: "Lock of Hair",
-	parentItem: "Item_Slasher_Stalker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC2/iconAddon_lockOfHair.png"
+		name: "Lock of Hair",
+		parentItem: "Item_Slasher_Stalker",
+		image: "../../images/DbD/addons/lockOfHair.png"
 	},
 	{
-	name: "Utility Blades",
-	parentItem: "Item_Slasher_ReverseBearTrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Finland/iconAddon_utilityBlades.png"
+		name: "Utility Blades",
+		parentItem: "Item_Slasher_ReverseBearTrap",
+		image: "../../images/DbD/addons/utilityBlades.png"
 	},
 	{
-	name: "Mannequin Foot ",
-	parentItem: "Item_Slasher_TormentMode",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Wales/iconAddon_mannequinFoot.png"
+		name: "Mannequin Foot ",
+		parentItem: "Item_Slasher_TormentMode",
+		image: "../../images/DbD/addons/mannequinFoot.png"
 	},
 	{
-	name: "Polished Electrode",
-	parentItem: "Item_Slasher_Killer07Item",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC4/iconAddon_polishedElectrode.png"
+		name: "Polished Electrode",
+		parentItem: "Item_Slasher_Killer07Item",
+		image: "../../images/DbD/addons/polishedElectrode.png"
 	},
 	{
-	name: "Renjiro’s Bloody Glove",
-	parentItem: "Item_Slasher_Kanobo",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Sweden/iconAddon_renirosBloodyGlove.png"
+		name: "Renjiro’s Bloody Glove",
+		parentItem: "Item_Slasher_Kanobo",
+		image: "../../images/DbD/addons/renirosBloodyGlove.png"
 	},
 	{
-	name: "Spit Polish Rag ",
-	parentItem: "Item_Slasher_HarpoonRifle",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Ukraine/iconAddon_spitPolishRag.png"
+		name: "Spit Polish Rag ",
+		parentItem: "Item_Slasher_HarpoonRifle",
+		image: "../../images/DbD/addons/spitPolishRag.png"
 	},
 	{
-	name: "Shattered Wakizashi",
-	parentItem: "Item_Slasher_Kanobo",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Sweden/iconAddon_shatteredWakizashi.png"
+		name: "Shattered Wakizashi",
+		parentItem: "Item_Slasher_Kanobo",
+		image: "../../images/DbD/addons/shatteredWakizashi.png"
 	},
 	{
-	name: "Jewelry Box",
-	parentItem: "Item_Slasher_Stalker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC2/iconAddon_jewelryBox.png"
+		name: "Jewelry Box",
+		parentItem: "Item_Slasher_Stalker",
+		image: "../../images/DbD/addons/jewelryBox.png"
 	},
 	{
-	name: "Interview Tape",
-	parentItem: "Item_Slasher_Killer07Item",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC4/iconAddon_interviewTape.png"
+		name: "Interview Tape",
+		parentItem: "Item_Slasher_Killer07Item",
+		image: "../../images/DbD/addons/interviewTape.png"
 	},
 	{
-	name: "Smiley Face Pin",
-	parentItem: "Item_Slasher_Frenzy",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Kenya/iconAddon_smileyFaceButton.png"
+		name: "Smiley Face Pin",
+		parentItem: "Item_Slasher_Frenzy",
+		image: "../../images/DbD/addons/smileyFaceButton.png"
 	},
 	{
-	name: "'Z' Block",
-	parentItem: "Item_Slasher_DreamInducer",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/England/iconAddon_zBlock.png"
+		name: "'Z' Block",
+		parentItem: "Item_Slasher_DreamInducer",
+		image: "../../images/DbD/addons/zBlock.png"
 	},
 	{
-	name: "Memorial Flower",
-	parentItem: "Item_Slasher_Stalker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC2/iconAddon_memorialFlower.png"
+		name: "Memorial Flower",
+		parentItem: "Item_Slasher_Stalker",
+		image: "../../images/DbD/addons/memorialFlower.png"
 	},
 	{
-	name: "Light Chassis",
-	parentItem: "Item_Slasher_LFChainsaw",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_lightChassis.png"
+		name: "Light Chassis",
+		parentItem: "Item_Slasher_LFChainsaw",
+		image: "../../images/DbD/addons/lightChassis.png"
 	},
 	{
-	name: "'Bad Man's' Last Breath",
-	parentItem: "Item_Slasher_Blinker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_badMansLastBreath.png"
+		name: "'Bad Man's' Last Breath",
+		parentItem: "Item_Slasher_Blinker",
+		image: "../../images/DbD/addons/badMansLastBreath.png"
 	},
 	{
-	name: "Shiny Pin",
-	parentItem: "Item_Slasher_Hatchet",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC5/iconAddon_shinyPin.png"
+		name: "Shiny Pin",
+		parentItem: "Item_Slasher_Hatchet",
+		image: "../../images/DbD/addons/shinyPin.png"
 	},
 	{
-	name: "Jigsaw's Sketch",
-	parentItem: "Item_Slasher_ReverseBearTrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Finland/iconAddon_jigsawsSketch.png"
+		name: "Jigsaw's Sketch",
+		parentItem: "Item_Slasher_ReverseBearTrap",
+		image: "../../images/DbD/addons/jigsawsSketch.png"
 	},
 	{
-	name: "Limestone Seal",
-	parentItem: "Item_Slasher_PlaguePower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Mali/iconAddon_limestoneSeal.png"
+		name: "Limestone Seal",
+		parentItem: "Item_Slasher_PlaguePower",
+		image: "../../images/DbD/addons/limestoneSeal.png"
 	},
 	{
-	name: "Trap Setters",
-	parentItem: "Item_Slasher_Beartrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_tapSetters.png"
+		name: "Trap Setters",
+		parentItem: "Item_Slasher_Beartrap",
+		image: "../../images/DbD/addons/tapSetters.png"
 	},
 	{
-	name: "Lifeguard Whistle",
-	parentItem: "Item_Slasher_QatarKillerPower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Qatar/iconAddon_lifeguardWhistle.png"
+		name: "Lifeguard Whistle",
+		parentItem: "Item_Slasher_QatarKillerPower",
+		image: "../../images/DbD/addons/lifeguardWhistle.png"
 	},
 	{
-	name: "Black Grease",
-	parentItem: "Item_Slasher_Chainsaw",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Xipre/iconAddon_blackGrease.png"
+		name: "Black Grease",
+		parentItem: "Item_Slasher_Chainsaw",
+		image: "../../images/DbD/addons/blackGrease.png"
 	},
 	{
-	name: "Fingerless Parade Gloves",
-	parentItem: "Item_Slasher_GasBomb",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Guam/iconAddon_fingerlessParadeGloves.png"
+		name: "Fingerless Parade Gloves",
+		parentItem: "Item_Slasher_GasBomb",
+		image: "../../images/DbD/addons/fingerlessParadeGloves.png"
 	},
 	{
-	name: "Bloody Coil",
-	parentItem: "Item_Slasher_Beartrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_bloodyCoil.png"
+		name: "Bloody Coil",
+		parentItem: "Item_Slasher_Beartrap",
+		image: "../../images/DbD/addons/bloodyCoil.png"
 	},
 	{
-	name: "Setting Tools",
-	parentItem: "Item_Slasher_Beartrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_settingTools.png"
+		name: "Setting Tools",
+		parentItem: "Item_Slasher_Beartrap",
+		image: "../../images/DbD/addons/settingTools.png"
 	},
 	{
-	name: "Rin's Broken Watch",
-	parentItem: "Item_Slasher_PhaseWalker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Haiti/iconAddon_rinsBrokenWatch.png"
+		name: "Rin's Broken Watch",
+		parentItem: "Item_Slasher_PhaseWalker",
+		image: "../../images/DbD/addons/rinsBrokenWatch.png"
 	},
 	{
-	name: "Yakuyoke Amulet",
-	parentItem: "Item_Slasher_PhaseWalker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Haiti/iconAddon_yakuyokeAmulet.png"
+		name: "Yakuyoke Amulet",
+		parentItem: "Item_Slasher_PhaseWalker",
+		image: "../../images/DbD/addons/yakuyokeAmulet.png"
 	},
 	{
-	name: "Chewed Pen",
-	parentItem: "Item_Slasher_GhostPower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Oman/iconAddon_chewedPen.png"
+		name: "Chewed Pen",
+		parentItem: "Item_Slasher_GhostPower",
+		image: "../../images/DbD/addons/chewedPen.png"
 	},
 	{
-	name: "Spiked Boots",
-	parentItem: "Item_Slasher_Chainsaw",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_spikedBoots.png"
+		name: "Spiked Boots",
+		parentItem: "Item_Slasher_Chainsaw",
+		image: "../../images/DbD/addons/spikedBoots.png"
 	},
 	{
-	name: "Scrapped Tape",
-	parentItem: "Item_Slasher_Killer07Item",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC4/iconAddon_scrappedTape.png"
+		name: "Scrapped Tape",
+		parentItem: "Item_Slasher_Killer07Item",
+		image: "../../images/DbD/addons/scrappedTape.png"
 	},
 	{
-	name: "Swing Chains",
-	parentItem: "Item_Slasher_DreamInducer",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/England/iconAddon_swingChains.png"
+		name: "Swing Chains",
+		parentItem: "Item_Slasher_DreamInducer",
+		image: "../../images/DbD/addons/swingChains.png"
 	},
 	{
-	name: "Oily Coil",
-	parentItem: "Item_Slasher_Beartrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_oilyCoil.png"
+		name: "Oily Coil",
+		parentItem: "Item_Slasher_Beartrap",
+		image: "../../images/DbD/addons/oilyCoil.png"
 	},
 	{
-	name: "Metal Spoon",
-	parentItem: "Item_Slasher_Blinker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_metalSpoon.png"
+		name: "Metal Spoon",
+		parentItem: "Item_Slasher_Blinker",
+		image: "../../images/DbD/addons/metalSpoon.png"
 	},
 	{
-	name: "Bayshore’s Gold Tooth",
-	parentItem: "Item_Slasher_HarpoonRifle",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Ukraine/iconAddon_bayshoresGoldTooth.png"
+		name: "Bayshore’s Gold Tooth",
+		parentItem: "Item_Slasher_HarpoonRifle",
+		image: "../../images/DbD/addons/bayshoresGoldTooth.png"
 	},
 	{
-	name: "Half Eggshell",
-	parentItem: "Item_Slasher_PhantomTrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC3/iconAddon_halfEggshell.png"
+		name: "Half Eggshell",
+		parentItem: "Item_Slasher_PhantomTrap",
+		image: "../../images/DbD/addons/halfEggshell.png"
 	},
 	{
-	name: "Rusty Attachments",
-	parentItem: "Item_Slasher_ReverseBearTrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Finland/iconAddon_rustyAttachments.png"
+		name: "Rusty Attachments",
+		parentItem: "Item_Slasher_ReverseBearTrap",
+		image: "../../images/DbD/addons/rustyAttachments.png"
 	},
 	{
-	name: "Viscous Webbing",
-	parentItem: "Item_Slasher_QatarKillerPower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Qatar/iconAddon_viscousWebbing.png"
+		name: "Viscous Webbing",
+		parentItem: "Item_Slasher_QatarKillerPower",
+		image: "../../images/DbD/addons/viscousWebbing.png"
 	},
 	{
-	name: "Crystal Bead",
-	parentItem: "Item_Camper_BeigeMap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_beadCrystal.png"
+		name: "Crystal Bead",
+		parentItem: "Item_Camper_BeigeMap",
+		image: "../../images/DbD/addons/beadCrystal.png"
 	},
 	{
-	name: "Nasty Blade",
-	parentItem: "Item_Slasher_Frenzy",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Kenya/iconAddon_nastyBlade.png"
+		name: "Nasty Blade",
+		parentItem: "Item_Slasher_Frenzy",
+		image: "../../images/DbD/addons/nastyBlade.png"
 	},
 	{
-	name: "Outdoor Rope",
-	parentItem: "Item_Slasher_DreamInducer",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/England/iconAddon_outdoorRope.png"
+		name: "Outdoor Rope",
+		parentItem: "Item_Slasher_DreamInducer",
+		image: "../../images/DbD/addons/outdoorRope.png"
 	},
 	{
-	name: "Scratched Mirror",
-	parentItem: "Item_Slasher_Stalker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC2/iconAddon_scratchedMirror.png"
+		name: "Scratched Mirror",
+		parentItem: "Item_Slasher_Stalker",
+		image: "../../images/DbD/addons/scratchedMirror.png"
 	},
 	{
-	name: "Matchbox",
-	parentItem: "Item_Slasher_Blinker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_matchBox.png"
+		name: "Matchbox",
+		parentItem: "Item_Slasher_Blinker",
+		image: "../../images/DbD/addons/matchBox.png"
 	},
 	{
-	name: "Ether 5 vol%",
-	parentItem: "Item_Slasher_GasBomb",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Guam/iconAddon_ether5.png"
+		name: "Ether 5 vol%",
+		parentItem: "Item_Slasher_GasBomb",
+		image: "../../images/DbD/addons/ether5.png"
 	},
 	{
-	name: "Julie's Mix Tape",
-	parentItem: "Item_Slasher_Frenzy",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Kenya/iconAddon_juliesMixtape.png"
+		name: "Julie's Mix Tape",
+		parentItem: "Item_Slasher_Frenzy",
+		image: "../../images/DbD/addons/juliesMixtape.png"
 	},
 	{
-	name: "Kanai-anzen Talisman",
-	parentItem: "Item_Slasher_Kanobo",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Sweden/iconAddon_kanaianzenTalisman.png"
+		name: "Kanai-anzen Talisman",
+		parentItem: "Item_Slasher_Kanobo",
+		image: "../../images/DbD/addons/kanaianzenTalisman.png"
 	},
 	{
-	name: "Joey's Mix Tape",
-	parentItem: "Item_Slasher_Frenzy",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Kenya/iconAddon_joeysMixtape.png"
+		name: "Joey's Mix Tape",
+		parentItem: "Item_Slasher_Frenzy",
+		image: "../../images/DbD/addons/joeysMixtape.png"
 	},
 	{
-	name: "Speed Limiter",
-	parentItem: "Item_Slasher_LFChainsaw",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_speedLimiter.png"
+		name: "Speed Limiter",
+		parentItem: "Item_Slasher_LFChainsaw",
+		image: "../../images/DbD/addons/speedLimiter.png"
 	},
 	{
-	name: "High Stimulus Electrode",
-	parentItem: "Item_Slasher_Killer07Item",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC4/iconAddon_highStimulusElectrode.png"
+		name: "High Stimulus Electrode",
+		parentItem: "Item_Slasher_Killer07Item",
+		image: "../../images/DbD/addons/highStimulusElectrode.png"
 	},
 	{
-	name: "Vanity Mirror",
-	parentItem: "Item_Slasher_Stalker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC2/iconAddon_vanityMirror.png"
+		name: "Vanity Mirror",
+		parentItem: "Item_Slasher_Stalker",
+		image: "../../images/DbD/addons/vanityMirror.png"
 	},
 	{
-	name: "Scarlet Egg ",
-	parentItem: "Item_Slasher_TormentMode",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Wales/iconAddon_scarletEgg.png"
+		name: "Scarlet Egg ",
+		parentItem: "Item_Slasher_TormentMode",
+		image: "../../images/DbD/addons/scarletEgg.png"
 	},
 	{
-	name: "Prayer Beads Bracelet",
-	parentItem: "Item_Slasher_PhaseWalker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Haiti/iconAddon_prayersBeads.png"
+		name: "Prayer Beads Bracelet",
+		parentItem: "Item_Slasher_PhaseWalker",
+		image: "../../images/DbD/addons/prayersBeads.png"
 	},
 	{
-	name: "Coarse Stone",
-	parentItem: "Item_Slasher_Hatchet",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC5/iconAddon_coarseStone.png"
+		name: "Coarse Stone",
+		parentItem: "Item_Slasher_Hatchet",
+		image: "../../images/DbD/addons/coarseStone.png"
 	},
 	{
-	name: "Mother's Helpers",
-	parentItem: "Item_Slasher_Chainsaw",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Xipre/iconAddon_mothersHelpers.png"
+		name: "Mother's Helpers",
+		parentItem: "Item_Slasher_Chainsaw",
+		image: "../../images/DbD/addons/mothersHelpers.png"
 	},
 	{
-	name: "Vile Emetic",
-	parentItem: "Item_Slasher_PlaguePower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Mali/iconAddon_vileEmetic.png"
+		name: "Vile Emetic",
+		parentItem: "Item_Slasher_PlaguePower",
+		image: "../../images/DbD/addons/vileEmetic.png"
 	},
 	{
-	name: "Bag of Gears",
-	parentItem: "Item_Slasher_ReverseBearTrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Finland/iconAddon_bagOfGears.png"
+		name: "Bag of Gears",
+		parentItem: "Item_Slasher_ReverseBearTrap",
+		image: "../../images/DbD/addons/bagOfGears.png"
 	},
 	{
-	name: "'Blind Warrior' - White",
-	parentItem: "Item_Slasher_CloakBell",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_whiteBlindWarrior.png"
+		name: "'Blind Warrior' - White",
+		parentItem: "Item_Slasher_CloakBell",
+		image: "../../images/DbD/addons/whiteBlindWarrior.png"
 	},
 	{
-	name: "Copper Ring ",
-	parentItem: "Item_Slasher_TormentMode",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Wales/iconAddon_copperRing.png"
+		name: "Copper Ring ",
+		parentItem: "Item_Slasher_TormentMode",
+		image: "../../images/DbD/addons/copperRing.png"
 	},
 	{
-	name: "Jenner's Last Breath",
-	parentItem: "Item_Slasher_Blinker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_jennersLastBreath.png"
+		name: "Jenner's Last Breath",
+		parentItem: "Item_Slasher_Blinker",
+		image: "../../images/DbD/addons/jennersLastBreath.png"
 	},
 	{
-	name: "Paint Thinner",
-	parentItem: "Item_Slasher_DreamInducer",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/England/iconAddon_paintThinner.png"
+		name: "Paint Thinner",
+		parentItem: "Item_Slasher_DreamInducer",
+		image: "../../images/DbD/addons/paintThinner.png"
 	},
 	{
-	name: "Unknown Egg",
-	parentItem: "Item_Slasher_QatarKillerPower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Qatar/iconAddon_unknownEgg.png"
+		name: "Unknown Egg",
+		parentItem: "Item_Slasher_QatarKillerPower",
+		image: "../../images/DbD/addons/unknownEgg.png"
 	},
 	{
-	name: "Tuned Carburetor",
-	parentItem: "Item_Slasher_Chainsaw",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Xipre/iconAddon_tunedCarburetor.png"
+		name: "Tuned Carburetor",
+		parentItem: "Item_Slasher_Chainsaw",
+		image: "../../images/DbD/addons/tunedCarburetor.png"
 	},
 	{
-	name: "Wanted Poster ",
-	parentItem: "Item_Slasher_HarpoonRifle",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Ukraine/iconAddon_wantedPoster.png"
+		name: "Wanted Poster ",
+		parentItem: "Item_Slasher_HarpoonRifle",
+		image: "../../images/DbD/addons/wantedPoster.png"
 	},
 	{
-	name: "Cypress Necklet",
-	parentItem: "Item_Slasher_PhantomTrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC3/iconAddon_cypressNecklet.png"
+		name: "Cypress Necklet",
+		parentItem: "Item_Slasher_PhantomTrap",
+		image: "../../images/DbD/addons/cypressNecklet.png"
 	},
 	{
-	name: "Poison Oak Leaves",
-	parentItem: "Item_Slasher_HarpoonRifle",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Ukraine/iconAddon_poisonOakLeaves.png"
+		name: "Poison Oak Leaves",
+		parentItem: "Item_Slasher_HarpoonRifle",
+		image: "../../images/DbD/addons/poisonOakLeaves.png"
 	},
 	{
-	name: "Warden’s Keys ",
-	parentItem: "Item_Slasher_HarpoonRifle",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Ukraine/iconAddon_wardensKeys.png"
+		name: "Warden’s Keys ",
+		parentItem: "Item_Slasher_HarpoonRifle",
+		image: "../../images/DbD/addons/wardensKeys.png"
 	},
 	{
-	name: "Catatonic Boy's Treasure",
-	parentItem: "Item_Slasher_Blinker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_catatonicTreasure.png"
+		name: "Catatonic Boy's Treasure",
+		parentItem: "Item_Slasher_Blinker",
+		image: "../../images/DbD/addons/catatonicTreasure.png"
 	},
 	{
-	name: "Incensed Ointment",
-	parentItem: "Item_Slasher_PlaguePower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Mali/iconAddon_incensedOintment.png"
+		name: "Incensed Ointment",
+		parentItem: "Item_Slasher_PlaguePower",
+		image: "../../images/DbD/addons/incensedOintment.png"
 	},
 	{
-	name: "'Swift Hunt' - Mud",
-	parentItem: "Item_Slasher_CloakBell",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_mudSwiftHunt.png"
+		name: "'Swift Hunt' - Mud",
+		parentItem: "Item_Slasher_CloakBell",
+		image: "../../images/DbD/addons/mudSwiftHunt.png"
 	},
 	{
-	name: "Primer Bulb",
-	parentItem: "Item_Slasher_LFChainsaw",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_primerBulb.png"
+		name: "Primer Bulb",
+		parentItem: "Item_Slasher_LFChainsaw",
+		image: "../../images/DbD/addons/primerBulb.png"
 	},
 	{
-	name: "Mirror Shard",
-	parentItem: "Item_Slasher_Stalker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC2/iconAddon_mirrorShard.png"
+		name: "Mirror Shard",
+		parentItem: "Item_Slasher_Stalker",
+		image: "../../images/DbD/addons/mirrorShard.png"
 	},
 	{
-	name: "Cheap Cologne",
-	parentItem: "Item_Slasher_GhostPower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Oman/iconAddon_cheapCologne.png"
+		name: "Cheap Cologne",
+		parentItem: "Item_Slasher_GhostPower",
+		image: "../../images/DbD/addons/cheapCologne.png"
 	},
 	{
-	name: "Tin Oil Can ",
-	parentItem: "Item_Slasher_HarpoonRifle",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Ukraine/iconAddon_tinOilCan.png"
+		name: "Tin Oil Can ",
+		parentItem: "Item_Slasher_HarpoonRifle",
+		image: "../../images/DbD/addons/tinOilCan.png"
 	},
 	{
-	name: "Manna Grass Braid",
-	parentItem: "Item_Slasher_Hatchet",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC5/iconAddon_mannaGrassBraid.png"
+		name: "Manna Grass Braid",
+		parentItem: "Item_Slasher_Hatchet",
+		image: "../../images/DbD/addons/mannaGrassBraid.png"
 	},
 	{
-	name: "Rusty Shackles",
-	parentItem: "Item_Slasher_PhantomTrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC3/iconAddon_rustyShackles.png"
+		name: "Rusty Shackles",
+		parentItem: "Item_Slasher_PhantomTrap",
+		image: "../../images/DbD/addons/rustyShackles.png"
 	},
 	{
-	name: "Rope Necklet",
-	parentItem: "Item_Slasher_PhantomTrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC3/iconAddon_ropeNecklet.png"
+		name: "Rope Necklet",
+		parentItem: "Item_Slasher_PhantomTrap",
+		image: "../../images/DbD/addons/ropeNecklet.png"
 	},
 	{
-	name: "Dead Butterfly ",
-	parentItem: "Item_Slasher_TormentMode",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Wales/iconAddon_deadButterfly.png"
+		name: "Dead Butterfly ",
+		parentItem: "Item_Slasher_TormentMode",
+		image: "../../images/DbD/addons/deadButterfly.png"
 	},
 	{
-	name: "'The Ghost' - Soot",
-	parentItem: "Item_Slasher_CloakBell",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_sootTheGhost.png"
+		name: "'The Ghost' - Soot",
+		parentItem: "Item_Slasher_CloakBell",
+		image: "../../images/DbD/addons/sootTheGhost.png"
 	},
 	{
-	name: "Spasmodic Breath",
-	parentItem: "Item_Slasher_Blinker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_spasmodicBreath.png"
+		name: "Spasmodic Breath",
+		parentItem: "Item_Slasher_Blinker",
+		image: "../../images/DbD/addons/spasmodicBreath.png"
 	},
 	{
-	name: "Drop-Leg Knife Sheath",
-	parentItem: "Item_Slasher_GhostPower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Oman/iconAddon_dropLegKnifeSheath.png"
+		name: "Drop-Leg Knife Sheath",
+		parentItem: "Item_Slasher_GhostPower",
+		image: "../../images/DbD/addons/dropLegKnifeSheath.png"
 	},
 	{
-	name: "Cracked Turtle Egg",
-	parentItem: "Item_Slasher_PhantomTrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC3/iconAddon_crackedTurtleEgg.png"
+		name: "Cracked Turtle Egg",
+		parentItem: "Item_Slasher_PhantomTrap",
+		image: "../../images/DbD/addons/crackedTurtleEgg.png"
 	},
 	{
-	name: "Glass Fragment",
-	parentItem: "Item_Slasher_Stalker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC2/iconAddon_glassFragment.png"
+		name: "Glass Fragment",
+		parentItem: "Item_Slasher_Stalker",
+		image: "../../images/DbD/addons/glassFragment.png"
 	},
 	{
-	name: "Rusted Spike ",
-	parentItem: "Item_Slasher_HarpoonRifle",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Ukraine/iconAddon_rustedSpike.png"
+		name: "Rusted Spike ",
+		parentItem: "Item_Slasher_HarpoonRifle",
+		image: "../../images/DbD/addons/rustedSpike.png"
 	},
 	{
-	name: "Iridescent Brick",
-	parentItem: "Item_Slasher_Chainsaw",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Xipre/iconAddon_iridescentBrick.png"
+		name: "Iridescent Brick",
+		parentItem: "Item_Slasher_Chainsaw",
+		image: "../../images/DbD/addons/iridescentBrick.png"
 	},
 	{
-	name: "Misty Day, Remains of Judgment ",
-	parentItem: "Item_Slasher_TormentMode",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Wales/iconAddon_mistyDay.png"
+		name: "Misty Day, Remains of Judgment ",
+		parentItem: "Item_Slasher_TormentMode",
+		image: "../../images/DbD/addons/mistyDay.png"
 	},
 	{
-	name: "Begrimed Chains",
-	parentItem: "Item_Slasher_LFChainsaw",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_chainsBloody.png"
+		name: "Begrimed Chains",
+		parentItem: "Item_Slasher_LFChainsaw",
+		image: "../../images/DbD/addons/chainsBloody.png"
 	},
 	{
-	name: "Infected Emetic",
-	parentItem: "Item_Slasher_PlaguePower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Mali/iconAddon_infectedEmetic.png"
+		name: "Infected Emetic",
+		parentItem: "Item_Slasher_PlaguePower",
+		image: "../../images/DbD/addons/infectedEmetic.png"
 	},
 	{
-	name: "Barbed Wire",
-	parentItem: "Item_Slasher_HarpoonRifle",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Ukraine/iconAddon_barbedWire.png"
+		name: "Barbed Wire",
+		parentItem: "Item_Slasher_HarpoonRifle",
+		image: "../../images/DbD/addons/barbedWire.png"
 	},
 	{
-	name: "Garden Rake",
-	parentItem: "Item_Slasher_DreamInducer",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/England/iconAddon_gardenRake.png"
+		name: "Garden Rake",
+		parentItem: "Item_Slasher_DreamInducer",
+		image: "../../images/DbD/addons/gardenRake.png"
 	},
 	{
-	name: "Mischief List",
-	parentItem: "Item_Slasher_Frenzy",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Kenya/iconAddon_mischiefList.png"
+		name: "Mischief List",
+		parentItem: "Item_Slasher_Frenzy",
+		image: "../../images/DbD/addons/mischiefList.png"
 	},
 	{
-	name: "Wakizashi Saya",
-	parentItem: "Item_Slasher_PhaseWalker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Haiti/iconAddon_wakizashiSaya.png"
+		name: "Wakizashi Saya",
+		parentItem: "Item_Slasher_PhaseWalker",
+		image: "../../images/DbD/addons/wakizashiSaya.png"
 	},
 	{
-	name: "Red Paint Brush",
-	parentItem: "Item_Slasher_DreamInducer",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/England/iconAddon_redPaintBrush.png"
+		name: "Red Paint Brush",
+		parentItem: "Item_Slasher_DreamInducer",
+		image: "../../images/DbD/addons/redPaintBrush.png"
 	},
 	{
-	name: "Olsen's Address Book",
-	parentItem: "Item_Slasher_GhostPower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Oman/iconAddon_olsensAddressBook.png"
+		name: "Olsen's Address Book",
+		parentItem: "Item_Slasher_GhostPower",
+		image: "../../images/DbD/addons/olsensAddressBook.png"
 	},
 	{
-	name: "Unicorn Block",
-	parentItem: "Item_Slasher_DreamInducer",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/England/iconAddon_unicornBlock.png"
+		name: "Unicorn Block",
+		parentItem: "Item_Slasher_DreamInducer",
+		image: "../../images/DbD/addons/unicornBlock.png"
 	},
 	{
-	name: "Big Buckle",
-	parentItem: "Item_Slasher_Chainsaw",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Xipre/iconAddon_bigBuckle.png"
+		name: "Big Buckle",
+		parentItem: "Item_Slasher_Chainsaw",
+		image: "../../images/DbD/addons/bigBuckle.png"
 	},
 	{
-	name: "Olsen’s Journal",
-	parentItem: "Item_Slasher_GhostPower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Oman/iconAddon_olsensJournal.png"
+		name: "Olsen’s Journal",
+		parentItem: "Item_Slasher_GhostPower",
+		image: "../../images/DbD/addons/olsensJournal.png"
 	},
 	{
-	name: "Crimson Ceremony Book ",
-	parentItem: "Item_Slasher_TormentMode",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Wales/iconAddon_crimsonCeremonyBook.png"
+		name: "Crimson Ceremony Book ",
+		parentItem: "Item_Slasher_TormentMode",
+		image: "../../images/DbD/addons/crimsonCeremonyBook.png"
 	},
 	{
-	name: "'Discipline' - Carter's Notes",
-	parentItem: "Item_Slasher_Killer07Item",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC4/iconAddon_diciplineCartersNotes.png"
+		name: "'Discipline' - Carter's Notes",
+		parentItem: "Item_Slasher_Killer07Item",
+		image: "../../images/DbD/addons/diciplineCartersNotes.png"
 	},
 	{
-	name: "'Calm' - Class I",
-	parentItem: "Item_Slasher_Killer07Item",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC4/iconAddon_calmClassI.png"
+		name: "'Calm' - Class I",
+		parentItem: "Item_Slasher_Killer07Item",
+		image: "../../images/DbD/addons/calmClassI.png"
 	},
 	{
-	name: "'Order' - Class I",
-	parentItem: "Item_Slasher_Killer07Item",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC4/iconAddon_orderClassI.png"
+		name: "'Order' - Class I",
+		parentItem: "Item_Slasher_Killer07Item",
+		image: "../../images/DbD/addons/orderClassI.png"
 	},
 	{
-	name: "Yaku-Yoke Talisman",
-	parentItem: "Item_Slasher_Kanobo",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Sweden/iconAddon_paperLantern.png"
+		name: "Yaku-Yoke Talisman",
+		parentItem: "Item_Slasher_Kanobo",
+		image: "../../images/DbD/addons/paperLantern.png"
 	},
 	{
-	name: "'The Hound' - Soot",
-	parentItem: "Item_Slasher_CloakBell",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_sootTheHound.png"
+		name: "'The Hound' - Soot",
+		parentItem: "Item_Slasher_CloakBell",
+		image: "../../images/DbD/addons/sootTheHound.png"
 	},
 	{
-	name: "Modified Ammo Belt ",
-	parentItem: "Item_Slasher_HarpoonRifle",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Ukraine/iconAddon_modifiedAmmoBelt.png"
+		name: "Modified Ammo Belt ",
+		parentItem: "Item_Slasher_HarpoonRifle",
+		image: "../../images/DbD/addons/modifiedAmmoBelt.png"
 	},
 	{
-	name: "Award-Winning Chili",
-	parentItem: "Item_Slasher_LFChainsaw",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Cannibal/iconAddon_awardwinningChili.png"
+		name: "Award-Winning Chili",
+		parentItem: "Item_Slasher_LFChainsaw",
+		image: "../../images/DbD/addons/awardwinningChili.png"
 	},
 	{
-	name: "Marshal's Badge ",
-	parentItem: "Item_Slasher_HarpoonRifle",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Ukraine/iconAddon_marshalsBadge.png"
+		name: "Marshal's Badge ",
+		parentItem: "Item_Slasher_HarpoonRifle",
+		image: "../../images/DbD/addons/marshalsBadge.png"
 	},
 	{
-	name: "Black Heart",
-	parentItem: "Item_Slasher_QatarKillerPower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Qatar/iconAddon_blackHeart.png"
+		name: "Black Heart",
+		parentItem: "Item_Slasher_QatarKillerPower",
+		image: "../../images/DbD/addons/blackHeart.png"
 	},
 	{
-	name: "Iridescent Family Crest",
-	parentItem: "Item_Slasher_Kanobo",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Sweden/iconAddon_IridescentFamilyCrest.png"
+		name: "Iridescent Family Crest",
+		parentItem: "Item_Slasher_Kanobo",
+		image: "../../images/DbD/addons/IridescentFamilyCrest.png"
 	},
 	{
-	name: "Off-Brand Motor Oil",
-	parentItem: "Item_Slasher_Chainsaw",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Xipre/iconAddon_offBrandMotorOil.png"
+		name: "Off-Brand Motor Oil",
+		parentItem: "Item_Slasher_Chainsaw",
+		image: "../../images/DbD/addons/offBrandMotorOil.png"
 	},
 	{
-	name: "'Blink' - Mud",
-	parentItem: "Item_Slasher_CloakBell",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_mudBlink.png"
+		name: "'Blink' - Mud",
+		parentItem: "Item_Slasher_CloakBell",
+		image: "../../images/DbD/addons/mudBlink.png"
 	},
 	{
-	name: "Yew Seed Concoction",
-	parentItem: "Item_Slasher_Hatchet",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC5/iconAddon_yewSeedConcoction.png"
+		name: "Yew Seed Concoction",
+		parentItem: "Item_Slasher_Hatchet",
+		image: "../../images/DbD/addons/yewSeedConcoction.png"
 	},
 	{
-	name: "Low Kickback Chains",
-	parentItem: "Item_Slasher_Chainsaw",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Xipre/iconAddon_lowKickbackChains.png"
+		name: "Low Kickback Chains",
+		parentItem: "Item_Slasher_Chainsaw",
+		image: "../../images/DbD/addons/lowKickbackChains.png"
 	},
 	{
-	name: "Tar Bottle",
-	parentItem: "Item_Slasher_Beartrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_tarBottle.png"
+		name: "Tar Bottle",
+		parentItem: "Item_Slasher_Beartrap",
+		image: "../../images/DbD/addons/tarBottle.png"
 	},
 	{
-	name: "Fastening Tools",
-	parentItem: "Item_Slasher_Beartrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_fasteningTools.png"
+		name: "Fastening Tools",
+		parentItem: "Item_Slasher_Beartrap",
+		image: "../../images/DbD/addons/fasteningTools.png"
 	},
 	{
-	name: "Black Incense",
-	parentItem: "Item_Slasher_PlaguePower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Mali/iconAddon_blackIncense.png"
+		name: "Black Incense",
+		parentItem: "Item_Slasher_PlaguePower",
+		image: "../../images/DbD/addons/blackIncense.png"
 	},
 	{
-	name: "'Windstorm' - Blood",
-	parentItem: "Item_Slasher_CloakBell",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_bloodWindstorm.png"
+		name: "'Windstorm' - Blood",
+		parentItem: "Item_Slasher_CloakBell",
+		image: "../../images/DbD/addons/bloodWindstorm.png"
 	},
 	{
-	name: "Wool Shirt",
-	parentItem: "Item_Slasher_DreamInducer",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/England/iconAddon_woolShirt.png"
+		name: "Wool Shirt",
+		parentItem: "Item_Slasher_DreamInducer",
+		image: "../../images/DbD/addons/woolShirt.png"
 	},
 	{
-	name: "Secondary Coil",
-	parentItem: "Item_Slasher_Beartrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_secondaryCoil.png"
+		name: "Secondary Coil",
+		parentItem: "Item_Slasher_Beartrap",
+		image: "../../images/DbD/addons/secondaryCoil.png"
 	},
 	{
-	name: "Exorcism Amulet",
-	parentItem: "Item_Slasher_PlaguePower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Mali/iconAddon_exorcismAmulet.png"
+		name: "Exorcism Amulet",
+		parentItem: "Item_Slasher_PlaguePower",
+		image: "../../images/DbD/addons/exorcismAmulet.png"
 	},
 	{
-	name: "Tombstone Piece",
-	parentItem: "Item_Slasher_Stalker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC2/iconAddon_tombstonePiece.png"
+		name: "Tombstone Piece",
+		parentItem: "Item_Slasher_Stalker",
+		image: "../../images/DbD/addons/tombstonePiece.png"
 	},
 	{
-	name: "White Nit Comb",
-	parentItem: "Item_Slasher_Blinker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_whiteNitComb.png"
+		name: "White Nit Comb",
+		parentItem: "Item_Slasher_Blinker",
+		image: "../../images/DbD/addons/whiteNitComb.png"
 	},
 	{
-	name: "'Swift Hunt' - Blood",
-	parentItem: "Item_Slasher_CloakBell",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_bloodSwiftHunt.png"
+		name: "'Swift Hunt' - Blood",
+		parentItem: "Item_Slasher_CloakBell",
+		image: "../../images/DbD/addons/bloodSwiftHunt.png"
 	},
 	{
-	name: "Akito's Crutch",
-	parentItem: "Item_Slasher_Kanobo",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Sweden/iconAddon_akitosCrutch.png"
+		name: "Akito's Crutch",
+		parentItem: "Item_Slasher_Kanobo",
+		image: "../../images/DbD/addons/akitosCrutch.png"
 	},
 	{
-	name: "Lead Ring ",
-	parentItem: "Item_Slasher_TormentMode",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Wales/iconAddon_leadRing.png"
+		name: "Lead Ring ",
+		parentItem: "Item_Slasher_TormentMode",
+		image: "../../images/DbD/addons/leadRing.png"
 	},
 	{
-	name: "Red Moss",
-	parentItem: "Item_Slasher_QatarKillerPower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Qatar/iconAddon_redMoss.png"
+		name: "Red Moss",
+		parentItem: "Item_Slasher_QatarKillerPower",
+		image: "../../images/DbD/addons/redMoss.png"
 	},
 	{
-	name: "Driver's License",
-	parentItem: "Item_Slasher_GhostPower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Oman/iconAddon_driversLicense.png"
+		name: "Driver's License",
+		parentItem: "Item_Slasher_GhostPower",
+		image: "../../images/DbD/addons/driversLicense.png"
 	},
 	{
-	name: "Last Will",
-	parentItem: "Item_Slasher_ReverseBearTrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Finland/iconAddon_lastWill.png"
+		name: "Last Will",
+		parentItem: "Item_Slasher_ReverseBearTrap",
+		image: "../../images/DbD/addons/lastWill.png"
 	},
 	{
-	name: "Bandaged Haft",
-	parentItem: "Item_Slasher_Hatchet",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC5/iconAddon_bandagedHaft.png"
+		name: "Bandaged Haft",
+		parentItem: "Item_Slasher_Hatchet",
+		image: "../../images/DbD/addons/bandagedHaft.png"
 	},
 	{
-	name: "Robin Feather",
-	parentItem: "Item_Slasher_GasBomb",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Guam/iconAddon_robinFeather.png"
+		name: "Robin Feather",
+		parentItem: "Item_Slasher_GasBomb",
+		image: "../../images/DbD/addons/robinFeather.png"
 	},
 	{
-	name: "Lion Fang",
-	parentItem: "Item_Slasher_Kanobo",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Sweden/iconAddon_lionFang.png"
+		name: "Lion Fang",
+		parentItem: "Item_Slasher_Kanobo",
+		image: "../../images/DbD/addons/lionFang.png"
 	},
 	{
-	name: "Lost Memories Book ",
-	parentItem: "Item_Slasher_TormentMode",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Wales/iconAddon_lostMemoriesBook.png"
+		name: "Lost Memories Book ",
+		parentItem: "Item_Slasher_TormentMode",
+		image: "../../images/DbD/addons/lostMemoriesBook.png"
 	},
 	{
-	name: "Rusted Jaws",
-	parentItem: "Item_Slasher_Beartrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_rustedJaws.png"
+		name: "Rusted Jaws",
+		parentItem: "Item_Slasher_Beartrap",
+		image: "../../images/DbD/addons/rustedJaws.png"
 	},
 	{
-	name: "'Order' - Class II",
-	parentItem: "Item_Slasher_Killer07Item",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC4/iconAddon_orderClassII.png"
+		name: "'Order' - Class II",
+		parentItem: "Item_Slasher_Killer07Item",
+		image: "../../images/DbD/addons/orderClassII.png"
 	},
 	{
-	name: "Prototype Claws",
-	parentItem: "Item_Slasher_DreamInducer",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/England/iconAddon_prototypeClaw.png"
+		name: "Prototype Claws",
+		parentItem: "Item_Slasher_DreamInducer",
+		image: "../../images/DbD/addons/prototypeClaw.png"
 	},
 	{
-	name: "Serrated Jaws",
-	parentItem: "Item_Slasher_Beartrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_serratedJaws.png"
+		name: "Serrated Jaws",
+		parentItem: "Item_Slasher_Beartrap",
+		image: "../../images/DbD/addons/serratedJaws.png"
 	},
 	{
-	name: "Mew's Guts",
-	parentItem: "Item_Slasher_QatarKillerPower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Qatar/iconAddon_mewsGuts.png"
+		name: "Mew's Guts",
+		parentItem: "Item_Slasher_QatarKillerPower",
+		image: "../../images/DbD/addons/mewsGuts.png"
 	},
 	{
-	name: "Hematite Seal",
-	parentItem: "Item_Slasher_PlaguePower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Mali/iconAddon_hematiteSeal.png"
+		name: "Hematite Seal",
+		parentItem: "Item_Slasher_PlaguePower",
+		image: "../../images/DbD/addons/hematiteSeal.png"
 	},
 	{
-	name: "Worship Tablet",
-	parentItem: "Item_Slasher_PlaguePower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Mali/iconAddon_worshipTablet.png"
+		name: "Worship Tablet",
+		parentItem: "Item_Slasher_PlaguePower",
+		image: "../../images/DbD/addons/worshipTablet.png"
 	},
 	{
-	name: "Jump Rope",
-	parentItem: "Item_Slasher_DreamInducer",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/England/iconAddon_jumpRope.png"
+		name: "Jump Rope",
+		parentItem: "Item_Slasher_DreamInducer",
+		image: "../../images/DbD/addons/jumpRope.png"
 	},
 	{
-	name: "Cinderella Music Box ",
-	parentItem: "Item_Slasher_TormentMode",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Wales/iconAddon_cinderellaMusicBox.png"
+		name: "Cinderella Music Box ",
+		parentItem: "Item_Slasher_TormentMode",
+		image: "../../images/DbD/addons/cinderellaMusicBox.png"
 	},
 	{
-	name: "Kerosene Can",
-	parentItem: "Item_Slasher_GasBomb",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Guam/iconAddon_keroseneCan.png"
+		name: "Kerosene Can",
+		parentItem: "Item_Slasher_GasBomb",
+		image: "../../images/DbD/addons/keroseneCan.png"
 	},
 	{
-	name: "Burning Man Painting ",
-	parentItem: "Item_Slasher_TormentMode",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Wales/iconAddon_burningManPainting.png"
+		name: "Burning Man Painting ",
+		parentItem: "Item_Slasher_TormentMode",
+		image: "../../images/DbD/addons/burningManPainting.png"
 	},
 	{
-	name: "Shop Lubricant",
-	parentItem: "Item_Slasher_LFChainsaw",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_shopLubricant.png"
+		name: "Shop Lubricant",
+		parentItem: "Item_Slasher_LFChainsaw",
+		image: "../../images/DbD/addons/shopLubricant.png"
 	},
 	{
-	name: "Moldy Electrode",
-	parentItem: "Item_Slasher_Killer07Item",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC4/iconAddon_moldyElectrode.png"
+		name: "Moldy Electrode",
+		parentItem: "Item_Slasher_Killer07Item",
+		image: "../../images/DbD/addons/moldyElectrode.png"
 	},
 	{
-	name: "Chipped Saihai",
-	parentItem: "Item_Slasher_Kanobo",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Sweden/iconAddon_chippedSaihai.png"
+		name: "Chipped Saihai",
+		parentItem: "Item_Slasher_Kanobo",
+		image: "../../images/DbD/addons/chippedSaihai.png"
 	},
 	{
-	name: "Headlines Cutouts",
-	parentItem: "Item_Slasher_GhostPower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Oman/iconAddon_headlinesCutouts.png"
+		name: "Headlines Cutouts",
+		parentItem: "Item_Slasher_GhostPower",
+		image: "../../images/DbD/addons/headlinesCutouts.png"
 	},
 	{
-	name: "John's Medical File",
-	parentItem: "Item_Slasher_ReverseBearTrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Finland/iconAddon_johnsMedicalFile.png"
+		name: "John's Medical File",
+		parentItem: "Item_Slasher_ReverseBearTrap",
+		image: "../../images/DbD/addons/johnsMedicalFile.png"
 	},
 	{
-	name: "Coxcombed Clapper",
-	parentItem: "Item_Slasher_CloakBell",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_coxcombedClapper.png"
+		name: "Coxcombed Clapper",
+		parentItem: "Item_Slasher_CloakBell",
+		image: "../../images/DbD/addons/coxcombedClapper.png"
 	},
 	{
-	name: "Iridescent Flesh",
-	parentItem: "Item_Slasher_LFChainsaw",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Cannibal/iconAddon_iridescentFlesh.png"
+		name: "Iridescent Flesh",
+		parentItem: "Item_Slasher_LFChainsaw",
+		image: "../../images/DbD/addons/iridescentFlesh.png"
 	},
 	{
-	name: "Severed Toe",
-	parentItem: "Item_Slasher_PlaguePower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Mali/iconAddon_severedToe.png"
+		name: "Severed Toe",
+		parentItem: "Item_Slasher_PlaguePower",
+		image: "../../images/DbD/addons/severedToe.png"
 	},
 	{
-	name: "Fuming Mix Tape",
-	parentItem: "Item_Slasher_Frenzy",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Kenya/iconAddon_fumingMixtape.png"
+		name: "Fuming Mix Tape",
+		parentItem: "Item_Slasher_Frenzy",
+		image: "../../images/DbD/addons/fumingMixtape.png"
 	},
 	{
-	name: "Trapper Gloves",
-	parentItem: "Item_Slasher_Beartrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_trapperGloves.png"
+		name: "Trapper Gloves",
+		parentItem: "Item_Slasher_Beartrap",
+		image: "../../images/DbD/addons/trapperGloves.png"
 	},
 	{
-	name: "Olibanum Incense",
-	parentItem: "Item_Slasher_PlaguePower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Mali/iconAddon_olibanumIncense.png"
+		name: "Olibanum Incense",
+		parentItem: "Item_Slasher_PlaguePower",
+		image: "../../images/DbD/addons/olibanumIncense.png"
 	},
 	{
-	name: "Wooden Horse",
-	parentItem: "Item_Slasher_Blinker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_woodenHorse.png"
+		name: "Wooden Horse",
+		parentItem: "Item_Slasher_Blinker",
+		image: "../../images/DbD/addons/woodenHorse.png"
 	},
 	{
-	name: "Powdered Eggshell",
-	parentItem: "Item_Slasher_PhantomTrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC3/iconAddon_powderedEggshell.png"
+		name: "Powdered Eggshell",
+		parentItem: "Item_Slasher_PhantomTrap",
+		image: "../../images/DbD/addons/powderedEggshell.png"
 	},
 	{
-	name: "Obsidian Goblet ",
-	parentItem: "Item_Slasher_TormentMode",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Wales/iconAddon_obsidianGoblet.png"
+		name: "Obsidian Goblet ",
+		parentItem: "Item_Slasher_TormentMode",
+		image: "../../images/DbD/addons/obsidianGoblet.png"
 	},
 	{
-	name: "Glowing Concoction",
-	parentItem: "Item_Slasher_Hatchet",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC5/iconAddon_glowingConcoction.png"
+		name: "Glowing Concoction",
+		parentItem: "Item_Slasher_Hatchet",
+		image: "../../images/DbD/addons/glowingConcoction.png"
 	},
 	{
-	name: "'Order' - Carter's Notes",
-	parentItem: "Item_Slasher_Killer07Item",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC4/iconAddon_orderCartersNotes.png"
+		name: "'Order' - Carter's Notes",
+		parentItem: "Item_Slasher_Killer07Item",
+		image: "../../images/DbD/addons/orderCartersNotes.png"
 	},
 	{
-	name: "Punctured Muffler",
-	parentItem: "Item_Slasher_Chainsaw",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Xipre/iconAddon_puncturedMuffler.png"
+		name: "Punctured Muffler",
+		parentItem: "Item_Slasher_Chainsaw",
+		image: "../../images/DbD/addons/puncturedMuffler.png"
 	},
 	{
-	name: "Disfigured Ear",
-	parentItem: "Item_Slasher_PhantomTrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC3/iconAddon_disfiguredEar.png"
+		name: "Disfigured Ear",
+		parentItem: "Item_Slasher_PhantomTrap",
+		image: "../../images/DbD/addons/disfiguredEar.png"
 	},
 	{
-	name: "Telephoto Lens",
-	parentItem: "Item_Slasher_GhostPower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Oman/iconAddon_telephotoLens.png"
+		name: "Telephoto Lens",
+		parentItem: "Item_Slasher_GhostPower",
+		image: "../../images/DbD/addons/telephotoLens.png"
 	},
 	{
-	name: "Spark Plug",
-	parentItem: "Item_Slasher_LFChainsaw",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_sparkPlug.png"
+		name: "Spark Plug",
+		parentItem: "Item_Slasher_LFChainsaw",
+		image: "../../images/DbD/addons/sparkPlug.png"
 	},
 	{
-	name: "Leprose Lichen",
-	parentItem: "Item_Slasher_QatarKillerPower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Qatar/iconAddon_leproseLichen.png"
+		name: "Leprose Lichen",
+		parentItem: "Item_Slasher_QatarKillerPower",
+		image: "../../images/DbD/addons/leproseLichen.png"
 	},
 	{
-	name: "'The Serpent' - Soot",
-	parentItem: "Item_Slasher_CloakBell",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_sootTheSerpent.png"
+		name: "'The Serpent' - Soot",
+		parentItem: "Item_Slasher_CloakBell",
+		image: "../../images/DbD/addons/sootTheSerpent.png"
 	},
 	{
-	name: "Strong Coil Spring",
-	parentItem: "Item_Slasher_Beartrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_coilSpring.png"
+		name: "Strong Coil Spring",
+		parentItem: "Item_Slasher_Beartrap",
+		image: "../../images/DbD/addons/coilSpring.png"
 	},
 	{
-	name: "Rotten Pumpkin",
-	parentItem: "Item_Slasher_QatarKillerPower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Qatar/iconAddon_rottenPumpkin.png"
+		name: "Rotten Pumpkin",
+		parentItem: "Item_Slasher_QatarKillerPower",
+		image: "../../images/DbD/addons/rottenPumpkin.png"
 	},
 	{
-	name: "Vermillion Webcap",
-	parentItem: "Item_Slasher_QatarKillerPower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Qatar/iconAddon_vermillionWebcap.png"
+		name: "Vermillion Webcap",
+		parentItem: "Item_Slasher_QatarKillerPower",
+		image: "../../images/DbD/addons/vermillionWebcap.png"
 	},
 	{
-	name: "Splintered Hull",
-	parentItem: "Item_Slasher_Kanobo",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Sweden/iconAddon_splinteredHull.png"
+		name: "Splintered Hull",
+		parentItem: "Item_Slasher_Kanobo",
+		image: "../../images/DbD/addons/splinteredHull.png"
 	},
 	{
-	name: "Barb's Glasses",
-	parentItem: "Item_Slasher_QatarKillerPower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Qatar/iconAddon_barbsGlasses.png"
+		name: "Barb's Glasses",
+		parentItem: "Item_Slasher_QatarKillerPower",
+		image: "../../images/DbD/addons/barbsGlasses.png"
 	},
 	{
-	name: "Frank's Mix Tape",
-	parentItem: "Item_Slasher_Frenzy",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Kenya/iconAddon_franksMixtape.png"
+		name: "Frank's Mix Tape",
+		parentItem: "Item_Slasher_Frenzy",
+		image: "../../images/DbD/addons/franksMixtape.png"
 	},
 	{
-	name: "Blackened Toenail",
-	parentItem: "Item_Slasher_Kanobo",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Sweden/iconAddon_blackenedToenail.png"
+		name: "Blackened Toenail",
+		parentItem: "Item_Slasher_Kanobo",
+		image: "../../images/DbD/addons/blackenedToenail.png"
 	},
 	{
-	name: "J.Myers Memorial",
-	parentItem: "Item_Slasher_Stalker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC2/iconAddon_jMyersMemorial.png"
+		name: "J.Myers Memorial",
+		parentItem: "Item_Slasher_Stalker",
+		image: "../../images/DbD/addons/jMyersMemorial.png"
 	},
 	{
-	name: "Fragile Wheeze",
-	parentItem: "Item_Slasher_Blinker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_fragileWheeze.png"
+		name: "Fragile Wheeze",
+		parentItem: "Item_Slasher_Blinker",
+		image: "../../images/DbD/addons/fragileWheeze.png"
 	},
 	{
-	name: "'Blind Warrior' - Mud",
-	parentItem: "Item_Slasher_CloakBell",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_mudBaikraKaeug.png"
+		name: "'Blind Warrior' - Mud",
+		parentItem: "Item_Slasher_CloakBell",
+		image: "../../images/DbD/addons/mudBaikraKaeug.png"
 	},
 	{
-	name: "Sheep Block",
-	parentItem: "Item_Slasher_DreamInducer",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/England/iconAddon_sheepBlock.png"
+		name: "Sheep Block",
+		parentItem: "Item_Slasher_DreamInducer",
+		image: "../../images/DbD/addons/sheepBlock.png"
 	},
 	{
-	name: "Iridescent Coin",
-	parentItem: "Item_Slasher_HarpoonRifle",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Ukraine/iconAddon_iridescentCoin.png"
+		name: "Iridescent Coin",
+		parentItem: "Item_Slasher_HarpoonRifle",
+		image: "../../images/DbD/addons/iridescentCoin.png"
 	},
 	{
-	name: "Ink Lion",
-	parentItem: "Item_Slasher_Kanobo",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Sweden/iconAddon_inkLion.png"
+		name: "Ink Lion",
+		parentItem: "Item_Slasher_Kanobo",
+		image: "../../images/DbD/addons/inkLion.png"
 	},
 	{
-	name: "Vegetable Oil",
-	parentItem: "Item_Slasher_LFChainsaw",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_vegetableOil.png"
+		name: "Vegetable Oil",
+		parentItem: "Item_Slasher_LFChainsaw",
+		image: "../../images/DbD/addons/vegetableOil.png"
 	},
 	{
-	name: "Crate of Gears",
-	parentItem: "Item_Slasher_ReverseBearTrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Finland/iconAddon_crateOfGears.png"
+		name: "Crate of Gears",
+		parentItem: "Item_Slasher_ReverseBearTrap",
+		image: "../../images/DbD/addons/crateOfGears.png"
 	},
 	{
-	name: "Father's Glasses",
-	parentItem: "Item_Slasher_PhaseWalker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Haiti/iconAddon_fathersGlasses.png"
+		name: "Father's Glasses",
+		parentItem: "Item_Slasher_PhaseWalker",
+		image: "../../images/DbD/addons/fathersGlasses.png"
 	},
 	{
-	name: "Bloody Hair Brooch",
-	parentItem: "Item_Slasher_PhaseWalker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Haiti/iconAddon_bloodyHairBroochi.png"
+		name: "Bloody Hair Brooch",
+		parentItem: "Item_Slasher_PhaseWalker",
+		image: "../../images/DbD/addons/bloodyHairBroochi.png"
 	},
 	{
-	name: "Scalped Topknot",
-	parentItem: "Item_Slasher_Kanobo",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Sweden/iconAddon_scalpedTopknot.png"
+		name: "Scalped Topknot",
+		parentItem: "Item_Slasher_Kanobo",
+		image: "../../images/DbD/addons/scalpedTopknot.png"
 	},
 	{
-	name: "'All Seeing' - Blood",
-	parentItem: "Item_Slasher_CloakBell",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_bloodKraFabai.png"
+		name: "'All Seeing' - Blood",
+		parentItem: "Item_Slasher_CloakBell",
+		image: "../../images/DbD/addons/bloodKraFabai.png"
 	},
 	{
-	name: "Lasting Perfume",
-	parentItem: "Item_Slasher_GhostPower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Oman/iconAddon_lastingPerfume.png"
+		name: "Lasting Perfume",
+		parentItem: "Item_Slasher_GhostPower",
+		image: "../../images/DbD/addons/lastingPerfume.png"
 	},
 	{
-	name: "Knife Belt Clip",
-	parentItem: "Item_Slasher_GhostPower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Oman/iconAddon_knifeBeltClip.png"
+		name: "Knife Belt Clip",
+		parentItem: "Item_Slasher_GhostPower",
+		image: "../../images/DbD/addons/knifeBeltClip.png"
 	},
 	{
-	name: "'Windstorm'- Mud",
-	parentItem: "Item_Slasher_CloakBell",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_mudWindstorm.png"
+		name: "'Windstorm'- Mud",
+		parentItem: "Item_Slasher_CloakBell",
+		image: "../../images/DbD/addons/mudWindstorm.png"
 	},
 	{
-	name: "Scarred Hand",
-	parentItem: "Item_Slasher_PhantomTrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC3/iconAddon_scarredHand.png"
+		name: "Scarred Hand",
+		parentItem: "Item_Slasher_PhantomTrap",
+		image: "../../images/DbD/addons/scarredHand.png"
 	},
 	{
-	name: "Eleven's Soda",
-	parentItem: "Item_Slasher_QatarKillerPower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Qatar/iconAddon_elevensSoda.png"
+		name: "Eleven's Soda",
+		parentItem: "Item_Slasher_QatarKillerPower",
+		image: "../../images/DbD/addons/elevensSoda.png"
 	},
 	{
-	name: "Stitched Bag",
-	parentItem: "Item_Slasher_Beartrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_stichedBag.png"
+		name: "Stitched Bag",
+		parentItem: "Item_Slasher_Beartrap",
+		image: "../../images/DbD/addons/stichedBag.png"
 	},
 	{
-	name: "Dirty Uwabaki",
-	parentItem: "Item_Slasher_PhaseWalker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Haiti/iconAddon_dirtyUwabaki.png"
+		name: "Dirty Uwabaki",
+		parentItem: "Item_Slasher_PhaseWalker",
+		image: "../../images/DbD/addons/dirtyUwabaki.png"
 	},
 	{
-	name: "Doom Engravings",
-	parentItem: "Item_Slasher_Chainsaw",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Xipre/iconAddon_doomEngravings.png"
+		name: "Doom Engravings",
+		parentItem: "Item_Slasher_Chainsaw",
+		image: "../../images/DbD/addons/doomEngravings.png"
 	},
 	{
-	name: "Snake Oil ",
-	parentItem: "Item_Slasher_HarpoonRifle",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Ukraine/iconAddon_snakeOil.png"
+		name: "Snake Oil",
+		parentItem: "Item_Slasher_HarpoonRifle",
+		image: "../../images/DbD/addons/snakeOil.png"
 	},
 	{
-	name: "Blond Hair",
-	parentItem: "Item_Slasher_Stalker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC2/iconAddon_blondeHair.png"
+		name: "Blond Hair",
+		parentItem: "Item_Slasher_Stalker",
+		image: "../../images/DbD/addons/blondeHair.png"
 	},
 	{
-	name: "Sticky Soda Bottle",
-	parentItem: "Item_Slasher_GasBomb",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Guam/iconAddon_stickySodaBottle.png"
+		name: "Sticky Soda Bottle",
+		parentItem: "Item_Slasher_GasBomb",
+		image: "../../images/DbD/addons/stickySodaBottle.png"
 	},
 	{
-	name: "Nancy's Masterpiece",
-	parentItem: "Item_Slasher_DreamInducer",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/England/iconAddon_nancysMasterpiece.png"
+		name: "Nancy's Masterpiece",
+		parentItem: "Item_Slasher_DreamInducer",
+		image: "../../images/DbD/addons/nancysMasterpiece.png"
 	},
 	{
-	name: "'Shadow Dance' - White",
-	parentItem: "Item_Slasher_CloakBell",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_whiteShadowDance.png"
+		name: "'Shadow Dance' - White",
+		parentItem: "Item_Slasher_CloakBell",
+		image: "../../images/DbD/addons/whiteShadowDance.png"
 	},
 	{
-	name: "Healing Salve",
-	parentItem: "Item_Slasher_PlaguePower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Mali/iconAddon_healingSalve.png"
+		name: "Healing Salve",
+		parentItem: "Item_Slasher_PlaguePower",
+		image: "../../images/DbD/addons/healingSalve.png"
 	},
 	{
-	name: "'Calm' - Carter's Notes",
-	parentItem: "Item_Slasher_Killer07Item",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC4/iconAddon_calmCartersNotes.png"
+		name: "'Calm' - Carter's Notes",
+		parentItem: "Item_Slasher_Killer07Item",
+		image: "../../images/DbD/addons/calmCartersNotes.png"
 	},
 	{
-	name: "The Beast's Marks",
-	parentItem: "Item_Slasher_LFChainsaw",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Cannibal/iconAddon_theBeastsMark.png"
+		name: "The Beast's Marks",
+		parentItem: "Item_Slasher_LFChainsaw",
+		image: "../../images/DbD/addons/theBeastsMark.png"
 	},
 	{
-	name: "Death Engravings",
-	parentItem: "Item_Slasher_Chainsaw",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Xipre/iconAddon_deathEngravings.png"
+		name: "Death Engravings",
+		parentItem: "Item_Slasher_Chainsaw",
+		image: "../../images/DbD/addons/deathEngravings.png"
 	},
 	{
-	name: "Judith's Journal",
-	parentItem: "Item_Slasher_Stalker",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC2/iconAddon_judithsJournal.png"
+		name: "Judith's Journal",
+		parentItem: "Item_Slasher_Stalker",
+		image: "../../images/DbD/addons/judithsJournal.png"
 	},
 	{
-	name: "'Windstorm' - White",
-	parentItem: "Item_Slasher_CloakBell",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_whiteWindstorm.png"
+		name: "'Windstorm' - White",
+		parentItem: "Item_Slasher_CloakBell",
+		image: "../../images/DbD/addons/whiteWindstorm.png"
 	},
 	{
-	name: "Begrimed Head",
-	parentItem: "Item_Slasher_Hatchet",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC5/iconAddon_begrimedHead.png"
+		name: "Begrimed Head",
+		parentItem: "Item_Slasher_Hatchet",
+		image: "../../images/DbD/addons/begrimedHead.png"
 	},
 	{
-	name: "Grisly Chain",
-	parentItem: "Item_Slasher_LFChainsaw",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_chainsGrisly.png"
+		name: "Grisly Chain",
+		parentItem: "Item_Slasher_LFChainsaw",
+		image: "../../images/DbD/addons/chainsGrisly.png"
 	},
 	{
-	name: "Oak Haft",
-	parentItem: "Item_Slasher_Hatchet",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/DLC5/iconAddon_oakHaft.png"
+		name: "Oak Haft",
+		parentItem: "Item_Slasher_Hatchet",
+		image: "../../images/DbD/addons/oakHaft.png"
 	},
 	{
-	name: "'Shadow Dance' - Blood",
-	parentItem: "Item_Slasher_CloakBell",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_bloodShadowDance.png"
+		name: "'Shadow Dance' - Blood",
+		parentItem: "Item_Slasher_CloakBell",
+		image: "../../images/DbD/addons/bloodShadowDance.png"
 	},
 	{
-	name: "Spearhead ",
-	parentItem: "Item_Slasher_TormentMode",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Wales/iconAddon_spearhead.png"
+		name: "Spearhead",
+		parentItem: "Item_Slasher_TormentMode",
+		image: "../../images/DbD/addons/spearhead.png"
 	},
 	{
-	name: "Iridescent Seal",
-	parentItem: "Item_Slasher_PlaguePower",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/Mali/iconAddon_IridescentSeal.png"
+		name: "Iridescent Seal",
+		parentItem: "Item_Slasher_PlaguePower",
+		image: "../../images/DbD/addons/IridescentSeal.png"
 	},
     {
-    name: "any red",
-	parentItem: "blight",
-	image: ""
-    },
+		name: "Placebo Tablet",
+		parentItem: "blight",
+		image: "../../images/DbD/addons/placeboTablet.png"
+	},
     {
-    name: "any purple",
-	parentItem: "blight",
-	image: ""
-    },
+		name: "Foxglove",
+		parentItem: "blight",
+		image: "../../images/DbD/addons/foxglove.png"
+	},
     {
-    name: "any green",
-	parentItem: "blight",
-	image: ""
-    },
+		name: "Compound Seven",
+		parentItem: "blight",
+		image: "../../images/DbD/addons/compoundSeven.png"
+	},
     {
-    name: "any yellow",
-	parentItem: "blight",
-	image: ""
-    },
+		name: "Chipped Monocle",
+		parentItem: "blight",
+		image: "../../images/DbD/addons/chippedMonocle.png"
+	},
     {
-    name: "any brown",
-	parentItem: "blight",
-	image: ""
-    },
+		name: "Shredded Notes",
+		parentItem: "blight",
+		image: "../../images/DbD/addons/shreddedNotes.png"
+	},
     {
-    name: "any red",
-	parentItem: "twins",
-	image: ""
-    },
+		name: "Pustula Dust",
+		parentItem: "blight",
+		image: "../../images/DbD/addons/pustulaDust.png"
+	},
     {
-    name: "any purple",
-	parentItem: "twins",
-	image: ""
-    },
+		name: "Plague Bile",
+		parentItem: "blight",
+		image: "../../images/DbD/addons/plagueBile.png"
+	},
     {
-    name: "any green",
-	parentItem: "twins",
-	image: ""
-    },
+		name: "Canker Thorn",
+		parentItem: "blight",
+		image: "../../images/DbD/addons/cankerThorn.png"
+	},
     {
-    name: "any yellow",
-	parentItem: "twins",
-	image: ""
-    },
+		name: "Blighted Rat",
+		parentItem: "blight",
+		image: "../../images/DbD/addons/blightedRat.png"
+	},
     {
-    name: "any brown",
-	parentItem: "twins",
-	image: ""
-    }
+		name: "Umbra Salts",
+		parentItem: "blight",
+		image: "../../images/DbD/addons/umbraSalts.png"
+	},
+    {
+		name: "Rose Tonic",
+		parentItem: "blight",
+		image: "../../images/DbD/addons/roseTonic.png"
+	},
+    {
+		name: "Compound Twenty-One",
+		parentItem: "blight",
+		image: "../../images/DbD/addons/compoundTwentyOne.png"
+	},
+    {
+		name: "Blighted Crow",
+		parentItem: "blight",
+		image: "../../images/DbD/addons/blightedCrow.png"
+	},
+    {
+		name: "Adrenaline Vial",
+		parentItem: "blight",
+		image: "../../images/DbD/addons/adrenalineVial.png"
+	},
+    {
+		name: "Vigo's Journal",
+		parentItem: "blight",
+		image: "../../images/DbD/addons/vigosJournal.png"
+	},
+    {
+		name: "Summoning Stone",
+		parentItem: "blight",
+		image: "../../images/DbD/addons/summoningStone.png"
+	},
+    {
+		name: "Soul Chemical",
+		parentItem: "blight",
+		image: "../../images/DbD/addons/soulChemical.png"
+	},
+    {
+		name: "Alchemist's Ring",
+		parentItem: "blight",
+		image: "../../images/DbD/addons/alchemistsRing.png"
+	},
+    {
+		name: "Iridescent Blight Tag",
+		parentItem: "blight",
+		image: "../../images/DbD/addons/iridescentBlightTag.png"
+	},
+    {
+		name: "Compound Thirty-Three",
+		parentItem: "blight",
+		image: "../../images/DbD/addons/compoundThirtyThree.png"
+	},
+    {
+		name: "Toy Sword",
+		parentItem: "twins",
+		image: "../../images/DbD/addons/toySword.png"
+	},
+    {
+		name: "Tiny Fingernail",
+		parentItem: "twins",
+		image: "../../images/DbD/addons/tinyFingernail.png"
+	},
+    {
+		name: "Soured Milk",
+		parentItem: "twins",
+		image: "../../images/DbD/addons/souredMilk.png"
+	},
+    {
+		name: "Cat Figurine",
+		parentItem: "twins",
+		image: "../../images/DbD/addons/catFigurine.png"
+	},
+    {
+		name: "Madeleine's Glove",
+		parentItem: "twins",
+		image: "../../images/DbD/addons/madeleinesGlove.png"
+	},
+    {
+		name: "Ceremonial Candelabrum",
+		parentItem: "twins",
+		image: "../../images/DbD/addons/ceremonialCandelabrum.png"
+	},
+    {
+		name: "Cat's Eye",
+		parentItem: "twins",
+		image: "../../images/DbD/addons/catsEye.png"
+	},
+    {
+		name: "Bloody Black Hood",
+		parentItem: "twins",
+		image: "../../images/DbD/addons/bloodyBlackHood.png"
+	},
+    {
+		name: "Baby Teeth",
+		parentItem: "twins",
+		image: "../../images/DbD/addons/babyTeeth.png"
+	},
+    {
+		name: "Weighty Rattle",
+		parentItem: "twins",
+		image: "../../images/DbD/addons/weightyRattle.png"
+	},
+    {
+		name: "Stale Biscuit",
+		parentItem: "twins",
+		image: "../../images/DbD/addons/staleBiscuit.png"
+	},
+    {
+		name: "Sewer Sludge",
+		parentItem: "twins",
+		image: "../../images/DbD/addons/sewerSludge.png"
+	},
+    {
+		name: "Rusted Needle",
+		parentItem: "twins",
+		image: "../../images/DbD/addons/rustedNeedle.png"
+	},
+    {
+		name: "Madeleine's Scarf",
+		parentItem: "twins",
+		image: "../../images/DbD/addons/MadeleinesScarf.png"
+	},
+    {
+		name: "Victor's Soldier",
+		parentItem: "twins",
+		image: "../../images/DbD/addons/victorsSoldier.png"
+	},
+    {
+		name: "Spinning Top",
+		parentItem: "twins",
+		image: "../../images/DbD/addons/spinningTop.png"
+	},
+    {
+		name: "Forest Stew",
+		parentItem: "twins",
+		image: "../../images/DbD/addons/forestStew.png"
+	},
+    {
+		name: "Drop of Perfume",
+		parentItem: "twins",
+		image: "../../images/DbD/addons/dropOfPerfume.png"
+	},
+    {
+		name: "Silencing Cloth",
+		parentItem: "twins",
+		image: "../../images/DbD/addons/silencingCloth.png"
+	},
+    {
+		name: "Iridescent Pendant",
+		parentItem: "twins",
+		image: "../../images/DbD/addons/iridescentPendant.png"
+	}
 ];
 
 
@@ -2103,6 +2253,7 @@ function timeOutTime(obj, key) {
 }
 
 function displayKillerAddons() {
+    //letsgoka();
     const list = getKiller();
     //addonSlot.innerHTML = '';
     var indeces = getIndeces(2, list.length);
@@ -2116,6 +2267,41 @@ function displayKillerAddons() {
     lag +='</div></li>';
     //addonSlot.innerHTML += lag;
     return lag;
+}
+
+function letsgoka() {
+    var i = 0;
+    var arr = ['name: ', 'parentItem: ', 'image: '];
+    var a = 'const killerAddons = [\n';
+    for(i = 0; i < killerAddons.length; i++) {
+        var j = 0;
+        var add;
+        a += '\t{\n';
+        for (j = 0; j < arr.length; j++) {
+            var index = killerAddons[i].image.lastIndexOf('_')+1;
+            index = '../../images/DbD/addons/' + killerAddons[i].image.substr(index);
+            if (j == arr.length-1) { 
+                a += '\t\t' + arr[j];
+                add = '"' + index + '"';
+                a += add + '\n';
+            } else if (j == arr.length-2) {
+                a += '\t\t' + arr[j];
+                add = '"' + killerAddons[i].parentItem + '"';
+                a += add + ',\n';
+            }else {
+                a += '\t\t' + arr[j];
+                add = '"' + killerAddons[i].name + '"';
+                a += add + ',\n';
+            }
+        }
+        if (i == killerAddons.length-1) {
+            a += '\t}\n';
+        } else {
+            a += '\t},\n'
+        }
+    }
+    a += '];';
+    console.log(a);
 }
 
 function getKiller() {
@@ -2154,10 +2340,10 @@ function displayKillerBuild(obj) {
     displayKiller();
     setTimeout(function() {
         displayKillerAddons();
-    }, 100);
+    }, 50);
     setTimeout(function() {
         obj.disabled = false;
-    }, 3000);
+    }, 50);
 }
 
 function timeOutTime_2(obj) {
@@ -2175,7 +2361,7 @@ function displaySurvivorBuild(obj) {
     }, 50);
     setTimeout(function() {
         obj.disabled = false;
-    }, 5000);
+    }, 50);
 }
 
 function displayKillerPerkss(obj) {

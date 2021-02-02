@@ -330,7 +330,7 @@ const survivorPerks = [
 	},
     {
 		name: "Visionary",
-		image: "../../images/DbD/perks/versionary.png"
+		image: "../../images/DbD/perks/visionary.png"
 	},
     {
 		name: "Desperate Measures",

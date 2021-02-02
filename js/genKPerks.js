@@ -281,8 +281,8 @@ const killerPerks = [
 		image: "../../images/DbD/perks/dragonsGrip.png"
 	},
     {
-		name: "Hex: Blood Favour",
-		image: "../../images/DbD/perks/hexBloodFavour.png"
+		name: "Hex: Blood Favor",
+		image: "../../images/DbD/perks/hexBloodFavor.png"
 	},
     {
 		name: "Hex: Undying",
@@ -293,12 +293,12 @@ const killerPerks = [
 		image: "../../images/DbD/perks/hoarder.png"
 	},
     {
-		name: "Opression",
-		image: "../../images/DbD/perks/opression.png"
+		name: "Oppression",
+		image: "../../images/DbD/perks/oppression.png"
 	},
     {
 		name: "Coup de Grâce",
-		image: "../../images/DbD/perks/coupeDeGrace.png"
+		image: "../../images/DbD/perks/coupDeGrace.png"
 	}
 ];
 
