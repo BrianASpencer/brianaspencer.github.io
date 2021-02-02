@@ -294,7 +294,7 @@ const killerPerks = [
 	},
     {
 		name: "Oppression",
-		image: "../../images/DbD/perks/oppression.png"
+		image: "../../images/DbD/perks/Oppression.png"
 	},
     {
 		name: "Coup de Grâce",
