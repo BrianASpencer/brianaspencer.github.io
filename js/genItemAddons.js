@@ -1,499 +1,499 @@
 //const itemAddonSlot = document.getElementById('itemAddonSlot');
 const survItemAddons = [
 	{
-	name: "Rubber Grip",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_rubberGrip.png",
-	parentItem: [
-		"Item_Camper_Flashlight",
-		"Item_Camper_Flashlight02",
-		"Item_Camper_Flashlight03",
-		"Item_Camper_Flashlight04",
-		"Item_Camper_Flashlight_Anniversary2020"]
+		name: "Rubber Grip",
+		image: "../../images/DbD/addons/rubberGrip.png",
+		parentItem: [
+			"Item_Camper_Flashlight",
+			"Item_Camper_Flashlight02",
+			"Item_Camper_Flashlight03",
+			"Item_Camper_Flashlight04",
+			"Item_Camper_Flashlight_Anniversary2020"]
 	},
 	{
-	name: "Grip Wrench",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_gripWrench.png",
-	parentItem: [
-		"Item_Camper_WornoutToolbox",
-		"Item_Camper_Toolbox",
-		"Item_Camper_MechanicsToolbox",
-		"Item_Camper_CommodiousToolbox",
-		"Item_Camper_EngineerToolbox",
-		"Item_Camper_AlexsToolbox"]
+		name: "Grip Wrench",
+		image: "../../images/DbD/addons/gripWrench.png",
+		parentItem: [
+			"Item_Camper_WornoutToolbox",
+			"Item_Camper_Toolbox",
+			"Item_Camper_MechanicsToolbox",
+			"Item_Camper_CommodiousToolbox",
+			"Item_Camper_EngineerToolbox",
+			"Item_Camper_AlexsToolbox"]
 	},
 	{
-	name: "Abdominal Dressing",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_abdominalDressing.png",
-	parentItem: [
-		"Item_Camper_MedKit",
-		"Item_Camper_MedKit02",
-		"Item_Camper_MedKit03",
-		"Item_Camper_MedKit04",
-		"Item_Camper_MedKit05",
-		"Item_Camper_Medkit_Anniversary2020"]
+		name: "Abdominal Dressing",
+		image: "../../images/DbD/addons/abdominalDressing.png",
+		parentItem: [
+			"Item_Camper_MedKit",
+			"Item_Camper_MedKit02",
+			"Item_Camper_MedKit03",
+			"Item_Camper_MedKit04",
+			"Item_Camper_MedKit05",
+			"Item_Camper_Medkit_Anniversary2020"]
 	},
 	{
-	name: "Unusual Stamp",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_stampUnusual.png",
-	parentItem: [
-		"Item_Camper_BeigeMap",
-		"Item_Camper_RainbowMap"]
+		name: "Unusual Stamp",
+		image: "../../images/DbD/addons/stampUnusual.png",
+		parentItem: [
+			"Item_Camper_BeigeMap",
+			"Item_Camper_RainbowMap"]
 	},
 	{
-	name: "Heavy Duty Battery",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_heavyDutyBattery.png",
-	parentItem: [
-		"Item_Camper_Flashlight",
-		"Item_Camper_Flashlight02",
-		"Item_Camper_Flashlight03",
-		"Item_Camper_Flashlight04",
-		"Item_Camper_Flashlight_Anniversary2020"]
+		name: "Heavy Duty Battery",
+		image: "../../images/DbD/addons/heavyDutyBattery.png",
+		parentItem: [
+			"Item_Camper_Flashlight",
+			"Item_Camper_Flashlight02",
+			"Item_Camper_Flashlight03",
+			"Item_Camper_Flashlight04",
+			"Item_Camper_Flashlight_Anniversary2020"]
 	},
 	{
-	name: "Scratched Pearl",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_scratchedPearl.png",
-	parentItem: [
-		"Item_Camper_Key",
-		"Item_Camper_DullKey",
-		"Item_Camper_BrokenKey"]
+		name: "Scratched Pearl",
+		image: "../../images/DbD/addons/scratchedPearl.png",
+		parentItem: [
+			"Item_Camper_Key",
+			"Item_Camper_DullKey",
+			"Item_Camper_BrokenKey"]
 	},
 	{
-	name: "Power Bulb",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_powerBulb.png",
-	parentItem: [
-		"Item_Camper_Flashlight",
-		"Item_Camper_Flashlight02",
-		"Item_Camper_Flashlight03",
-		"Item_Camper_Flashlight04",
-		"Item_Camper_Flashlight_Anniversary2020"]
+		name: "Power Bulb",
+		image: "../../images/DbD/addons/powerBulb.png",
+		parentItem: [
+			"Item_Camper_Flashlight",
+			"Item_Camper_Flashlight02",
+			"Item_Camper_Flashlight03",
+			"Item_Camper_Flashlight04",
+			"Item_Camper_Flashlight_Anniversary2020"]
 	},
 	{
-	name: "Scraps",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_scraps.png",
-	parentItem: [
-		"Item_Camper_WornoutToolbox",
-		"Item_Camper_Toolbox",
-		"Item_Camper_MechanicsToolbox",
-		"Item_Camper_CommodiousToolbox",
-		"Item_Camper_EngineerToolbox",
-		"Item_Camper_AlexsToolbox"]
+		name: "Scraps",
+		image: "../../images/DbD/addons/scraps.png",
+		parentItem: [
+			"Item_Camper_WornoutToolbox",
+			"Item_Camper_Toolbox",
+			"Item_Camper_MechanicsToolbox",
+			"Item_Camper_CommodiousToolbox",
+			"Item_Camper_EngineerToolbox",
+			"Item_Camper_AlexsToolbox"]
 	},
 	{
-	name: "Leather Grip",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_leatherGrip.png",
-	parentItem: [
-		"Item_Camper_Flashlight",
-		"Item_Camper_Flashlight02",
-		"Item_Camper_Flashlight03",
-		"Item_Camper_Flashlight04",
-		"Item_Camper_Flashlight_Anniversary2020"]
+		name: "Leather Grip",
+		image: "../../images/DbD/addons/leatherGrip.png",
+		parentItem: [
+			"Item_Camper_Flashlight",
+			"Item_Camper_Flashlight02",
+			"Item_Camper_Flashlight03",
+			"Item_Camper_Flashlight04",
+			"Item_Camper_Flashlight_Anniversary2020"]
 	},
 	{
-	name: "Intense Halogen",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_intenseHalogen.png",
-	parentItem: [
-		"Item_Camper_Flashlight",
-		"Item_Camper_Flashlight02",
-		"Item_Camper_Flashlight03",
-		"Item_Camper_Flashlight04",
-		"Item_Camper_Flashlight_Anniversary2020"]
+		name: "Intense Halogen",
+		image: "../../images/DbD/addons/intenseHalogen.png",
+		parentItem: [
+			"Item_Camper_Flashlight",
+			"Item_Camper_Flashlight02",
+			"Item_Camper_Flashlight03",
+			"Item_Camper_Flashlight04",
+			"Item_Camper_Flashlight_Anniversary2020"]
 	},
 	{
-	name: "Medical Scissors",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_scissors.png",
-	parentItem: [
-		"Item_Camper_MedKit",
-		"Item_Camper_MedKit02",
-		"Item_Camper_MedKit03",
-		"Item_Camper_MedKit04",
-		"Item_Camper_MedKit05",
-		"Item_Camper_Medkit_Anniversary2020"]
+		name: "Medical Scissors",
+		image: "../../images/DbD/addons/scissors.png",
+		parentItem: [
+			"Item_Camper_MedKit",
+			"Item_Camper_MedKit02",
+			"Item_Camper_MedKit03",
+			"Item_Camper_MedKit04",
+			"Item_Camper_MedKit05",
+			"Item_Camper_Medkit_Anniversary2020"]
 	},
 	{
-	name: "Wide Lens",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_wideLens.png",
-	parentItem: [
-		"Item_Camper_Flashlight",
-		"Item_Camper_Flashlight02",
-		"Item_Camper_Flashlight03",
-		"Item_Camper_Flashlight04",
-		"Item_Camper_Flashlight_Anniversary2020"]
+		name: "Wide Lens",
+		image: "../../images/DbD/addons/wideLens.png",
+		parentItem: [
+			"Item_Camper_Flashlight",
+			"Item_Camper_Flashlight02",
+			"Item_Camper_Flashlight03",
+			"Item_Camper_Flashlight04",
+			"Item_Camper_Flashlight_Anniversary2020"]
 	},
 	{
-	name: "Instructions",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_instructions.png",
-	parentItem: [
-		"Item_Camper_WornoutToolbox",
-		"Item_Camper_Toolbox",
-		"Item_Camper_MechanicsToolbox",
-		"Item_Camper_CommodiousToolbox",
-		"Item_Camper_EngineerToolbox",
-		"Item_Camper_AlexsToolbox"]
+		name: "Instructions",
+		image: "../../images/DbD/addons/instructions.png",
+		parentItem: [
+			"Item_Camper_WornoutToolbox",
+			"Item_Camper_Toolbox",
+			"Item_Camper_MechanicsToolbox",
+			"Item_Camper_CommodiousToolbox",
+			"Item_Camper_EngineerToolbox",
+			"Item_Camper_AlexsToolbox"]
 	},
 	{
-	name: "Styptic Agent",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_stypticAgent.png",
-	parentItem: [
-		"Item_Camper_MedKit",
-		"Item_Camper_MedKit02",
-		"Item_Camper_MedKit03",
-		"Item_Camper_MedKit04",
-		"Item_Camper_MedKit05",
-		"Item_Camper_Medkit_Anniversary2020"]
+		name: "Styptic Agent",
+		image: "../../images/DbD/addons/stypticAgent.png",
+		parentItem: [
+			"Item_Camper_MedKit",
+			"Item_Camper_MedKit02",
+			"Item_Camper_MedKit03",
+			"Item_Camper_MedKit04",
+			"Item_Camper_MedKit05",
+			"Item_Camper_Medkit_Anniversary2020"]
 	},
 	{
-	name: "Red Twine",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_ropeRed.png",
-	parentItem: [
-		"Item_Camper_BeigeMap",
-		"Item_Camper_RainbowMap"]
+		name: "Red Twine",
+		image: "../../images/DbD/addons/ropeRed.png",
+		parentItem: [
+			"Item_Camper_BeigeMap",
+			"Item_Camper_RainbowMap"]
 	},
 	{
-	name: "Gold Token",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_tokenGold.png",
-	parentItem: [
-		"Item_Camper_Key",
-		"Item_Camper_DullKey",
-		"Item_Camper_BrokenKey"]
+		name: "Gold Token",
+		image: "../../images/DbD/addons/tokenGold.png",
+		parentItem: [
+			"Item_Camper_Key",
+			"Item_Camper_DullKey",
+			"Item_Camper_BrokenKey"]
 	},
 	{
-	name: "Glass Bead",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_beadGlass.png",
-	parentItem: [
-		"Item_Camper_BeigeMap",
-		"Item_Camper_RainbowMap"]
+		name: "Glass Bead",
+		image: "../../images/DbD/addons/beadGlass.png",
+		parentItem: [
+			"Item_Camper_BeigeMap",
+			"Item_Camper_RainbowMap"]
 	},
 	{
-	name: "Retardant Jelly",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_retardantJelly.png",
-	parentItem: [
-		"Item_Camper_BeigeMap",
-		"Item_Camper_RainbowMap"]
+		name: "Retardant Jelly",
+		image: "../../images/DbD/addons/retardantJelly.png",
+		parentItem: [
+			"Item_Camper_BeigeMap",
+			"Item_Camper_RainbowMap"]
 	},
 	{
-	name: "Gauze Roll",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_gauseRoll.png",
-	parentItem: [
-		"Item_Camper_MedKit",
-		"Item_Camper_MedKit02",
-		"Item_Camper_MedKit03",
-		"Item_Camper_MedKit04",
-		"Item_Camper_MedKit05",
-		"Item_Camper_Medkit_Anniversary2020"]
+		name: "Gauze Roll",
+		image: "../../images/DbD/addons/gauseRoll.png",
+		parentItem: [
+			"Item_Camper_MedKit",
+			"Item_Camper_MedKit02",
+			"Item_Camper_MedKit03",
+			"Item_Camper_MedKit04",
+			"Item_Camper_MedKit05",
+			"Item_Camper_Medkit_Anniversary2020"]
 	},
 	{
-	name: "Odd Bulb",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_oddBulb.png",
-	parentItem: [
-		"Item_Camper_Flashlight",
-		"Item_Camper_Flashlight02",
-		"Item_Camper_Flashlight03",
-		"Item_Camper_Flashlight04",
-		"Item_Camper_Flashlight_Anniversary2020"]
+		name: "Odd Bulb",
+		image: "../../images/DbD/addons/oddBulb.png",
+		parentItem: [
+			"Item_Camper_Flashlight",
+			"Item_Camper_Flashlight02",
+			"Item_Camper_Flashlight03",
+			"Item_Camper_Flashlight04",
+			"Item_Camper_Flashlight_Anniversary2020"]
 	},
 	{
-	name: "Focus Lens",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_focusLens.png",
-	parentItem: [
-		"Item_Camper_Flashlight",
-		"Item_Camper_Flashlight02",
-		"Item_Camper_Flashlight03",
-		"Item_Camper_Flashlight04",
-		"Item_Camper_Flashlight_Anniversary2020"]
+		name: "Focus Lens",
+		image: "../../images/DbD/addons/focusLens.png",
+		parentItem: [
+			"Item_Camper_Flashlight",
+			"Item_Camper_Flashlight02",
+			"Item_Camper_Flashlight03",
+			"Item_Camper_Flashlight04",
+			"Item_Camper_Flashlight_Anniversary2020"]
 	},
 	{
-	name: "Sponge",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_sponge.png",
-	parentItem: [
-		"Item_Camper_MedKit",
-		"Item_Camper_MedKit02",
-		"Item_Camper_MedKit03",
-		"Item_Camper_MedKit04",
-		"Item_Camper_MedKit05",
-		"Item_Camper_Medkit_Anniversary2020"]
+		name: "Sponge",
+		image: "../../images/DbD/addons/sponge.png",
+		parentItem: [
+			"Item_Camper_MedKit",
+			"Item_Camper_MedKit02",
+			"Item_Camper_MedKit03",
+			"Item_Camper_MedKit04",
+			"Item_Camper_MedKit05",
+			"Item_Camper_Medkit_Anniversary2020"]
 	},
 	{
-	name: "Socket Swivels",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_socketSwivels.png",
-	parentItem: [
-		"Item_Camper_WornoutToolbox",
-		"Item_Camper_Toolbox",
-		"Item_Camper_MechanicsToolbox",
-		"Item_Camper_CommodiousToolbox",
-		"Item_Camper_EngineerToolbox",
-		"Item_Camper_AlexsToolbox"]
+		name: "Socket Swivels",
+		image: "../../images/DbD/addons/socketSwivels.png",
+		parentItem: [
+			"Item_Camper_WornoutToolbox",
+			"Item_Camper_Toolbox",
+			"Item_Camper_MechanicsToolbox",
+			"Item_Camper_CommodiousToolbox",
+			"Item_Camper_EngineerToolbox",
+			"Item_Camper_AlexsToolbox"]
 	},
 	{
-	name: "Cutting Wire",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_cuttingWire.png",
-	parentItem: [
-		"Item_Camper_WornoutToolbox",
-		"Item_Camper_Toolbox",
-		"Item_Camper_MechanicsToolbox",
-		"Item_Camper_CommodiousToolbox",
-		"Item_Camper_EngineerToolbox",
-		"Item_Camper_AlexsToolbox"]
+		name: "Cutting Wire",
+		image: "../../images/DbD/addons/cuttingWire.png",
+		parentItem: [
+			"Item_Camper_WornoutToolbox",
+			"Item_Camper_Toolbox",
+			"Item_Camper_MechanicsToolbox",
+			"Item_Camper_CommodiousToolbox",
+			"Item_Camper_EngineerToolbox",
+			"Item_Camper_AlexsToolbox"]
 	},
 	{
-	name: "Bandages",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_bandages.png",
-	parentItem: [
-		"Item_Camper_MedKit",
-		"Item_Camper_MedKit02",
-		"Item_Camper_MedKit03",
-		"Item_Camper_MedKit04",
-		"Item_Camper_MedKit05",
-		"Item_Camper_Medkit_Anniversary2020"]
+		name: "Bandages",
+		image: "../../images/DbD/addons/bandages.png",
+		parentItem: [
+			"Item_Camper_MedKit",
+			"Item_Camper_MedKit02",
+			"Item_Camper_MedKit03",
+			"Item_Camper_MedKit04",
+			"Item_Camper_MedKit05",
+			"Item_Camper_Medkit_Anniversary2020"]
 	},
 	{
-	name: "Low Amp Filament",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_threadedFilament.png",
-	parentItem: [
-		"Item_Camper_Flashlight",
-		"Item_Camper_Flashlight02",
-		"Item_Camper_Flashlight03",
-		"Item_Camper_Flashlight04",
-		"Item_Camper_Flashlight_Anniversary2020"]
+		name: "Low Amp Filament",
+		image: "../../images/DbD/addons/threadedFilament.png",
+		parentItem: [
+			"Item_Camper_Flashlight",
+			"Item_Camper_Flashlight02",
+			"Item_Camper_Flashlight03",
+			"Item_Camper_Flashlight04",
+			"Item_Camper_Flashlight_Anniversary2020"]
 	},
 	{
-	name: "Protective Gloves",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_protectiveGloves.png",
-	parentItem: [
-		"Item_Camper_WornoutToolbox",
-		"Item_Camper_Toolbox",
-		"Item_Camper_MechanicsToolbox",
-		"Item_Camper_CommodiousToolbox",
-		"Item_Camper_EngineerToolbox",
-		"Item_Camper_AlexsToolbox"]
+		name: "Protective Gloves",
+		image: "../../images/DbD/addons/protectiveGloves.png",
+		parentItem: [
+			"Item_Camper_WornoutToolbox",
+			"Item_Camper_Toolbox",
+			"Item_Camper_MechanicsToolbox",
+			"Item_Camper_CommodiousToolbox",
+			"Item_Camper_EngineerToolbox",
+			"Item_Camper_AlexsToolbox"]
 	},
 	{
-	name: "Gel Dressings",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_gelDressings.png",
-	parentItem: [
-		"Item_Camper_MedKit",
-		"Item_Camper_MedKit02",
-		"Item_Camper_MedKit03",
-		"Item_Camper_MedKit04",
-		"Item_Camper_MedKit05",
-		"Item_Camper_Medkit_Anniversary2020"]
+		name: "Gel Dressings",
+		image: "../../images/DbD/addons/gelDressings.png",
+		parentItem: [
+			"Item_Camper_MedKit",
+			"Item_Camper_MedKit02",
+			"Item_Camper_MedKit03",
+			"Item_Camper_MedKit04",
+			"Item_Camper_MedKit05",
+			"Item_Camper_Medkit_Anniversary2020"]
 	},
 	{
-	name: "Prayer Rope",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_prayerRope.png",
-	parentItem: [
-		"Item_Camper_Key",
-		"Item_Camper_DullKey",
-		"Item_Camper_BrokenKey"]
+		name: "Prayer Rope",
+		image: "../../images/DbD/addons/prayerRope.png",
+		parentItem: [
+			"Item_Camper_Key",
+			"Item_Camper_DullKey",
+			"Item_Camper_BrokenKey"]
 	},
 	{
-	name: "Wire Spool",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_spoolOfWire.png",
-	parentItem: [
-		"Item_Camper_WornoutToolbox",
-		"Item_Camper_Toolbox",
-		"Item_Camper_MechanicsToolbox",
-		"Item_Camper_CommodiousToolbox",
-		"Item_Camper_EngineerToolbox",
-		"Item_Camper_AlexsToolbox"]
+		name: "Wire Spool",
+		image: "../../images/DbD/addons/spoolOfWire.png",
+		parentItem: [
+			"Item_Camper_WornoutToolbox",
+			"Item_Camper_Toolbox",
+			"Item_Camper_MechanicsToolbox",
+			"Item_Camper_CommodiousToolbox",
+			"Item_Camper_EngineerToolbox",
+			"Item_Camper_AlexsToolbox"]
 	},
 	{
-	name: "Unique Wedding Ring",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_uniqueRing.png",
-	parentItem: [
-		"Item_Camper_Key",
-		"Item_Camper_DullKey",
-		"Item_Camper_BrokenKey"]
+		name: "Unique Wedding Ring",
+		image: "../../images/DbD/addons/uniqueRing.png",
+		parentItem: [
+			"Item_Camper_Key",
+			"Item_Camper_DullKey",
+			"Item_Camper_BrokenKey"]
 	},
 	{
-	name: "Anti-Hemorrhagic Syringe",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_syringe.png",
-	parentItem: [
-		"Item_Camper_MedKit",
-		"Item_Camper_MedKit02",
-		"Item_Camper_MedKit03",
-		"Item_Camper_MedKit04",
-		"Item_Camper_MedKit05",
-		"Item_Camper_Medkit_Anniversary2020"]
+		name: "Anti-Hemorrhagic Syringe",
+		image: "../../images/DbD/addons/syringe.png",
+		parentItem: [
+			"Item_Camper_MedKit",
+			"Item_Camper_MedKit02",
+			"Item_Camper_MedKit03",
+			"Item_Camper_MedKit04",
+			"Item_Camper_MedKit05",
+			"Item_Camper_Medkit_Anniversary2020"]
 	},
 	{
-	name: "Yellow Wire",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_ropeYellow.png",
-	parentItem: [
-		"Item_Camper_BeigeMap",
-		"Item_Camper_RainbowMap"]
+		name: "Yellow Wire",
+		image: "../../images/DbD/addons/ropeYellow.png",
+		parentItem: [
+			"Item_Camper_BeigeMap",
+			"Item_Camper_RainbowMap"]
 	},
 	{
-	name: "Self Adherent Wrap",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_selfAdherentWrap.png",
-	parentItem: [
-		"Item_Camper_MedKit",
-		"Item_Camper_MedKit02",
-		"Item_Camper_MedKit03",
-		"Item_Camper_MedKit04",
-		"Item_Camper_MedKit05",
-		"Item_Camper_Medkit_Anniversary2020"]
+		name: "Self Adherent Wrap",
+		image: "../../images/DbD/addons/selfAdherentWrap.png",
+		parentItem: [
+			"Item_Camper_MedKit",
+			"Item_Camper_MedKit02",
+			"Item_Camper_MedKit03",
+			"Item_Camper_MedKit04",
+			"Item_Camper_MedKit05",
+			"Item_Camper_Medkit_Anniversary2020"]
 	},
 	{
-	name: "Long Life Battery",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_longLifeBattery.png",
-	parentItem: [
-		"Item_Camper_Flashlight",
-		"Item_Camper_Flashlight02",
-		"Item_Camper_Flashlight03",
-		"Item_Camper_Flashlight04",
-		"Item_Camper_Flashlight_Anniversary2020"]
+		name: "Long Life Battery",
+		image: "../../images/DbD/addons/longLifeBattery.png",
+		parentItem: [
+			"Item_Camper_Flashlight",
+			"Item_Camper_Flashlight02",
+			"Item_Camper_Flashlight03",
+			"Item_Camper_Flashlight04",
+			"Item_Camper_Flashlight_Anniversary2020"]
 	},
 	{
-	name: "Eroded Token",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_tokenErroded.png",
-	parentItem: [
-		"Item_Camper_Key",
-		"Item_Camper_DullKey",
-		"Item_Camper_BrokenKey"]
+		name: "Eroded Token",
+		image: "../../images/DbD/addons/tokenErroded.png",
+		parentItem: [
+			"Item_Camper_Key",
+			"Item_Camper_DullKey",
+			"Item_Camper_BrokenKey"]
 	},
 	{
-	name: "Map Addendum",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_mapAddendum.png",
-	parentItem: [
-		"Item_Camper_BeigeMap",
-		"Item_Camper_RainbowMap"]
+		name: "Map Addendum",
+		image: "../../images/DbD/addons/mapAddendum.png",
+		parentItem: [
+			"Item_Camper_BeigeMap",
+			"Item_Camper_RainbowMap"]
 	},
 	{
-	name: "Surgical Suture",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_surgicalSuture.png",
-	parentItem: [
-		"Item_Camper_MedKit",
-		"Item_Camper_MedKit02",
-		"Item_Camper_MedKit03",
-		"Item_Camper_MedKit04",
-		"Item_Camper_MedKit05",
-		"Item_Camper_Medkit_Anniversary2020"]
+		name: "Surgical Suture",
+		image: "../../images/DbD/addons/surgicalSuture.png",
+		parentItem: [
+			"Item_Camper_MedKit",
+			"Item_Camper_MedKit02",
+			"Item_Camper_MedKit03",
+			"Item_Camper_MedKit04",
+			"Item_Camper_MedKit05",
+			"Item_Camper_Medkit_Anniversary2020"]
 	},
 	{
-	name: "Hacksaw",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_metalSaw.png",
-	parentItem: [
-		"Item_Camper_WornoutToolbox",
-		"Item_Camper_Toolbox",
-		"Item_Camper_MechanicsToolbox",
-		"Item_Camper_CommodiousToolbox",
-		"Item_Camper_EngineerToolbox",
-		"Item_Camper_AlexsToolbox"]
+		name: "Hacksaw",
+		image: "../../images/DbD/addons/metalSaw.png",
+		parentItem: [
+			"Item_Camper_WornoutToolbox",
+			"Item_Camper_Toolbox",
+			"Item_Camper_MechanicsToolbox",
+			"Item_Camper_CommodiousToolbox",
+			"Item_Camper_EngineerToolbox",
+			"Item_Camper_AlexsToolbox"]
 	},
 	{
-	name: "High-end Sapphire lens",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_highEndSapphireLens.png",
-	parentItem: [
-		"Item_Camper_Flashlight",
-		"Item_Camper_Flashlight02",
-		"Item_Camper_Flashlight03",
-		"Item_Camper_Flashlight04",
-		"Item_Camper_Flashlight_Anniversary2020"]
+		name: "High-end Sapphire lens",
+		image: "../../images/DbD/addons/highEndSapphireLens.png",
+		parentItem: [
+			"Item_Camper_Flashlight",
+			"Item_Camper_Flashlight02",
+			"Item_Camper_Flashlight03",
+			"Item_Camper_Flashlight04",
+			"Item_Camper_Flashlight_Anniversary2020"]
 	},
 	{
-	name: "TIR Optic",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_tirOptic.png",
-	parentItem: [
-		"Item_Camper_Flashlight",
-		"Item_Camper_Flashlight02",
-		"Item_Camper_Flashlight03",
-		"Item_Camper_Flashlight04",
-		"Item_Camper_Flashlight_Anniversary2020"]
+		name: "TIR Optic",
+		image: "../../images/DbD/addons/tirOptic.png",
+		parentItem: [
+			"Item_Camper_Flashlight",
+			"Item_Camper_Flashlight02",
+			"Item_Camper_Flashlight03",
+			"Item_Camper_Flashlight04",
+			"Item_Camper_Flashlight_Anniversary2020"]
 	},
 	{
-	name: "Odd Stamp",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_stampOdd.png",
-	parentItem: [
-		"Item_Camper_BeigeMap",
-		"Item_Camper_RainbowMap"]
+		name: "Odd Stamp",
+		image: "../../images/DbD/addons/stampOdd.png",
+		parentItem: [
+			"Item_Camper_BeigeMap",
+			"Item_Camper_RainbowMap"]
 	},
 	{
-	name: "Blood Amber",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_bloodAmber.png",
-	parentItem: [
-		"Item_Camper_Key",
-		"Item_Camper_DullKey",
-		"Item_Camper_BrokenKey"]
+		name: "Blood Amber",
+		image: "../../images/DbD/addons/bloodAmber.png",
+		parentItem: [
+			"Item_Camper_Key",
+			"Item_Camper_DullKey",
+			"Item_Camper_BrokenKey"]
 	},
 	{
-	name: "Clean Rag",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_cleanRag.png",
-	parentItem: [
-		"Item_Camper_WornoutToolbox",
-		"Item_Camper_Toolbox",
-		"Item_Camper_MechanicsToolbox",
-		"Item_Camper_CommodiousToolbox",
-		"Item_Camper_EngineerToolbox",
-		"Item_Camper_AlexsToolbox"]
+		name: "Clean Rag",
+		image: "../../images/DbD/addons/cleanRag.png",
+		parentItem: [
+			"Item_Camper_WornoutToolbox",
+			"Item_Camper_Toolbox",
+			"Item_Camper_MechanicsToolbox",
+			"Item_Camper_CommodiousToolbox",
+			"Item_Camper_EngineerToolbox",
+			"Item_Camper_AlexsToolbox"]
 	},
 	{
-	name: "Black Silk Cord",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_ropeBlack.png",
-	parentItem: [
-		"Item_Camper_BeigeMap",
-		"Item_Camper_RainbowMap"]
+		name: "Black Silk Cord",
+		image: "../../images/DbD/addons/ropeBlack.png",
+		parentItem: [
+			"Item_Camper_BeigeMap",
+			"Item_Camper_RainbowMap"]
 	},
 	{
-	name: "Needle & Thread",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_needAndThread.png",
-	parentItem: [
-		"Item_Camper_MedKit",
-		"Item_Camper_MedKit02",
-		"Item_Camper_MedKit03",
-		"Item_Camper_MedKit04",
-		"Item_Camper_MedKit05",
-		"Item_Camper_Medkit_Anniversary2020"]
+		name: "Needle & Thread",
+		image: "../../images/DbD/addons/needAndThread.png",
+		parentItem: [
+			"Item_Camper_MedKit",
+			"Item_Camper_MedKit02",
+			"Item_Camper_MedKit03",
+			"Item_Camper_MedKit04",
+			"Item_Camper_MedKit05",
+			"Item_Camper_Medkit_Anniversary2020"]
 	},
 	{
-	name: "Rubber Gloves",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_gloves.png",
-	parentItem: [
-		"Item_Camper_MedKit",
-		"Item_Camper_MedKit02",
-		"Item_Camper_MedKit03",
-		"Item_Camper_MedKit04",
-		"Item_Camper_MedKit05",
-		"Item_Camper_Medkit_Anniversary2020"]
+		name: "Rubber Gloves",
+		image: "../../images/DbD/addons/gloves.png",
+		parentItem: [
+			"Item_Camper_MedKit",
+			"Item_Camper_MedKit02",
+			"Item_Camper_MedKit03",
+			"Item_Camper_MedKit04",
+			"Item_Camper_MedKit05",
+			"Item_Camper_Medkit_Anniversary2020"]
 	},
 	{
-	name: "Prayer Beads",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_prayerBeads.png",
-	parentItem: [
-		"Item_Camper_Key",
-		"Item_Camper_DullKey",
-		"Item_Camper_BrokenKey"]
+		name: "Prayer Beads",
+		image: "../../images/DbD/addons/prayerBeads.png",
+		parentItem: [
+			"Item_Camper_Key",
+			"Item_Camper_DullKey",
+			"Item_Camper_BrokenKey"]
 	},
 	{
-	name: "Butterfly Tape",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_butterflyTape.png",
-	parentItem: [
-		"Item_Camper_MedKit",
-		"Item_Camper_MedKit02",
-		"Item_Camper_MedKit03",
-		"Item_Camper_MedKit04",
-		"Item_Camper_MedKit05",
-		"Item_Camper_Medkit_Anniversary2020"]
+		name: "Butterfly Tape",
+		image: "../../images/DbD/addons/butterflyTape.png",
+		parentItem: [
+			"Item_Camper_MedKit",
+			"Item_Camper_MedKit02",
+			"Item_Camper_MedKit03",
+			"Item_Camper_MedKit04",
+			"Item_Camper_MedKit05",
+			"Item_Camper_Medkit_Anniversary2020"]
 	},
 	{
-	name: "Battery",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_battery.png",
-	parentItem: [
-		"Item_Camper_Flashlight",
-		"Item_Camper_Flashlight02",
-		"Item_Camper_Flashlight03",
-		"Item_Camper_Flashlight04",
-		"Item_Camper_Flashlight_Anniversary2020"]
+		name: "Battery",
+		image: "../../images/DbD/addons/battery.png",
+		parentItem: [
+			"Item_Camper_Flashlight",
+			"Item_Camper_Flashlight02",
+			"Item_Camper_Flashlight03",
+			"Item_Camper_Flashlight04",
+			"Item_Camper_Flashlight_Anniversary2020"]
 	},
 	{
-	name: "Spring Clamp",
-	image: "https://dbd-stats.info/data/Public/UI/Icons/ItemAddons/iconAddon_springClamp.png",
-	parentItem: [
-		"Item_Camper_WornoutToolbox",
-		"Item_Camper_Toolbox",
-		"Item_Camper_MechanicsToolbox",
-		"Item_Camper_CommodiousToolbox",
-		"Item_Camper_EngineerToolbox",
-		"Item_Camper_AlexsToolbox"]
+		name: "Spring Clamp",
+		image: "../../images/DbD/addons/springClamp.png",
+		parentItem: [
+			"Item_Camper_WornoutToolbox",
+			"Item_Camper_Toolbox",
+			"Item_Camper_MechanicsToolbox",
+			"Item_Camper_CommodiousToolbox",
+			"Item_Camper_EngineerToolbox",
+			"Item_Camper_AlexsToolbox"]
 	}
 ];
 
@@ -597,7 +597,7 @@ function displayAddons() {
 
 function letsgoia() {
     var i = 0;
-    var arr = ['name: ', 'image: ', 'parentItem: '];
+    var arr = ['name: ', 'image: ', 'parentItem: [\n'];
     var a = 'const survItemAddons = [\n';
     for(i = 0; i < survItemAddons.length; i++) {
         var j = 0;
@@ -607,11 +607,21 @@ function letsgoia() {
             var index = survItemAddons[i].image.lastIndexOf('_')+1;
             index = '../../images/DbD/addons/' + survItemAddons[i].image.substr(index);
             if (j == arr.length-1) { 
+                add = '';
                 // another for loop for array of parent items
+                a += '\t\t' + arr[j];
+                for(k = 0; k < survItemAddons[i].parentItem.length; k++) {
+                    if (k == survItemAddons[i].parentItem.length - 1) {
+                        add += '\t\t\t"' + survItemAddons[i].parentItem[k] + '"]';
+                    } else {
+                        add += '\t\t\t"' + survItemAddons[i].parentItem[k] + '",\n';
+                    }
+                }
+                a += add + '\n';
             } else if (j == arr.length-2) {
                 a += '\t\t' + arr[j];
                 add = '"' + index + '"';
-                a += add + '\n';
+                a += add + ',\n';
             }else {
                 a += '\t\t' + arr[j];
                 add = '"' + survItemAddons[i].name + '"';
@@ -649,6 +659,7 @@ function getItemsss() {
 }
 
 function getItem() {
+    //letsgoia();
     var arr = [];
     var i;
     var cnt = 0;
@@ -689,7 +700,7 @@ function doSomething(arr) {
             if (j != names.length-1) {
                 output += '\t' + names[cnt++] + element + ',\n';
             } else {
-                output += '\t' + names[cnt++] + element + '\n';
+                output += '\t' + names[cnt++] + element + ',\n';
             }
         }
         if (i != arr.length-1) {

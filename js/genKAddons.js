@@ -2073,7 +2073,7 @@ const killerAddons = [
     {
 		name: "Bloody Black Hood",
 		parentItem: "twins",
-		image: "../../images/DbD/addons/bloodyBlackHood.png"
+		image: "../../images/DbD/addons/bloodiedBlackHood.png"
 	},
     {
 		name: "Baby Teeth",
