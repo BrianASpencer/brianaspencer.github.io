@@ -290,7 +290,7 @@ const killerPerks = [
 	},
     {
 		name: "Hoarder",
-		image: "../../images/DbD/perks/hoarder.png"
+		image: "../../images/DbD/perks/Hoarder.png"
 	},
     {
 		name: "Oppression",
