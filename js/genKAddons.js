@@ -241,11 +241,6 @@ const killerAddons = [
 		image: "../../images/DbD/addons/pillBottle.png"
 	},
 	{
-		name: "Starling Feather",
-		parentItem: "Item_Slasher_GasBomb",
-		image: "../../images/DbD/addons/starlingFeather.png"
-	},
-	{
 		name: "Chewing Tobacco",
 		parentItem: "Item_Slasher_HarpoonRifle",
 		image: "../../images/DbD/addons/chewingTobacco.png"
@@ -459,11 +454,6 @@ const killerAddons = [
 		name: "Bone Clapper",
 		parentItem: "Item_Slasher_CloakBell",
 		image: "../../images/DbD/addons/boneClapper.png"
-	},
-	{
-		name: "Smelly Inner Soles",
-		parentItem: "Item_Slasher_GasBomb",
-		image: "../../images/DbD/addons/smellyInnerSoles.png"
 	},
 	{
 		name: "Green Dress",
@@ -741,11 +731,6 @@ const killerAddons = [
 		image: "../../images/DbD/addons/devoteesAmulet.png"
 	},
 	{
-		name: "Thick Cork Stopper",
-		parentItem: "Item_Slasher_GasBomb",
-		image: "../../images/DbD/addons/thickCorkStopper.png"
-	},
-	{
 		name: "Speed Limiter",
 		parentItem: "Item_Slasher_Chainsaw",
 		image: "../../images/DbD/addons/speedLimiter.png"
@@ -911,11 +896,6 @@ const killerAddons = [
 		image: "../../images/DbD/addons/tuftOfHair.png"
 	},
 	{
-		name: "Redhead's Pinky Finger",
-		parentItem: "Item_Slasher_GasBomb",
-		image: "../../images/DbD/addons/redheadsPinkyFinger.png"
-	},
-	{
 		name: "Lock of Hair",
 		parentItem: "Item_Slasher_Stalker",
 		image: "../../images/DbD/addons/lockOfHair.png"
@@ -1016,11 +996,6 @@ const killerAddons = [
 		image: "../../images/DbD/addons/blackGrease.png"
 	},
 	{
-		name: "Fingerless Parade Gloves",
-		parentItem: "Item_Slasher_GasBomb",
-		image: "../../images/DbD/addons/fingerlessParadeGloves.png"
-	},
-	{
 		name: "Bloody Coil",
 		parentItem: "Item_Slasher_Beartrap",
 		image: "../../images/DbD/addons/bloodyCoil.png"
@@ -1114,11 +1089,6 @@ const killerAddons = [
 		name: "Matchbox",
 		parentItem: "Item_Slasher_Blinker",
 		image: "../../images/DbD/addons/matchBox.png"
-	},
-	{
-		name: "Ether 5 vol%",
-		parentItem: "Item_Slasher_GasBomb",
-		image: "../../images/DbD/addons/ether5.png"
 	},
 	{
 		name: "Julie's Mix Tape",
@@ -1536,11 +1506,6 @@ const killerAddons = [
 		image: "../../images/DbD/addons/bandagedHaft.png"
 	},
 	{
-		name: "Robin Feather",
-		parentItem: "Item_Slasher_GasBomb",
-		image: "../../images/DbD/addons/robinFeather.png"
-	},
-	{
 		name: "Lion Fang",
 		parentItem: "Item_Slasher_Kanobo",
 		image: "../../images/DbD/addons/lionFang.png"
@@ -1594,11 +1559,6 @@ const killerAddons = [
 		name: "Cinderella Music Box ",
 		parentItem: "Item_Slasher_TormentMode",
 		image: "../../images/DbD/addons/cinderellaMusicBox.png"
-	},
-	{
-		name: "Kerosene Can",
-		parentItem: "Item_Slasher_GasBomb",
-		image: "../../images/DbD/addons/keroseneCan.png"
 	},
 	{
 		name: "Burning Man Painting ",
@@ -1859,11 +1819,6 @@ const killerAddons = [
 		name: "Blond Hair",
 		parentItem: "Item_Slasher_Stalker",
 		image: "../../images/DbD/addons/blondeHair.png"
-	},
-	{
-		name: "Sticky Soda Bottle",
-		parentItem: "Item_Slasher_GasBomb",
-		image: "../../images/DbD/addons/stickySodaBottle.png"
 	},
 	{
 		name: "Nancy's Masterpiece",
@@ -2134,6 +2089,116 @@ const killerAddons = [
 		name: "Iridescent Pendant",
 		parentItem: "twins",
 		image: "../../images/DbD/addons/iridescentPendant.png"
+	},
+    {
+		name: "Bottle of Chloroform",
+		parentItem: "Item_Slasher_GasBomb",
+		image: "../../images/DbD/addons/bottleOfChloroform.png"
+	},
+    {
+		name: "Cheap Gin Bottle",
+		parentItem: "Item_Slasher_GasBomb",
+		image: "../../images/DbD/addons/cheapGinBottle.png"
+	},
+    {
+		name: "Cigar Box",
+		parentItem: "Item_Slasher_GasBomb",
+		image: "../../images/DbD/addons/cigarBox.png"
+	},
+    {
+		name: "Ether 5%",
+		parentItem: "Item_Slasher_GasBomb",
+		image: "../../images/DbD/addons/ether5.png"
+	},
+    {
+		name: "Ether 10 Vol%",
+		parentItem: "Item_Slasher_GasBomb",
+		image: "../../images/DbD/addons/ether10.png"
+	},
+    {
+		name: "Ether 15 Vol%",
+		parentItem: "Item_Slasher_GasBomb",
+		image: "../../images/DbD/addons/ether15.png"
+	},
+    {
+		name: "Fingerless Parade Gloves",
+		parentItem: "Item_Slasher_GasBomb",
+		image: "../../images/DbD/addons/fingerlessParadeGloves.png"
+	},
+    {
+		name: "Flash of Bleach",
+		parentItem: "Item_Slasher_GasBomb",
+		image: "../../images/DbD/addons/flaskOfBleach.png"
+	},
+    {
+		name: "Garish Makeup Kit",
+		parentItem: "Item_Slasher_GasBomb",
+		image: "../../images/DbD/addons/garishMakeupKit.png"
+	},
+    {
+		name: "Kerosene Can",
+		parentItem: "Item_Slasher_GasBomb",
+		image: "../../images/DbD/addons/keroseneCan.png"
+	},
+    {
+		name: "Party Bottle",
+		parentItem: "Item_Slasher_GasBomb",
+		image: "../../images/DbD/addons/partyBottle.png"
+	},
+    {
+		name: "Redhead's Pinky Finger",
+		parentItem: "Item_Slasher_GasBomb",
+		image: "../../images/DbD/addons/redheadsPinkyFinger.png"
+	},
+    {
+		name: "Robin Feather",
+		parentItem: "Item_Slasher_GasBomb",
+		image: "../../images/DbD/addons/robinFeather.png"
+	},
+    {
+		name: "Smelly Inner Soles",
+		parentItem: "Item_Slasher_GasBomb",
+		image: "../../images/DbD/addons/smellyInnerSoles.png"
+	},
+    {
+		name: "Solvent Jug",
+		parentItem: "Item_Slasher_GasBomb",
+		image: "../../images/DbD/addons/solventJug.png"
+	},
+    {
+		name: "Spirt of Hartshorn",
+		parentItem: "Item_Slasher_GasBomb",
+		image: "../../images/DbD/addons/spiritOfHartshorn.png"
+	},
+    {
+		name: "Starling Feather",
+		parentItem: "Item_Slasher_GasBomb",
+		image: "../../images/DbD/addons/starlingFeather.png"
+	},
+    {
+		name: "Sticky Soda Bottle",
+		parentItem: "Item_Slasher_GasBomb",
+		image: "../../images/DbD/addons/stickySodaBottle.png"
+	},
+    {
+		name: "Sulfuric Acid Vial",
+		parentItem: "Item_Slasher_GasBomb",
+		image: "../../images/DbD/addons/sulfuricAcidVial.png"
+	},
+    {
+		name: "Tattoo's Middle Finger",
+		parentItem: "Item_Slasher_GasBomb",
+		image: "../../images/DbD/addons/tattoosMiddleFinger.png"
+	},
+    {
+		name: "Thick Cork Stopper",
+		parentItem: "Item_Slasher_GasBomb",
+		image: "../../images/DbD/addons/thickCorkStopper.png"
+	},
+    {
+		name: "VHS Porn",
+		parentItem: "Item_Slasher_GasBomb",
+		image: "../../images/DbD/addons/vhsPorn.png"
 	}
 ];
 
