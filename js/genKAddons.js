@@ -481,11 +481,6 @@ const killerAddons = [
 		image: "../../images/DbD/addons/philly.png"
 	},
 	{
-		name: "Judith's Tombstone",
-		parentItem: "Item_Slasher_Stalker",
-		image: "../../images/DbD/addons/judithsTombstone.png"
-	},
-	{
 		name: "Workshop Grease",
 		parentItem: "Item_Slasher_ReverseBearTrap",
 		image: "../../images/DbD/addons/workshopGrease.png"
