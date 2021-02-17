@@ -71,25 +71,25 @@
             <div id="context1"> 
                 <div class="ui three item inverted menu"> 
                     <a class="grey item active" data-tab="first"> 
-                        <h2>General</h2> 
+                        <h3>General</h3> 
                     </a> 
                     <a class="blue item" data-tab= "second">
-                        <h2>Survivors</h2>
+                        <h3>Survivors</h3>
                     </a> 
 
                     <a class="red item" data-tab="third"> 
-                        <h2>Killer</h2> 
+                        <h3>Killer</h3> 
                     </a> 
                 </div> 
                         
-                <div class="ui tab segment active bg-dark" data-tab="first"> 
-                    <div class="ui one item inverted grey menu"  style="justify-content: center;"> 
-                        <a class="active item" data-tab= "first/a">
+                <div class="ui tab inverted segment active" data-tab="first"> 
+                    <div class="ui one item inverted menu"  style="justify-content: center;"> 
+                        <a class="item" data-tab= "first/a">
                             <h3>Welcome!</h3> 
                         </a> 
                     </div> 
 
-                    <div class="ui tab segment active bg-dark" data-tab="first/a"> 
+                    <div class="ui tab inverted segment active" data-tab="first/a"> 
                         <div class="text-center text-white">
                             <h3>
                                 This is a project to host our friend group's rules for our own version of "Kill Your Friends" in DbD. We also randomly generate our builds and the maps we play on to spice up the game we enjoy playing.
@@ -131,22 +131,19 @@
 
                 </div> 
                     
-                <div class="ui tab segment bg-dark" data-tab="second"> 
+                <div class="ui tab inverted segment" data-tab="second"> 
                     <div class="ui three item inverted menu" style="justify-content: center;"> 
-                        <a class="blue item" data-tab= 
-                           "second/a">
+                        <a class="item" data-tab= "second/a">
                             <h3>Rules</h3>
                         </a> 
-                        <a class="blue item" data-tab= 
-                           "second/b">
+                        <a class="item" data-tab= "second/b">
                             <h3>Perks</h3>
                         </a> 
-                        <a class="blue item" 
-                           data-tab="second/c">
+                        <a class="item" data-tab="second/c">
                             <h3>Items</h3>
                         </a> 
                     </div> 
-                    <div class="ui tab segment bg-dark" data-tab="second/a"> 
+                    <div class="ui tab inverted segment" data-tab="second/a"> 
                         <h3 class="text-center text-white">Gameplay/Loadout</h3>
                         <ul class="list-group">
                             <li class="list-group-item list-group-item-primary">
@@ -181,17 +178,21 @@
                             </li>
                         </ul>
                     </div> 
-                    <div class="ui tab segment bg-dark" data-tab="second/b"> 
+                    <div class="ui tab inverted segment" data-tab="second/b"> 
                         <div class="text-center">
-                            <button class="btn btn-primary" onclick="displaySurvPerks(this)">Generate New Perks</button>
+                            <button class="ui inverted primary button" onclick="displaySurvPerks(this)">
+                                <h4>Generate New Perks</h4>
+                            </button>
                         </div>
                         <br>
                         <ul class="list-group" id="sPerks">
                         </ul>
                     </div> 
-                    <div class="ui tab segment bg-dark" data-tab="second/c"> 
+                    <div class="ui tab inverted segment" data-tab="second/c"> 
                         <div class="text-center">
-                            <button class="btn btn-primary" onclick="displaySurvivorBuild(this);">Generate A New Item</button>
+                            <button class="ui inverted primary button" onclick="displaySurvivorBuild(this);">
+                                <h4>Generate A New Item</h4>
+                            </button>
                         </div>
                         <br>
                         <ul class="list-group" id="itemSlot">
@@ -199,7 +200,7 @@
                         <br>
                     </div> 
                 </div> 
-                <div class="ui tab segment bg-dark" data-tab="third"> 
+                <div class="ui tab inverted segment" data-tab="third"> 
                     <div class="ui three item inverted menu" style="justify-content: center;"> 
                         <a class="red item" data-tab="third/a">
                             <h3>Rules</h3>
@@ -211,7 +212,7 @@
                             <h3>Killer</h3>
                         </a> 
                     </div> 
-                    <div class="ui tab segment bg-dark" data-tab="third/a"> 
+                    <div class="ui tab inverted segment" data-tab="third/a"> 
                         <h3 class="text-center text-white">Gameplay/Loadout</h3>
                         <ul class="list-group">
                             <li class="list-group-item list-group-item-danger">
@@ -252,24 +253,30 @@
                             </li>
                         </ul> 
                     </div> 
-                    <div class="ui tab segment bg-dark" data-tab="third/b"> 
+                    <div class="ui tab inverted segment" data-tab="third/b"> 
                         <div class="text-center">
-                            <button class="btn btn-danger" onclick="displayKillerPerks(this)">Generate New Perks</button>
+                            <button class="ui inverted red button" onclick="displayKillerPerks(this)">
+                                <h4>Generate New Perks</h4>
+                            </button>
                         </div>
                         <br>
                         <ul class="list-group" id="kPerks">
                         </ul>
                     </div> 
-                    <div class="ui tab segment bg-dark" data-tab="third/c"> 
+                    <div class="ui tab inverted segment" data-tab="third/c"> 
                         <div class="text-center">
-                            <button class="btn btn-danger" onclick="displayKillerBuild(this);">Generate A New Killer</button>
+                            <button class="ui inverted red button" onclick="displayKillerBuild(this);">
+                                <h4>Generate A New Killer</h4>
+                            </button>
                         </div>
                         <br>
                         <ul class="list-group" id="killerSlot">
                         </ul>
                         <br>
                         <div class="text-center">
-                            <button class="btn btn-danger" onclick="displayMaps(this)">Generate New Maps</button>
+                            <button class="btn btn-danger" onclick="displayMaps(this)">
+                                <h4>Generate New Maps</h4>
+                            </button>
                         </div>
                         <br>
                         <ul class="list-group" id="maps">
@@ -292,10 +299,7 @@
     </body> 
 
     <div class="footer-copyright text-center py-3">
-        <a href="https://www.facebook.com/brian.spencer.1297"><i class="fa fa-facebook" aria-hidden="true" style="font-size: 2em; color: white;"></i></a>
-        &nbsp;&nbsp;
-        <a href="https://www.linkedin.com/in/brian-spencer-6b4a47199/"><i class="fa fa-linkedin" aria-hidden="true" style="font-size: 2em; color: white;"></i></a> <br>
-        <text style="color: white;">© 2020 Brian Spencer</text> 
+        <h4 class="text-white">© 2020 Brian Spencer</h4> 
     </div>
 
 </html> 
