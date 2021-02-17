@@ -176,7 +176,7 @@ function displayKiller() {
     var index = getRandomInt(killers.length);
     killer = killers[index];
     var lag = '<li class="list-group-item list-group-item-danger"><div class="row"><div class="column" style="width:96%"><div class="text-center"><h2>' +
-    killer.name + '</h2>' + '<img class="img-fluid" style="width: 22%; height: 22%;" src="' +killer.image +'">' + '</div></div></div><br>';
+    killer.name + '</h2>' + '<img class="img-fluid" style="width: 20%; height: 20%;" src="' +killer.image +'">' + '</div></div></div><br>';
     lag += displayKillerAddons();
     killerSlot.innerHTML += lag;
 }
