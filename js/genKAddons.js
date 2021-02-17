@@ -581,11 +581,6 @@ const killerAddons = [
 		image: "../../images/DbD/addons/victimsDetailedRoutine.png"
 	},
 	{
-		name: "Iridescent Head",
-		parentItem: "Item_Slasher_Hatchet",
-		image: "../../images/DbD/addons/iridescentHead.png"
-	},
-	{
 		name: "Plaid Flannel",
 		parentItem: "Item_Slasher_Blinker",
 		image: "../../images/DbD/addons/plaidFlannel.png"
