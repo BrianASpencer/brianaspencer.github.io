@@ -131,11 +131,8 @@
                         <a class="blue item" data-tab= "second/a">
                             <h3>Rules</h3>
                         </a> 
-                        <a class="blue item" data-tab= "second/b">
-                            <h3>Perks</h3>
-                        </a> 
-                        <a class="blue item" data-tab="second/c">
-                            <h3>Items</h3>
+                        <a class="blue item" data-tab="second/b">
+                            <h3>Build</h3>
                         </a> 
                     </div> 
                     <div class="ui tab inverted segment" data-tab="second/a"> 
@@ -175,18 +172,8 @@
                     </div> 
                     <div class="ui tab inverted segment" data-tab="second/b"> 
                         <div class="text-center">
-                            <button class="ui inverted primary button" onclick="displaySurvPerks(this)">
-                                <h4>Generate New Perks</h4>
-                            </button>
-                        </div>
-                        <br>
-                        <ul class="list-group" id="sPerks">
-                        </ul>
-                    </div> 
-                    <div class="ui tab inverted segment" data-tab="second/c"> 
-                        <div class="text-center">
                             <button class="ui inverted primary button" onclick="displaySurvivorBuild(this);">
-                                <h4>Generate A New Item</h4>
+                                <h4>Generate A New Build</h4>
                             </button>
                         </div>
                         <br>
@@ -201,10 +188,7 @@
                             <h3>Rules</h3>
                         </a> 
                         <a class="red item" data-tab="third/b">
-                            <h3>Perks</h3>
-                        </a> 
-                        <a class="red item" data-tab="third/c">
-                            <h3>Killer</h3>
+                            <h3>Build</h3>
                         </a> 
                     </div> 
                     <div class="ui tab inverted segment" data-tab="third/a"> 
@@ -226,7 +210,7 @@
                         <h3 class="text-center text-white">Banned Addons</h3>
                         <ul class="list-group">
                             <li class="list-group-item list-group-item-danger">
-                                <h4>Iridescent Head (The Huntress)</h4>
+                                <h4>Iridescent Head (The Shape)</h4>
                             </li>
                             <li class="list-group-item list-group-item-danger">
                                 <h4>Judith's Tomstone (The Shape)</h4>
@@ -235,7 +219,7 @@
                                 <h4>Anything that causes Exhaustion</h4>
                             </li>
                         </ul>
-                        <h3 class="text-center text-white">Banned Perks</h3>
+                        <h3 class="text-center text-white">Perks</h3>
                         <ul class="list-group">
                             <li class="list-group-item list-group-item-danger">
                                 <h4>Hex: No one Escapes Death</h4>
@@ -250,18 +234,8 @@
                     </div> 
                     <div class="ui tab inverted segment" data-tab="third/b"> 
                         <div class="text-center">
-                            <button class="ui inverted red button" onclick="displayKillerPerks(this)">
-                                <h4>Generate New Perks</h4>
-                            </button>
-                        </div>
-                        <br>
-                        <ul class="list-group" id="kPerks">
-                        </ul>
-                    </div> 
-                    <div class="ui tab inverted segment" data-tab="third/c"> 
-                        <div class="text-center">
                             <button class="ui inverted red button" onclick="displayKillerBuild(this);">
-                                <h4>Generate A New Killer</h4>
+                                <h4>Generate A New Build</h4>
                             </button>
                         </div>
                         <br>
@@ -280,10 +254,10 @@
                 </div> 
             </div> 
         </div> 
+        <script src="../../js/genKPerks.js"></script>
         <script src="../../js/genKAddons.js"></script>
         <script src="../../js/genKiller.js"></script>
         <script src="../../js/genMap.js"></script>
-        <script src="../../js/genKPerks.js"></script>
         <script src="../../js/genSPerks.js"></script>
         <script src="../../js/genItemAddons.js"></script>
         <script src="../../js/genItem.js"></script>
