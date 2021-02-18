@@ -175,9 +175,10 @@ function displayKiller() {
     killerSlot.innerHTML = '';
     var index = getRandomInt(killers.length);
     killer = killers[index];
-    var lag = '<li class="list-group-item list-group-item-danger"><div class="row"><div class="column" style="width:96%"><div class="text-center"><h2>' +
-    killer.name + '</h2>' + '<img class="img-fluid" style="width: 20%; height: 20%;" src="' +killer.image +'">' + '</div></div></div><br>';
+    var lag = '<li class="list-group-item list-group-item-danger"><div class="row"><div class="column" style="width:40%"><div class="text-center"><h2>' +
+    killer.name + '</h2>' + '<img class="img-fluid" style="height: auto; width: 50%;" src="' +killer.image +'">' + '</div></div><br>';
     lag += displayKillerAddons();
+    lag += displayKillerPerks();
     killerSlot.innerHTML += lag;
 }
 

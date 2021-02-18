@@ -1,4 +1,4 @@
-const surv = document.getElementById('sPerks');
+//const surv = document.getElementById('sPerks');
 const survivorPerks = [
 	{
 		name: "Babysitter",
@@ -395,7 +395,7 @@ const displaySurvPerks_Old = (disPerks) => {
 
 function displaySurvPerks() {
     //letsgosp();
-    surv.innerHTML = '';
+    //surv.innerHTML = '';
     var indeces = getIndeces(4, survivorPerks.length);
     var perks = [survivorPerks[indeces[0]], survivorPerks[indeces[1]], survivorPerks[indeces[2]], survivorPerks[indeces[3]]];
     var lag = '<li class="list-group-item list-group-item-primary">';
@@ -405,13 +405,14 @@ function displaySurvPerks() {
             lag += '<div class="row text-center">';
         }
         lag += '<div class="column" style="width:48%"><h3 class="text-center">' +
-        perks[i].name + '</h3>' + '<img class="img-fluid" style="width: 50%;" src="' + perks[i].image +'"></div>';
+        perks[i].name + '</h3>' + '<img class="img-fluid" style="width: 35%;" src="' + perks[i].image +'"></div>';
         if (i % 2 == 1) {
             lag += '</div>';
         }
     }
     lag += '</li>';
-    surv.innerHTML += lag;
+    return lag;
+    //surv.innerHTML += lag;
 }
 
 function letsgosp() {

@@ -589,7 +589,7 @@ function displayAddons() {
     var i = 0;
     for (i = 0; i < 2; i++) {
         lag += '<div class="column" style="width:48%"><div class="text-center"><h3>' +
-        addons[i].name + '</h3>' + '<img class="img-fluid" style="width: 35%;" src="' + addons[i].image +'">' + '</div></div>';
+        addons[i].name + '</h3>' + '<img class="img-fluid" style="width: 25%;" src="' + addons[i].image +'">' + '</div></div>';
     }
     lag +='</div></li>';
     return lag;

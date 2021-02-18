@@ -116,9 +116,11 @@ const displayItem = (item) => {
     itemSLot.innerHTML = '';
     var index = getRandomInt(survivorItems.length);
     sItem = survivorItems[index];
-    var lag = '<li class="list-group-item list-group-item-primary"><div class="row"><div class="column" style="width:96%"><div class="text-center"><h2>' +
-    sItem.name + '</h2>' + '<img class="img-fluid" style="width: 25%; height: 25%;" src="' + sItem.image +'">' + '</div></div></div><br>';
+    var lag = '<li class="list-group-item list-group-item-primary"><div class="row"><div class="column" style="width:100%"><div class="text-center"><h2>' +
+    sItem.name + '</h2>' + '<img class="img-fluid" style="width: 18%;" src="' + sItem.image +'">' + '</div></div></div><br>';
     lag += displayAddons();
+    lag += displaySurvPerks();
+    console.log(lag);
     itemSLot.innerHTML += lag;
 };
 

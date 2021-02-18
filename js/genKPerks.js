@@ -1,4 +1,4 @@
-const kill = document.getElementById('kPerks');
+//const kill = document.getElementById('kPerks');
 const killerPerks = [
 	{
 		name: "Deathbound",
@@ -355,7 +355,7 @@ const displayKillerPerks_old = (disPerks) => {
 
 function displayKillerPerks() {
     //letsgokp();
-    kill.innerHTML = '';
+    //kill.innerHTML = '';
     var sIndeces = getIndeces(4, killerPerks.length);
     var perks = [killerPerks[sIndeces[0]], killerPerks[sIndeces[1]], killerPerks[sIndeces[2]], killerPerks[sIndeces[3]]];
     var lag = '<li class="list-group-item list-group-item-danger">';
@@ -364,14 +364,16 @@ function displayKillerPerks() {
         if (i % 2 == 0) {
             lag += '<div class="row">';
         }
-        lag += '<div class="column" style="width:48%"><h3 class="text-center">' +
-        perks[i].name + '</h3>' + '<div class="text-center"> <img class="img-fluid" style="width: 50%;" src="' + perks[i].image +'"></div></div>';
+        lag += '<div class="column" style="width:50%"><h3 class="text-center">' +
+        perks[i].name + '</h3>' + '<div class="text-center"> <img class="img-fluid" style="height: auto; width: 35%;" src="' + perks[i].image +'"></div></div>';
         if (i % 2 == 1) {
             lag += '</div>';
         }
     }
-    lag += '</li>';
-    kill.innerHTML += lag;
+    //lag += '</li>';
+    lag +='</li></div></li>';
+    return lag;
+    //kill.innerHTML += lag;
 }
 
 function letsgokp() {
