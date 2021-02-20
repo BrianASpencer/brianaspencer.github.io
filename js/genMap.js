@@ -180,7 +180,7 @@ const displayMaps_Old = (mapList) => {
     var i = 0;
     for (i = 0; i < 2; i++) {
         var lag = '<li class="list-group-item list-group-item-danger"><div class="text-center"><h2>' +
-        mapList[i][0] + '</h2>' + '<img style="width: 30%; height: 30%;" src="' + mapList[i][1] +'"></div>' + '</li>';
+        mapList[i][0] + '</h2>' + '<img class="ui centered small image" src="' + mapList[i][1] +'"></div>' + '</li>';
         maps.innerHTML += lag;
     }
 };

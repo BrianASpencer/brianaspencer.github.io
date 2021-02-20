@@ -558,7 +558,7 @@ const displayAddons_old = (addons) => {
     itemAddonSlot.innerHTML = '';
     for (i = 0; i < 2; i++) {
         var lag = '<li class="list-group-item list-group-item-primary"><div class="text-center"><h2>' +
-        addons[i][0] + '</h2>' + '<img style="width: 10%; height: 10%;" src="' + addons[i][1] +'">' + '</div></li>';
+        addons[i][0] + '</h2>' + '<img class="ui centered tiny image" src="' + addons[i][1] +'">' + '</div></li>';
         itemAddonSlot.innerHTML += lag;
     }
 };
@@ -585,13 +585,13 @@ function displayAddons() {
     var items = getItem();
     var indeces = getIndeces(2, items.length);
     var addons = [items[indeces[0]], items[indeces[1]]];
-    var lag = '<div class="row text-center">';
+    var lag = '<div class="ui two column grid"><div class="row">';
     var i = 0;
     for (i = 0; i < 2; i++) {
         lag += '<div class="column" style="width:48%"><div class="text-center"><h3>' +
         addons[i].name + '</h3>' + '<img class="img-fluid" style="width: 25%;" src="' + addons[i].image +'">' + '</div></div>';
     }
-    lag +='</div></li>';
+    lag +='</div></div></li>';
     return lag;
 }
 

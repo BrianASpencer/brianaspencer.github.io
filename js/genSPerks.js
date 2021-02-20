@@ -398,19 +398,19 @@ function displaySurvPerks() {
     //surv.innerHTML = '';
     var indeces = getIndeces(4, survivorPerks.length);
     var perks = [survivorPerks[indeces[0]], survivorPerks[indeces[1]], survivorPerks[indeces[2]], survivorPerks[indeces[3]]];
-    var lag = '<li class="list-group-item list-group-item-primary">';
+    var lag = '<li class="list-group-item list-group-item-primary"><div class="ui two column grid">';
     var i = 0;
     for (i = 0; i < 4; i++) {
         if (i % 2 == 0) {
             lag += '<div class="row text-center">';
         }
-        lag += '<div class="column" style="width:48%"><h3 class="text-center">' +
-        perks[i].name + '</h3>' + '<img class="img-fluid" style="width: 35%;" src="' + perks[i].image +'"></div>';
+        lag += '<div class="column"><h3 class="text-center">' +
+        perks[i].name + '</h3>' + '<img class="ui centered small image" src="' + perks[i].image +'"></div>';
         if (i % 2 == 1) {
             lag += '</div>';
         }
     }
-    lag += '</li>';
+    lag += '</div></li>';
     return lag;
     //surv.innerHTML += lag;
 }

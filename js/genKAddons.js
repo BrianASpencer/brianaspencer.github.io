@@ -2313,15 +2313,16 @@ function displayKillerAddons() {
     //addonSlot.innerHTML = '';
     var indeces = getIndeces(2, list.length);
     var addons = [list[indeces[0]], list[indeces[1]]];
-    var lag = '<div class="row" style="display: flex; align-items: center; justify-content: center;">';
+    var lag = '<div class="eight wide column">';
     //var lag = '<div class="row">';
     var i = 0;
     for (i = 0; i < 2; i++) {
-        lag += '<div class="column" style="width:50%"><div class="text-center"><h3>' +
-        addons[i].name + '</h3>' + '<img class="img-fluid"" style="height: auto; width: 50%;" src="' + addons[i].image +'">' + '</div></div>';
+        lag += '<div class="text-center"><h3>' +
+        addons[i].name + '</h3>' + '<img class="ui centered small image" src="' + addons[i].image +'">' + '</div>';
     }
     //lag +='</div></li>';
     //addonSlot.innerHTML += lag;
+    lag += '</div>'
     return lag;
 }
 

@@ -348,7 +348,7 @@ const displayKillerPerks_old = (disPerks) => {
     var i = 0;
     for (i = 0; i < 4; i++) {
         var lag = '<li class="list-group-item list-group-item-danger"><h2 class="text-center">' +
-        disPerks[i][0] + '</h2>' + '<div class="text-center"> <img style="width: 20%; height: 20%;" src="' + disPerks[i][2] +'"></div>' + '<div>' + disPerks[i][1].replace(/<(.|\n)*?>/g, '') + '</div><br>' + '</li>';
+        disPerks[i][0] + '</h2>' + '<div class="text-center"> <img class="ui centered fluid image" src="' + disPerks[i][2] +'"></div>' + '<div>' + disPerks[i][1].replace(/<(.|\n)*?>/g, '') + '</div><br>' + '</li>';
         kill.innerHTML += lag;
     }
 };
@@ -358,20 +358,20 @@ function displayKillerPerks() {
     //kill.innerHTML = '';
     var sIndeces = getIndeces(4, killerPerks.length);
     var perks = [killerPerks[sIndeces[0]], killerPerks[sIndeces[1]], killerPerks[sIndeces[2]], killerPerks[sIndeces[3]]];
-    var lag = '<li class="list-group-item list-group-item-danger">';
+    var lag = '<li class="list-group-item list-group-item-danger"><div class="ui two column centered grid">';
     var i = 0;
     for (i = 0; i < 4; i++) {
         if (i % 2 == 0) {
             lag += '<div class="row">';
         }
-        lag += '<div class="column" style="width:50%"><h3 class="text-center">' +
-        perks[i].name + '</h3>' + '<div class="text-center"> <img class="img-fluid" style="height: auto; width: 35%;" src="' + perks[i].image +'"></div></div>';
+        lag += '<div class="eight wide column"><h3 class="text-center">' +
+        perks[i].name + '</h3>' + '<img class="ui centered small image" src="' + perks[i].image +'"></div>';
         if (i % 2 == 1) {
             lag += '</div>';
         }
     }
     //lag += '</li>';
-    lag +='</li></div></li>';
+    lag +='</li></div></div>';
     return lag;
     //kill.innerHTML += lag;
 }
