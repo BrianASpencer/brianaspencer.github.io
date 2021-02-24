@@ -2314,7 +2314,6 @@ function displayKillerAddons() {
     var indeces = getIndeces(2, list.length);
     var addons = [list[indeces[0]], list[indeces[1]]];
     var lag = '<div class="eight wide column">';
-    //var lag = '<div class="row">';
     var i = 0;
     for (i = 0; i < 2; i++) {
         lag += '<div class="text-center"><h3>' +
@@ -2322,7 +2321,7 @@ function displayKillerAddons() {
     }
     //lag +='</div></li>';
     //addonSlot.innerHTML += lag;
-    lag += '</div>'
+    //lag += '</div>'
     return lag;
 }
 

@@ -116,11 +116,12 @@ const displayItem = (item) => {
     itemSLot.innerHTML = '';
     var index = getRandomInt(survivorItems.length);
     sItem = survivorItems[index];
-    var lag = '<li class="list-group-item list-group-item-primary"><div class="ui one column grid"><div class="row"><div class="column"><div class="text-center"><h2>' +
-    sItem.name + '</h2>' + '<img class="ui centered small image" src="' + sItem.image +'">' + '</div></div></div></div>';
+    var lag = '<li class="list-group-item list-group-item-primary"><div class="ui two column centered grid"><div class="row"><div class="eight wide column"><h2 class="text-center">' +
+    sItem.name + '</h2>' + '<img class="ui centered medium image" src="' + sItem.image +'">' + '</div>';
     lag += displayAddons();
+    lag += '</div></li>';
     lag += displaySurvPerks();
-    //console.log(lag);
+    console.log('surv:', lag);
     itemSLot.innerHTML += lag;
 };
 

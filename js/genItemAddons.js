@@ -585,13 +585,13 @@ function displayAddons() {
     var items = getItem();
     var indeces = getIndeces(2, items.length);
     var addons = [items[indeces[0]], items[indeces[1]]];
-    var lag = '<div class="ui two column grid"><div class="row">';
+    var lag = '<div class="eight wide column">';
     var i = 0;
     for (i = 0; i < 2; i++) {
-        lag += '<div class="column" style="width:48%"><div class="text-center"><h3>' +
-        addons[i].name + '</h3>' + '<img class="img-fluid" style="width: 25%;" src="' + addons[i].image +'">' + '</div></div>';
+        lag += '<div class="text-center"><h3>' +
+        addons[i].name + '</h3>' + '<img class="ui centered small image" src="' + addons[i].image +'">' + '</div>';
     }
-    lag +='</div></div></li>';
+    //lag += '</div>';
     return lag;
 }
 

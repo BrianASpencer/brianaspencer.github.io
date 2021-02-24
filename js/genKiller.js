@@ -180,6 +180,7 @@ function displayKiller() {
     lag += displayKillerAddons();
     lag += '</div></li>';
     lag += displayKillerPerks();
+    console.log('killer', lag);
     killerSlot.innerHTML += lag;
 }
 
