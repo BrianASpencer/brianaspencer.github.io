@@ -121,7 +121,7 @@ const displayItem = (item) => {
     lag += displayAddons();
     lag += '</div></li>';
     lag += displaySurvPerks();
-    console.log('surv:', lag);
+    //console.log('surv:', lag);
     itemSLot.innerHTML += lag;
 };
 
