@@ -339,6 +339,30 @@ const survivorPerks = [
     {
 		name: "Built To Last",
 		image: "../../images/DbD/perks/builtToLast.png"
+	},
+    {
+		name: "Bit the Bullet",
+		image: "../../images/DbD/perks/builtToLast.png"
+	},
+    {
+		name: "Blast Mine",
+		image: "../../images/DbD/perks/blastMine.png"
+	},
+    {
+		name: "Counterforce",
+		image: "../../images/DbD/perks/Counterforce.png"
+	},
+    {
+		name: "Flashbang",
+		image: "../../images/DbD/perks/Flashbang.png"
+	},
+    {
+		name: "Resurgence",
+		image: "../../images/DbD/perks/Resurgence.png"
+	},
+    {
+		name: "Rookie Spirit",
+		image: "../../images/DbD/perks/RookieSpirit.png"
 	}
 ];
 

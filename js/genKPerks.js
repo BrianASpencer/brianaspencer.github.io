@@ -299,6 +299,18 @@ const killerPerks = [
     {
 		name: "Coup de Grâce",
 		image: "../../images/DbD/perks/coupDeGrace.png"
+	},
+    {
+		name: "Lethal Pursuer",
+		image: "../../images/DbD/perks/lethalPursuer.png"
+	},
+    {
+		name: "Hysteria",
+		image: "../../images/DbD/perks/hysteria.png"
+	},
+    {
+		name: "Eruption",
+		image: "../../images/DbD/perks/eruption.png"
 	}
 ];
 
