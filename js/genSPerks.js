@@ -341,8 +341,8 @@ const survivorPerks = [
 		image: "../../images/DbD/perks/builtToLast.png"
 	},
     {
-		name: "Bit the Bullet",
-		image: "../../images/DbD/perks/builtToLast.png"
+		name: "Bite the Bullet",
+		image: "../../images/DbD/perks/BiteTheBullet.png"
 	},
     {
 		name: "Blast Mine",
