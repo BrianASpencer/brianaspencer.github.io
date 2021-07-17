@@ -70,7 +70,7 @@
              class="ui container"> 
 
             <div id="context1"> 
-                <div class="ui three item inverted menu"> 
+                <div class="ui four item inverted menu"> 
                     <a class="grey item active" data-tab="first"> 
                         <h3>General</h3> 
                     </a> 
@@ -81,8 +81,12 @@
                     <a class="red item" data-tab="third"> 
                         <h3>Killer</h3> 
                     </a> 
+
+                    <a class="grey item" data-tab="fourth"> 
+                        <h3>Game Setup</h3> 
+                    </a> 
                 </div> 
-                        
+
                 <div class="ui tab inverted segment active" data-tab="first"> 
 
                     <div class="ui tab inverted segment active" data-tab="first/a"> 
@@ -129,7 +133,7 @@
                     </div> 
 
                 </div> 
-                    
+
                 <div class="ui tab inverted segment" data-tab="second"> 
                     <div class="ui three item inverted menu" style="justify-content: center;"> 
                         <a class="blue item" data-tab= "second/a">
@@ -177,7 +181,7 @@
                     <div class="ui tab inverted segment" data-tab="second/b"> 
                         <div class="text-center">
                             <button class="ui inverted primary button" onclick="displaySurvivorBuild(this);"
-                                     data-tooltip="No cheating :)" data-position="top center">
+                                    data-tooltip="No cheating :)" data-position="top center">
                                 <h4>Generate A New Build</h4>
                             </button>
                         </div>
@@ -250,7 +254,7 @@
                         <br>
                         <div class="text-center">
                             <button class="ui inverted red button" onclick="displayMaps(this)"
-                                     data-tooltip="No cheating :)" data-position="top center">
+                                    data-tooltip="No cheating :)" data-position="top center">
                                 <h4>Generate New Maps</h4>
                             </button>
                         </div>
@@ -259,6 +263,46 @@
                         </div>
                     </div> 
                 </div> 
+                <div class="ui tab inverted segment" data-tab="fourth"> 
+                    <div class="ui tab inverted segment active" data-tab="fourth/a"> 
+                        <div class="text-center text-white">
+                            <h3>
+                                THis is a tool to keep track of the killer rotation. Enter all five player names to begin.
+                            </h3>
+                            <br>
+                        </div>
+                        <form class="ui inverted form">
+                            <div class="field">
+                                <label for="name1">Player 1:</label>
+                                <input type="text" id="name1" name="name1" placeholder="Player 1" required>
+                            </div>
+                            <div class="field">
+                                <label for="name2">Player 2:</label>
+                                <input type="text" id="name2" name="name2" placeholder="Player 2" required>
+                            </div>
+                            <div class="field">
+                                <label for="name3">Player 3:</label>
+                                <input type="text" id="name3" name="name3" placeholder="Player 3" required>
+                            </div>
+                            <div class="field">
+                                <label for="name4">Player 4:</label>
+                                <input type="text" id="name4" name="name4" placeholder="Player 4" required>
+                            </div>
+                            <div class="field">
+                                <label for="name1">Player 5:</label>
+                                <input type="text" id="name5" name="name5" placeholder="Player 5" required>
+                            </div>
+                            <div class="text-center">
+                                <button class="ui inverted grey button" type="submit"
+                                        data-tooltip="GLHF :)" data-position="top center">
+                                    <h4>Start</h4>
+                                </button>
+                            </div>
+                        </form>
+                        <div class="text-center" id="rotationSlot">
+                        </div>
+                    </div> 
+                </div>
             </div> 
         </div> 
         <!-- DATA -->
@@ -270,6 +314,7 @@
         <script src="../../js/Data/addons.js"></script>
         <script src="../../js/Data/maps.js"></script>
         <!-- FUNCTIONS -->
+        <script src="../../js/rotation.js"></script>
         <script src="../../js/genKPerks.js"></script>
         <script src="../../js/genKAddons.js"></script>
         <script src="../../js/genKiller.js"></script>
@@ -277,7 +322,7 @@
         <script src="../../js/genSPerks.js"></script>
         <script src="../../js/genItemAddons.js"></script>
         <script src="../../js/genItem.js"></script>
-        
+
         <script> 
             $('.menu .item').tab();                    
         </script> 
