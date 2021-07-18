@@ -44,6 +44,7 @@
         <script src= 
                 "https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"> 
         </script> 
+        <script src="https://semantic-ui.com/javascript/library/tablesort.js"></script>
     </head> 
 
     <body class="bg-dark"> 
@@ -242,6 +243,10 @@
                         </ul> 
                         <h3 class="text-center text-white">Killer Tier List</h3>
                         <div id="killerTable"></div>
+                        <h4 class="text-white">Source: </h4>
+                        <div class="ui container text-center">
+                            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/treEuFCna8o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
                     </div> 
                     <div class="ui tab inverted segment" data-tab="third/b"> 
                         <div class="text-center">
@@ -327,7 +332,8 @@
         <script src="../../js/genItem.js"></script>
 
         <script> 
-            $('.menu .item').tab();                    
+            $('.menu .item').tab();  
+            $('table').tablesort()
         </script> 
 
     </body> 
