@@ -120,7 +120,7 @@ function letsgokp() {
 
 function renderTable() {
     killerTable.innerHTML = '';
-    var lag = '<table class="ui red table"><thead><tr><th>Killer</th><th>Rating</th></tr></thead><tbody>';
+    var lag = '<table class="ui sortable celled table"><thead><tr><th>Killer</th><th>Rating (out of 10)</th></tr></thead><tbody>';
     //<tr><td>TheTrapper</td><td>1590</td></tr>
     //iterate over tierList and make a row for each element (two columns)
     for(let i = 0; i < tierList.length; i++) {
