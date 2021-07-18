@@ -156,9 +156,20 @@ name: 'The Executioner',
 
  rating:7.23
 
+},
+{
+
+name: 'The Trickster',
+
+ rating: 6.5
+
+},
+{
+
+name: 'The Nemesis',
+
+ rating: 6.3
+
 }
 
 ];
-
-
-
