@@ -36,10 +36,6 @@ const survivorPerks = [
 		image: "../../images/DbD/perks/proveThyself.png"
 	},
 	{
-		name: "Sprint Burst",
-		image: "../../images/DbD/perks/sprintBurst.png"
-	},
-	{
 		name: "Spine Chill",
 		image: "../../images/DbD/perks/spineChill.png"
 	},
@@ -80,20 +76,12 @@ const survivorPerks = [
 		image: "../../images/DbD/perks/vigil.png"
 	},
 	{
-		name: "Balanced Landing",
-		image: "../../images/DbD/perks/balancedLanding.png"
-	},
-	{
 		name: "Dark Sense",
 		image: "../../images/DbD/perks/darkSense.png"
 	},
 	{
 		name: "Breakdown",
 		image: "../../images/DbD/perks/breakdown.png"
-	},
-	{
-		name: "Lithe",
-		image: "../../images/DbD/perks/lithe.png"
 	},
 	{
 		name: "Diversion",
@@ -106,10 +94,6 @@ const survivorPerks = [
 	{
 		name: "Borrowed Time",
 		image: "../../images/DbD/perks/borrowedTime.png"
-	},
-	{
-		name: "Dead Hard",
-		image: "../../images/DbD/perks/DeadHard.png"
 	},
 	{
 		name: "Saboteur",
@@ -218,10 +202,6 @@ const survivorPerks = [
 	{
 		name: "Blood Pact",
 		image: "../../images/DbD/perks/bloodPact.png"
-	},
-	{
-		name: "Head On",
-		image: "../../images/DbD/perks/headOn.png"
 	},
 	{
 		name: "Autodidact",
@@ -342,10 +322,6 @@ const survivorPerks = [
     {
 		name: "Fast Track",
 		image: "../../images/DbD/perks/fastTrack.png"
-	},
-    {
-		name: "Smash Hit",
-		image: "../../images/DbD/perks/smashHit.png"
 	},
     {
 		name: "Self-Preservation",
