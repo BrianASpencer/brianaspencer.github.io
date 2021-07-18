@@ -268,10 +268,6 @@ const survivorPerks = [
 		image: "../../images/DbD/perks/aftercare.png"
 	},
 	{
-		name: "No Mither",
-		image: "../../images/DbD/perks/NoMither.png"
-	},
-	{
 		name: "Wake Up!",
 		image: "../../images/DbD/perks/wakeUp.png"
 	},
