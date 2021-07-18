@@ -132,7 +132,7 @@ function renderTable() {
             lag += '<tr class="positive"><td>'+tierList[i].name+'</td><td>'+tierList[i].rating+'</td></tr>';
         }
     }
-    console.log(lag);
+    
     killerTable.innerHTML += lag;
 }
 

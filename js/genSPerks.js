@@ -58,7 +58,7 @@ function displaySurvPerks() {
     var perks = [survivorPerks[indeces[0]], survivorPerks[indeces[1]], survivorPerks[indeces[2]], survivorPerks[indeces[3]]];
     var lag = '<li class="list-group-item list-group-item-primary"><div class="ui two column centered grid">';
     var i = 0;
-    for (i = 0; i < 4; i++) {
+    for (i = 0; i < 3; i++) {
         if (i % 2 == 0) {
             lag += '<div class="row">';
         }
@@ -68,6 +68,8 @@ function displaySurvPerks() {
             lag += '</div>';
         }
     }
+    var rand = getIndeces(1, exhPerks.length);
+    lag += '<div class="eight wide column"><h3 class="text-center">' + exhPerks[rand[0]].name + '<img class="ui centered small image" src="' + exhPerks[rand[0]].image +'"></div></div>'
     lag += '</li></div></div>';
     return lag;
     //surv.innerHTML += lag;
