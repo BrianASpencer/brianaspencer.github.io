@@ -29,7 +29,7 @@ function displayRotation() {
     for(let i = 1; i < window.names.length; i++) {
         lag += '<div class="row"><h2 style="margin: auto; margin-right: 5%; margin-left: 25%;">'+window.names[i]+'</h2><img class="tiny image" src="../../images/DbD/survivor.png"></div><br>';
     }
-    rotationSlot.innerHTML += '</div>'+lag+'</div></div><div class="ui vertical divider"><h1>VS</h1></div></div>';
+    rotationSlot.innerHTML += '</div>'+lag+'</div></div><div class="ui vertical divider">VS</div></div>';
 }
 
 function newNames(players) {
