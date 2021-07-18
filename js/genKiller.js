@@ -1,4 +1,5 @@
 const killerSlot = document.getElementById('killerSlot');
+const killerTable = document.getElementById('killerTable');
 var killer;
 
 /*
@@ -117,4 +118,23 @@ function letsgokp() {
     console.log(a);
 }
 
+function renderTable() {
+    killerTable.innerHTML = '';
+    var lag = '<table class="ui red table"><thead><tr><th>Killer</th><th>Rating</th></tr></thead><tbody>';
+    //<tr><td>TheTrapper</td><td>1590</td></tr>
+    //iterate over tierList and make a row for each element (two columns)
+    for(let i = 0; i < tierList.length; i++) {
+        if (tierList[i].rating > 9) {
+            lag += '<tr class="error"><td>'+tierList[i].name+'</td><td>'+tierList[i].rating+'</td></tr>';
+        } else if (tierList[i].rating > 6.9) {
+            lag += '<tr class="warning"><td>'+tierList[i].name+'</td><td>'+tierList[i].rating+'</td></tr>';
+        } else {
+            lag += '<tr class="positive"><td>'+tierList[i].name+'</td><td>'+tierList[i].rating+'</td></tr>';
+        }
+    }
+    console.log(lag);
+    killerTable.innerHTML += lag;
+}
+
 displayKiller();
+renderTable();
