@@ -2292,7 +2292,7 @@ const killerAddons = [
     {
 		name: "Damaged Syringe",
 		parentItem: "nemesis",
-		image: "../../images/DbD/addons/damaged Syringe.png"
+		image: "../../images/DbD/addons/damagedSyringe.png"
 	},
     {
 		name: "Brian's Intestine",
