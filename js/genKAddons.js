@@ -184,21 +184,6 @@ function getKiller() {
     return arr;
 }
 
-function timeOutButton_2(obj) {
-    obj.disabled = true;
-    setTimeout(function() {
-        displayKiller();
-        timeOutTime_2(obj);
-    }, 400);
-}
-
-function timeOutTime_2(obj) {
-    setTimeout(function() {
-        obj.disabled = false;
-        displayKillerAddons();
-    }, 300);
-}
-
 function displayKillerBuild(obj) {
     obj.disabled = true;
     displayKiller();
@@ -207,14 +192,7 @@ function displayKillerBuild(obj) {
     }, 50);
     setTimeout(function() {
         obj.disabled = false;
-    }, 50);
-}
-
-function timeOutTime_2(obj) {
-    setTimeout(function() {
-        displayKillerAddons();
-        obj.disabled = false;
-    }, 500);
+    }, 350);
 }
 
 function displaySurvivorBuild(obj) {
@@ -225,7 +203,7 @@ function displaySurvivorBuild(obj) {
     }, 50);
     setTimeout(function() {
         obj.disabled = false;
-    }, 50);
+    }, 350);
 }
 
 function displayKillerPerkss(obj) {
