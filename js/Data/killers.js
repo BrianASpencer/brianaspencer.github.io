@@ -112,19 +112,16 @@ const killers = [
     {
 		name: "The Cenobite",
 		image: "../../images/DbD/killers/cenobite.webp",
-		item: "cenebite",
-        persk: []
+		item: "cenebite"
 	},
     {
 		name: "The Artist",
 		image: "../../images/DbD/killers/artist.webp",
-		item: "artist",
-        persk: []
+		item: "artist"
 	},
     {
 		name: "The Onryō",
 		image: "../../images/DbD/killers/onryo.webp",
-		item: "onryo",
-        perks: []
+		item: "onryo"
 	}
 ];

@@ -1,4 +1,8 @@
 const survivorPerks = [
+    {
+		name: "Adrenaline",
+		image: "../../images/DbD/perks/adrenaline.png"
+	},
 	{
 		name: "Guardian",
 		image: "../../images/DbD/perks/babySitter.png"

@@ -139,6 +139,10 @@ const killerPerks = [
 		name: "Unnerving Presence",
 		image: "../../images/DbD/perks/unnervingPresence.png"
 	},
+    {
+		name: "Enduring",
+		image: "../../images/DbD/perks/enduring.png"
+	},
 	{
 		name: "Predator",
 		image: "../../images/DbD/perks/predator.png"

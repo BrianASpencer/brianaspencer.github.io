@@ -20,10 +20,6 @@ const chasePerks = [
 		image: "../../images/DbD/perks/hexBloodFavor.png"
 	},
     {
-		name: "Enduring",
-		image: "../../images/DbD/perks/enduring.png"
-	},
-    {
 		name: "Save the best for last",
 		image: "../../images/DbD/perks/saveTheBestForLast.png"
 	}
