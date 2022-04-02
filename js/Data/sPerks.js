@@ -1,6 +1,6 @@
 const survivorPerks = [
 	{
-		name: "Babysitter",
+		name: "Guardian",
 		image: "../../images/DbD/perks/babySitter.png"
 	},
 	{
@@ -68,7 +68,7 @@ const survivorPerks = [
 		image: "../../images/DbD/perks/kindred.png"
 	},
 	{
-		name: "Second Wind",
+		name: "Renewal",
 		image: "../../images/DbD/perks/secondWind.png"
 	},
 	{
@@ -168,7 +168,7 @@ const survivorPerks = [
 		image: "../../images/DbD/perks/ironWill.png"
 	},
 	{
-		name: "Camaraderie",
+		name: "Kinship",
 		image: "../../images/DbD/perks/camaraderie.png"
 	},
 	{
@@ -188,7 +188,7 @@ const survivorPerks = [
 		image: "../../images/DbD/perks/thisIsNotHappening.png"
 	},
 	{
-		name: "Better Together",
+		name: "Situational Awareness",
 		image: "../../images/DbD/perks/betterTogether.png"
 	},
 	{
@@ -216,10 +216,6 @@ const survivorPerks = [
 		image: "../../images/DbD/perks/upTheAnte.png"
 	},
 	{
-		name: "Adrenaline",
-		image: "../../images/DbD/perks/adrenaline.png"
-	},
-	{
 		name: "Unbreakable",
 		image: "../../images/DbD/perks/unbreakable.png"
 	},
@@ -228,7 +224,7 @@ const survivorPerks = [
 		image: "../../images/DbD/perks/distortion.png"
 	},
 	{
-		name: "Inner Strength",
+		name: "Inner Healing",
 		image: "../../images/DbD/perks/innerStrength.png"
 	},
 	{
@@ -276,7 +272,7 @@ const survivorPerks = [
 		image: "../../images/DbD/perks/slipperyMeat.png"
 	},
 	{
-		name: "Fixated",
+		name: "Self-Aware",
 		image: "../../images/DbD/perks/fixated.png"
 	},
 	{
@@ -346,5 +342,37 @@ const survivorPerks = [
     {
 		name: "Rookie Spirit",
 		image: "../../images/DbD/perks/RookieSpirit.png"
+	},
+    {
+		name: "Clairvoyance",
+		image: "../../images/DbD/perks/clairvoyance.webp"
+	},
+    {
+		name: "Boon: Circle of Healing",
+		image: "../../images/DbD/perks/boonCircleOfHealing.webp"
+	},
+    {
+		name: "Boon: Shadow Step",
+		image: "../../images/DbD/perks/boonShadowStep.webp"
+	},
+    {
+		name: "Corrective Action",
+		image: "../../images/DbD/perks/correctiveAction.webp"
+	},
+    {
+		name: "Boon: Exponential",
+		image: "../../images/DbD/perks/boonExponential.webp"
+	},
+    {
+		name: "Parental Guidance",
+		image: "../../images/DbD/perks/parentalGuidance.webp"
+	},
+    {
+		name: "Empathic Connection",
+		image: "../../images/DbD/perks/empathicConnection.webp"
+	},
+    {
+		name: "Boon: Dark Theory",
+		image: "../../images/DbD/perks/boonDarkTheory.webp"
 	}
 ];
