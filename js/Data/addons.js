@@ -2378,5 +2378,80 @@ const killerAddons = [
 		name: "Iridescent Umbrella Badge",
 		parentItem: "nemesis",
 		image: "../../images/DbD/addons/iridescentUmbrellaBadge.png"
-	}
+	},
+    {
+        name: "Brown",
+		parentItem: "artist",
+		image: ""
+    },
+    {
+        name: "Yellow",
+		parentItem: "artist",
+		image: ""
+    },
+    {
+        name: "Green",
+		parentItem: "artist",
+		image: ""
+    },
+    {
+        name: "Purple",
+		parentItem: "artist",
+		image: ""
+    },
+    {
+        name: "Red",
+		parentItem: "artist",
+		image: ""
+    },
+    {
+        name: "Brown",
+		parentItem: "cenobite",
+		image: ""
+    },
+    {
+        name: "Yellow",
+		parentItem: "cenobite",
+		image: ""
+    },
+    {
+        name: "Green",
+		parentItem: "cenobite",
+		image: ""
+    },
+    {
+        name: "Purple",
+		parentItem: "cenobite",
+		image: ""
+    },
+    {
+        name: "Red",
+		parentItem: "cenobite",
+		image: ""
+    },
+    {
+        name: "Brown",
+		parentItem: "onryo",
+		image: ""
+    },
+    {
+        name: "Yellow",
+		parentItem: "onryo",
+		image: ""
+    },
+    {
+        name: "Green",
+		parentItem: "onryo",
+		image: ""
+    },
+    {
+        name: "Purple",
+		parentItem: "onryo",
+		image: ""
+    },
+    {
+        name: "Red",
+		parentItem: "onryo",
+		image: ""
+    }
 ];

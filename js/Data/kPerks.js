@@ -8,14 +8,6 @@ const killerPerks = [
 		image: "../../images/DbD/perks/ironMaiden.png"
 	},
 	{
-		name: "Hex: Ruin",
-		image: "../../images/DbD/perks/ruin.png"
-	},
-	{
-		name: "Dead Man’s Switch	",
-		image: "../../images/DbD/perks/deadManSwitch.png"
-	},
-	{
 		name: "Dark Devotion",
 		image: "../../images/DbD/perks/darkDevotion.png"
 	},
@@ -32,16 +24,8 @@ const killerPerks = [
 		image: "../../images/DbD/perks/agitation.png"
 	},
 	{
-		name: "Tinkerer",
-		image: "../../images/DbD/perks/tinkerer.png"
-	},
-	{
 		name: "Fire Up",
 		image: "../../images/DbD/perks/fireUp.png"
-	},
-	{
-		name: "Blood Warden",
-		image: "../../images/DbD/perks/bloodWarden.png"
 	},
 	{
 		name: "Unrelenting",
@@ -84,10 +68,6 @@ const killerPerks = [
 		image: "../../images/DbD/perks/insidious.png"
 	},
 	{
-		name: "Rancor",
-		image: "../../images/DbD/perks/hatred.png"
-	},
-	{
 		name: "Franklin's Demise",
 		image: "../../images/DbD/perks/franklinsLoss.png"
 	},
@@ -102,14 +82,6 @@ const killerPerks = [
 	{
 		name: "Remember Me",
 		image: "../../images/DbD/perks/rememberMe.png"
-	},
-	{
-		name: "Infectious Fright",
-		image: "../../images/DbD/perks/infectiousFright.png"
-	},
-	{
-		name: "Bamboozle",
-		image: "../../images/DbD/perks/bamboozle.png"
 	},
 	{
 		name: "Cruel Limits",
@@ -148,10 +120,6 @@ const killerPerks = [
 		image: "../../images/DbD/perks/hauntedGround.png"
 	},
 	{
-		name: "Hex: Retribution",
-		image: "../../images/DbD/perks/hexRetribution.png"
-	},
-	{
 		name: "Thrilling Tremors",
 		image: "../../images/DbD/perks/thrillingTremors.png"
 	},
@@ -162,18 +130,6 @@ const killerPerks = [
 	{
 		name: "Deerstalker",
 		image: "../../images/DbD/perks/deerstalker.png"
-	},
-	{
-		name: "Pop Goes the Weasel",
-		image: "../../images/DbD/perks/popGoesTheWeasel.png"
-	},
-	{
-		name: "Save the best for last",
-		image: "../../images/DbD/perks/saveTheBestForLast.png"
-	},
-	{
-		name: "Bitter Murmur",
-		image: "../../images/DbD/perks/bitterMurmur.png"
 	},
 	{
 		name: "Hex: Huntress Lullaby",
@@ -188,24 +144,8 @@ const killerPerks = [
 		image: "../../images/DbD/perks/predator.png"
 	},
 	{
-		name: "I'm All Ears",
-		image: "../../images/DbD/perks/imAllEars.png"
-	},
-	{
-		name: "Surge",
-		image: "../../images/DbD/perks/surge.png"
-	},
-	{
 		name: "A Nurse's Calling",
 		image: "../../images/DbD/perks/aNursesCalling.png"
-	},
-	{
-		name: "Zanshin Tactics",
-		image: "../../images/DbD/perks/zanshinTactics.png"
-	},
-	{
-		name: "Enduring",
-		image: "../../images/DbD/perks/enduring.png"
 	},
 	{
 		name: "Mindbreaker",
@@ -236,10 +176,6 @@ const killerPerks = [
 		image: "../../images/DbD/perks/brutalStrength.png"
 	},
 	{
-		name: "Thanatophobia",
-		image: "../../images/DbD/perks/thatanophobia.png"
-	},
-	{
 		name: "Coulrophobia",
 		image: "../../images/DbD/perks/coulrophobia.png"
 	},
@@ -248,20 +184,8 @@ const killerPerks = [
 		image: "../../images/DbD/perks/whispers.png"
 	},
 	{
-		name: "Barbecue & Chili",
-		image: "../../images/DbD/perks/BBQAndChili.png"
-	},
-	{
 		name: "Discordance",
 		image: "../../images/DbD/perks/discordance.png"
-	},
-	{
-		name: "Spirit Fury",
-		image: "../../images/DbD/perks/spiritFury.png"
-	},
-	{
-		name: "Corrupt Intervention",
-		image: "../../images/DbD/perks/corruptIntervention.png"
 	},
 	{
 		name: "Make your Choice",
@@ -278,10 +202,6 @@ const killerPerks = [
     {
 		name: "Dragon's Grip",
 		image: "../../images/DbD/perks/dragonsGrip.png"
-	},
-    {
-		name: "Hex: Blood Favor",
-		image: "../../images/DbD/perks/hexBloodFavor.png"
 	},
     {
 		name: "Hex: Undying",
@@ -308,19 +228,27 @@ const killerPerks = [
 		image: "../../images/DbD/perks/hexCrowdControl.png"
 	},
     {
-		name: "No Way Out",
-		image: "../../images/DbD/perks/noWayOut.png"
-	},
-    {
-		name: "Lethal Pursuer",
-		image: "../../images/DbD/perks/lethalPursuer.png"
-	},
-    {
 		name: "Hysteria",
 		image: "../../images/DbD/perks/hysteria.png"
 	},
     {
-		name: "Eruption",
-		image: "../../images/DbD/perks/eruption.png"
-	}
+        name: "Hex: Plaything",
+        image: "../../images/DbD/perks/hexPlaything.webp"
+    },
+    {
+        name: "Scourge Hook: Gift of Pain",
+        image: "../../images/DbD/perks/scourgeHookGiftOfPain.webp"
+    },
+    {
+        name: "Grim Embrace",
+        image: "../../images/DbD/perks/grimEmbrace.webp"
+    },
+    {
+        name: "Hex: Pentimento",
+        image: "../../images/DbD/perks/hexPentimento.webp"
+    },
+    {
+        name: "Call of Brine",
+        image: "../../images/DbD/perks/callOfBrine.webp"
+    }
 ];

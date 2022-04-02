@@ -30,56 +30,16 @@ function getIndeces(length, arrLength) {
     return arr;
 }
 
-const fetchKiller = (bound) => {
-    killer = [];
-    const characters = [];
-    
-    const url = 'https://dbd-stats.info/api/characters';
-    
-    characters.push(fetch(url).then((res) => res.json()));
-    
-    Promise.all(characters).then((results) => {
-        buildKiller(results);
-    });
-
-};
-
-
-const buildKiller = (arr) => {
-    arr.forEach(myFunction);
-    function myFunction(item) {
-        var killers = [];
-        for (const element in item) {
-            var url = 'https://dbd-stats.info/data/Public/';
-            if (item[element].role === "EPlayerRole::VE_Slasher") {
-                killers.push([item[element].displayName, item[element].biography, url + item[element].iconPath, item[element].defaultItem]);
-            }
-        }
-        
-        var index = getRandomInt(killers.length);
-        killer = killers[index];
-        return displayKiller(killer);
-    }
-};
-
-const displayKiller_Old = (killer) => {
-    killerSlot.innerHTML = '';
-    var lag = '<li class="list-group-item list-group-item-danger"><div class="text-center"><h2>' +
-    killer[0] + '</h2>' + '<img style="width: 20%; height: 20%;" src="' + killer[2] +'">' + '<div>' + killer[1].replace(/<(.|\n)*?>/g, '') + '</div></div></li>';
-    killerSlot.innerHTML += lag;
-};
-
 function displayKiller() {
-    //letsgokp();
     killerSlot.innerHTML = '';
     var index = getRandomInt(killers.length);
     killer = killers[index];
+    Window.killer = killer;
     var lag = '<li class="list-group-item list-group-item-danger"><div class="ui two column centered grid"><div class="row"><div class="eight wide column"><h2 class="text-center">' +
     killer.name + '</h2>' + '<img class="ui centered small image" src="' +killer.image +'">' + '</div>';
     lag += displayKillerAddons();
     lag += '</div></li>';
     lag += displayKillerPerks();
-    //console.log('killer', lag);
     killerSlot.innerHTML += lag;
 }
 

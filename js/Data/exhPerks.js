@@ -22,5 +22,13 @@ const exhPerks = [
     {
 		name: "Sprint Burst",
 		image: "../../images/DbD/perks/sprintBurst.png"
+	},
+    {
+		name: "Adrenaline",
+		image: "../../images/DbD/perks/adrenaline.png"
+	},
+    {
+		name: "Overcome",
+		image: "../../images/DbD/perks/overcome.webp"
 	}
 ];
