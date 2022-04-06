@@ -4,16 +4,8 @@ const infoPerks = [
 		image: "../../images/DbD/perks/tinkerer.png"
 	},
     {
-		name: "Rancor",
-		image: "../../images/DbD/perks/hatred.png"
-	},
-    {
 		name: "Infectious Fright",
 		image: "../../images/DbD/perks/infectiousFright.png"
-	},
-    {
-		name: "Hex: Retribution",
-		image: "../../images/DbD/perks/hexRetribution.png"
 	},
     {
 		name: "Bitter Murmur",
@@ -30,5 +22,9 @@ const infoPerks = [
     {
         name: "Scourge Hook: Floods of Rage",
         image: "../../images/DbD/perks/scourgeHookFloodsOfRage.webp"
-    }
+    },
+    {
+		name: "Discordance",
+		image: "../../images/DbD/perks/discordance.png"
+	},
 ];
