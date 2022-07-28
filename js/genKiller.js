@@ -2,21 +2,6 @@ const killerSlot = document.getElementById('killerSlot');
 const killerTable = document.getElementById('killerTable');
 var killer;
 
-/*
-* TODO:
-* Implement new killers (twins and blight)
-* Update when new clown changes happen
-* Remove description of perks?
-* Add Huntresses' addons
-* remove all banned perks from each side
-* remove banned maps from each side
-* remove all banned addons
-* FREEZE ISSUE: https://stackoverflow.com/questions/15973089/javascript-settimeout-and-interface-freezing
-* POSSIBLY: 
-* Put gen killer/addons // item/addons together in one actual function to
-* generate them as a grid similar to how perks are generated
-*/
-
 function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
 }

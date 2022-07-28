@@ -24,12 +24,12 @@ form.addEventListener("submit", function(event) {
 
 function displayRotation() {
     rotationSlot.innerHTML = '';
-    var lag = '<div class="ui inverted divider"></div><button class="ui inverted grey button" onclick="rotatePlayers(this);" data-position="top center"><h4>Rotate</h4></button>';
-    lag += '<div class="ui placeholder segment"><div class="ui two column grid"><div class="column" style="margin: auto"><h2>' + window.names[0]+'</h2><img class="small image"  src="../../images/DbD/killer.png"></div><div class="column">';
+    var html = '<div class="ui inverted divider"></div><button class="ui inverted grey button" onclick="rotatePlayers(this);" data-position="top center"><h4>Rotate</h4></button>';
+    html += '<div class="ui placeholder segment"><div class="ui two column grid"><div class="column" style="margin: auto"><h2>' + window.names[0]+'</h2><img class="small image"  src="../../images/DbD/killer.png"></div><div class="column">';
     for(let i = 1; i < window.names.length; i++) {
-        lag += '<div class="row"><h2 style="margin: auto; margin-right: 5%; margin-left: 25%;">'+window.names[i]+'</h2><img class="tiny image" src="../../images/DbD/survivor.png"></div><br>';
+        html += '<div class="row"><h2 style="margin: auto; margin-right: 5%; margin-left: 25%;">'+window.names[i]+'</h2><img class="tiny image" src="../../images/DbD/survivor.png"></div><br>';
     }
-    rotationSlot.innerHTML += '</div>'+lag+'</div></div><div class="ui vertical divider">VS</div></div>';
+    rotationSlot.innerHTML += '</div>'+html+'</div></div><div class="ui vertical divider">VS</div></div>';
 }
 
 function newNames(players) {

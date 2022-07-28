@@ -211,8 +211,8 @@ const unused = [
 		image: "../../images/DbD/perks/ironGrasp.png"
 	},
 	{
-		name: "Monstrous Shrine",
-		image: "../../images/DbD/perks/monstrousShrine.png"
+		name: "Scourge Hook: Monstrous Shrine",
+		image: "../../images/DbD/perks/scourgeHookMonstrousShrine.webp"
 	},
     {
 		name: "Territorial Imperative",

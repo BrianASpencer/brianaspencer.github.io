@@ -2382,76 +2382,101 @@ const killerAddons = [
     {
         name: "Any Brown",
 		parentItem: "artist",
-		image: ""
+		image: "../../images/DbD/addons/default.webp"
     },
     {
         name: "Any Yellow",
 		parentItem: "artist",
-		image: ""
+		image: "../../images/DbD/addons/default.webp"
     },
     {
         name: "Any Green",
 		parentItem: "artist",
-		image: ""
+		image: "../../images/DbD/addons/default.webp"
     },
     {
         name: "Any Purple",
 		parentItem: "artist",
-		image: ""
+		image: "../../images/DbD/addons/default.webp"
     },
     {
         name: "Any Red",
 		parentItem: "artist",
-		image: ""
+		image: "../../images/DbD/addons/default.webp"
     },
     {
         name: "Any Brown",
 		parentItem: "cenobite",
-		image: ""
+		image: "../../images/DbD/addons/default.webp"
     },
     {
         name: "Any Yellow",
 		parentItem: "cenobite",
-		image: ""
+		image: "../../images/DbD/addons/default.webp"
     },
     {
         name: "Any Green",
 		parentItem: "cenobite",
-		image: ""
+		image: "../../images/DbD/addons/default.webp"
     },
     {
         name: "Any Purple",
 		parentItem: "cenobite",
-		image: ""
+		image: "../../images/DbD/addons/default.webp"
     },
     {
         name: "Any Red",
 		parentItem: "cenobite",
-		image: ""
+		image: "../../images/DbD/addons/default.webp"
     },
     {
         name: "Any Brown",
 		parentItem: "onryo",
-		image: ""
+		image: "../../images/DbD/addons/default.webp"
     },
     {
         name: "Any Yellow",
 		parentItem: "onryo",
-		image: ""
+		image: "../../images/DbD/addons/default.webp"
     },
     {
         name: "Any Green",
 		parentItem: "onryo",
-		image: ""
+		image: "../../images/DbD/addons/default.webp"
     },
     {
         name: "Any Purple",
 		parentItem: "onryo",
-		image: ""
+		image: "../../images/DbD/addons/default.webp"
     },
     {
         name: "Any Red",
 		parentItem: "onryo",
-		image: ""
+		image: "../../images/DbD/addons/default.webp"
+    },
+    {
+        name: "Any Brown",
+		parentItem: "dredge",
+		image: "../../images/DbD/addons/default.webp"
+    },
+    {
+        name: "Any Yellow",
+		parentItem: "dredge",
+		image: "../../images/DbD/addons/default.webp"
+    },
+    {
+        name: "Any Green",
+		parentItem: "dredge",
+		image: "../../images/DbD/addons/default.webp"
+    },
+    {
+        name: "Any Purple",
+		parentItem: "dredge",
+		image: "../../images/DbD/addons/default.webp"
+    },
+    {
+        name: "Any Red",
+		parentItem: "dredge",
+		image: "../../images/DbD/addons/default.webp"
     }
 ];

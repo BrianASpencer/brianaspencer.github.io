@@ -14,43 +14,7 @@ function getIndeces(length, arrLength) {
     return arr;
 }
 
-const fetchItem = (bound) => {
-    sItem  = [];
-    const itemList = [];
-    
-    const url = 'https://dbd-stats.info/api/items';
-    
-    itemList.push(fetch(url).then((res) => res.json()));
-    
-    Promise.all(itemList).then((results) => {
-        buildItem(results);
-    });
-};
-
-
-const buildItem = (arr) => {
-    arr.forEach(myFunction);
-    function myFunction(item) {
-        var items = [];
-        for (const element in item) {
-            var url = 'https://dbd-stats.info/data/Public/';
-            
-            if (item[element].role === "EPlayerRole::VE_Camper" && item[element].bloodWeb && item[element].rarity !== "EItemRarity::SpecialEvent") {
-                items.push([item[element].displayName, item[element].description, url + item[element].iconPathList[0],
-                           item[element].id]);
-            }
-
-        }
-        
-        var index = getRandomInt(items.length);
-        sItem = items[index];
-        
-        return displayItem(sItem);
-    }
-};
-
 const displayItem = (item) => {
-    //letsgoi();
     itemSLot.innerHTML = '';
     var index = getRandomInt(survivorItems.length);
     sItem = survivorItems[index];
@@ -59,7 +23,7 @@ const displayItem = (item) => {
     lag += displayAddons();
     lag += '</div></li>';
     lag += displaySurvPerks();
-    //console.log('surv:', lag);
+    
     itemSLot.innerHTML += lag;
 };
 

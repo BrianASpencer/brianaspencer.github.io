@@ -123,5 +123,10 @@ const killers = [
 		name: "The Onryō",
 		image: "../../images/DbD/killers/onryo.webp",
 		item: "onryo"
+	},
+    {
+		name: "The Dredge",
+		image: "../../images/DbD/killers/dredge.webp",
+		item: "dredge"
 	}
 ];
